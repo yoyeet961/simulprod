@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderation | Roblox CS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            zoom: 67%;
+        }
+        .sidebar {
+          margin-top: 70px;
+          margin-left: 40px;
+          margin-right: 40px;
+          margin-bottom: 0;
+          width: 350px; /* Adjust the width as needed */
+          border-top: 1px solid #2578BB;
+          border-right: 1px solid #2578BB;
+          border-left: 1px solid #2578BB;
+          border-bottom: 1px solid #2578BB;
+          border-radius: 6px; /* Adjust the border radius as needed */
+          z-index: 1;
+          overflow-y: auto;
+        }
+        .section {
+            border-bottom: 4px solid #e0e0e0;
+            background-color: #f4f4f4;
+            padding: 15px;
+            height: 15px;
+            width: 98.7%;
+            position: absolute;
+            justify-content: space-between;
+        }
+        .welcome {
+            float: right;
+        }
+        .home {
+            position: absolute;
+            margin-top: 70px;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            margin-top: 70px;
+        }
+        h1 {
+            margin-top: 0;
+            font-weight: normal;
+        }
+        h2 {
+            font-size: 18px;
+            color: white;
+            background-color: #2578BB;
+            padding: 20px;
+            margin-top: -5px;
+            height: 15px;
+            font-weight: normal;
+        }
+        h3 {
+            margin-left: 15px;
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 15px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        span {
+            font-weight: bold;
+        }
+        input[type="radio"] {
+            margin-right: 8px;
+            margin-bottom: 5px;
+            height: 15px;
+        }
+        select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            height: 25px;
+            width: 60px;
+        }
+        select {
+            width: 400px;
+        }
+        textarea {
+            width: 388px;
+        }
+        hr {
+            width: 90%;
+            margin-left: 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 1em;
+        }
+        .nonbold {
+            font-weight: normal;
+        }
+        .loader {
+          border: 8px solid #a7a7a7; /* Light grey */
+          border-top: 8px solid #3498db; /* Blue */
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+          animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        .loading {
+            margin-top: 16px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .hidden2 {
+            display: none;
+            color: green;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <script src="buttons.js"></script>
+    <div class="section">
+        <span class="nonbold">Customer Service & Moderation</span>
+        <div class="welcome">Hi CrispelloVanilla (<a href="#">logout</a>)</div>
+    </div>
+    <!--
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    !-->
+    <div class="sidebar">
+        <h2>Customer Service</h2>
+        <h3>User Admin</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Find user</a></li>
+            <li><a href="#">Find payment</a></li>
+            <li><a href="#">User Asset Transfer</a></li>
+            <li><a href="#">Asset Transfer</a></li>
+            <li><a href="#">User Assets</a></li>
+            <li><a href="#">User/Group Transactions</a></li>
+            <li><a href="#">User Trades</a></li>
+            <li><a href="#">Send Personal Message</a></li>
+            <li><a href="#">User Message</a></li>
+            <li><a href="#">Preset Message</a></li>
+            <li><a href="/MassPasswordReset/index.html">Mass Password Reset</a></li>
+        </ul>
+        <h3>Groups</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Group Admin</a></li>
+            <li><a href="#">Group Mass Reward</a></li>
+        </ul>
+        <h3>Cards</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Lookup Game Cards</a></li>
+            <li><a href="#">Incomm Redemption Reversal</a></li>
+            <li><a href="#">Gift Cards</a></li>
+        </ul>
+        <h3>Billing</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Grant Membership</a></li>
+            <li><a href="#">Adjust Assets, Credit & Currency</a></li>
+            <li><a href="#">Imbursements</a></li>
+            <li><a href="#">Imbursements Blacklist</a></li>
+            <li><a href="/MassRefund/index.html">Mass Reward</a></li>
+            <li><a href="#">Reward using CSV</a></li>
+            <li><a href="#">Bundle Purchase Audit Logs</a></li>
+        </ul>
+        <h3>Private Servers</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Private Server Transactions</a></li>
+        </ul>
+        <h3>Policy Labels</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Mass Set Policy Labels</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>igirisujinmario</h1>
+            <br>
+            <a class="home" href="">Home Page</a>
+        </div>
+        <div class="form-group">
+            <label>Account State Override:</label>
+            <div>
+                <input type="radio" name="account-state" id="warn"><span for="warn">Warn</span>
+            </div>
+            <div>
+                <input type="radio" name="account-state" id="ban1"><span for="ban1">Ban 1 Day</span>
+            </div>
+            <div>
+                <input type="radio" name="account-state" id="ban3"><span for="ban3">Ban 3 Days</span>
+            </div>
+            <div>
+                <input type="radio" name="account-state" id="ban7"><span for="ban7">Ban 7 Days</span>
+            </div>
+            <div>
+                <input type="radio" name="account-state" id="ban14"><span for="ban14">Ban 14 Days</span>
+            </div>
+            <div>
+                <input type="radio" name="account-state" id="delete"><span for="delete">Delete</span>
+            </div>
+            <div>
+                <input type="radio" name="account-state" id="poison"><span for="poison">Poison</span>
+            </div>
+            <div>
+                <input type="radio" name="account-state" id="macban"><span for="macban">MAC Ban</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="moderation-reason">Moderation Reason:</label>
+            <select id="moderation-reason">
+                <option value=""></option>
+                <option value="">Spam</option>
+                <option value="">Bullying</option>
+                <option value="">Harassment</option>
+                <option value="">Personal Attacks</option>
+                <option value="">Swearing</option>
+                <option value="">Real Life Threats</option>
+                <option value="">Hate Speech</option>
+                <option value="">Discriminatory Content</option>
+                <option value="">Personal Info</option>
+                <option value="">Inappropriate Talk</option>
+                <option value="">Bad Image</option>
+                <option value="">Dispute</option>
+                <option value="">Dating</option>
+                <option value="">Grooming</option>
+                <option value="">Child Endangerment</option>
+                <option value="">Sexual Content / Games</option>
+                <option value="">Link</option>
+                <option value="">Refund</option>
+                <option value="">Selling Assets For USD</option>
+                <option value="">Buying Assets For USD</option>
+                <option value="">Scam</option>
+                <option value="">Known Fraud</option>
+                <option value="">Bot Account</option>
+                <option value="">Exploiting</option>
+                <option value="">Alternate Spam Accounts</option>
+                <option value="">General Abuse</option>
+                <option value="">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="preset-message">Preset Message to User:</label>
+            <select id="preset-message">
+                <option value=""></option>
+                <option value="">Spam</option>
+                <option value="">Bullying</option>
+                <option value="">Harassment</option>
+                <option value="">Personal Attacks</option>
+                <option value="">Swearing</option>
+                <option value="">Real Life Threats</option>
+                <option value="">Hate Speech</option>
+                <option value="">Discriminatory Content</option>
+                <option value="">Personal Info</option>
+                <option value="">Inappropriate Talk</option>
+                <option value="">Bad Image</option>
+                <option value="">Dispute</option>
+                <option value="">Dating</option>
+                <option value="">Grooming</option>
+                <option value="">Child Endangerment</option>
+                <option value="">Sexual Content / Games</option>
+                <option value="">Link</option>
+                <option value="">Refund</option>
+                <option value="">Selling Assets For USD</option>
+                <option value="">Buying Assets For USD</option>
+                <option value="">Scam</option>
+                <option value="">Known Fraud</option>
+                <option value="">Bot Account</option>
+                <option value="">Exploiting</option>
+                <option value="">Alternate Spam Accounts</option>
+                <option value="">General Abuse</option>
+                <option value="">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="user-message">Message to User:</label>
+            <textarea id="user-message"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="internal-note">Internal Moderation Note:</label>
+            <textarea id="internal-note"></textarea>
+        </div>
+        <button>Submit</button>
+        <div class="loading hidden">
+            <div class="loader"></div>
+            <span class="processing">Processing...</span>
+        </div>
+        <div class="hidden2">
+            <span style="color: green; margin-top: 16px;">✔Action completed successfully.</span>
+        </div>
+    </div>
+</body>
+</html>

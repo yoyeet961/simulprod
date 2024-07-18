@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service & Moderation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            height: 100vh;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: white;
+            background-color: #3498db;
+            padding: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Customer Service</h2>
+        <h3>User Admin</h3>
+        <ul>
+            <li><a href="#">Find user</a></li>
+            <li><a href="#">Find payment</a></li>
+            <li><a href="#">User Asset Transfer</a></li>
+            <li><a href="#">Asset Transfer</a></li>
+            <li><a href="#">User Assets</a></li>
+            <li><a href="#">User/Group Transactions</a></li>
+            <li><a href="#">User Trades</a></li>
+            <li><a href="#">Send Personal Message</a></li>
+            <li><a href="#">User Message</a></li>
+            <li><a href="#">Preset Message</a></li>
+            <li><a href="#">Mass Password Reset</a></li>
+        </ul>
+        <h3>Groups</h3>
+        <ul>
+            <li><a href="#">Group Admin</a></li>
+            <li><a href="#">Group Mass Reward</a></li>
+        </ul>
+        <h3>Cards</h3>
+        <ul>
+            <li><a href="#">Lookup Game Cards</a></li>
+            <li><a href="#">Incomm Redemption Reversal</a></li>
+            <li><a href="#">Gift Cards</a></li>
+        </ul>
+        <h3>Billing</h3>
+        <ul>
+            <li><a href="#">Grant Membership</a></li>
+            <li><a href="#">Adjust Assets, Credit & Currency</a></li>
+            <li><a href="#">Imbursements</a></li>
+            <li><a href="#">Imbursements Blacklist</a></li>
+            <li><a href="#">Mass Reward</a></li>
+            <li><a href="#">Reward using CSV</a></li>
+            <li><a href="#">Bundle Purchase Audit Logs</a></li>
+        </ul>
+        <h3>Private Servers</h3>
+        <ul>
+            <li><a href="#">Private Server Transactions</a></li>
+        </ul>
+        <h3>Policy Labels</h3>
+        <ul>
+            <li><a href="#">Mass Set Policy Labels</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>UsernameHere</h1>
+            <div>Hi CrispelloVanilla <a href="#">(logout)</a></div>
+        </div>
+        <form>
+            <div class="form-group">
+                <label>Account State Override:</label>
+                <div>
+                    <input type="radio" name="account-state" id="warn"><span for="warn">Warn</span>
+                </div>
+                <div>
+                    <input type="radio" name="account-state" id="ban1"><span for="ban1">Ban 1 Day</span>
+                </div>
+                <div>
+                    <input type="radio" name="account-state" id="ban3"><span for="ban3">Ban 3 Days</span>
+                </div>
+                <div>
+                    <input type="radio" name="account-state" id="ban7"><span for="ban7">Ban 7 Days</span>
+                </div>
+                <div>
+                    <input type="radio" name="account-state" id="ban14"><span for="ban14">Ban 14 Days</span>
+                </div>
+                <div>
+                    <input type="radio" name="account-state" id="delete"><span for="delete">Delete</span>
+                </div>
+                <div>
+                    <input type="radio" name="account-state" id="poison"><span for="poison">Poison</span>
+                </div>
+                <div>
+                    <input type="radio" name="account-state" id="macban"><span for="macban">MAC Ban</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="moderation-reason">Moderation Reason:</label>
+                <select id="moderation-reason">
+                    <option value=""></option>
+                    <option value="">Spam</option>
+                    <option value="">Bullying</option>
+                    <option value="">Harassment</option>
+                    <option value="">Personal Attacks</option>
+                    <option value="">Swearing</option>
+                    <option value="">Real Life Threats</option>
+                    <option value="">Hate Speech</option>
+                    <option value="">Discriminatory Content</option>
+                    <option value="">Personal Info</option>
+                    <option value="">Inappropriate Talk</option>
+                    <option value="">Bad Image</option>
+                    <option value="">Dispute</option>
+                    <option value="">Dating</option>
+                    <option value="">Grooming</option>
+                    <option value="">Child Endangerment</option>
+                    <option value="">Sexual Content / Games</option>
+                    <option value="">Link</option>
+                    <option value="">Refund</option>
+                    <option value="">Selling Assets For USD</option>
+                    <option value="">Buying Assets For USD</option>
+                    <option value="">Scam</option>
+                    <option value="">Known Fraud</option>
+                    <option value="">Bot Account</option>
+                    <option value="">Exploiting</option>
+                    <option value="">Alternate Spam Accounts</option>
+                    <option value="">General Abuse</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="preset-message">Preset Message to User:</label>
+                <select id="preset-message">
+                    <option value="">Select a message</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="user-message">Message to User:</label>
+                <textarea id="user-message"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="internal-note">Internal Moderation Note:</label>
+                <textarea id="internal-note"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

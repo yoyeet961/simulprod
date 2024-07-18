@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Reward | Roblox CS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            zoom: 67%;
+        }
+        .sidebar {
+          margin-top: 70px;
+          margin-left: 40px;
+          margin-right: 40px;
+          margin-bottom: 0;
+          width: 350px; /* Adjust the width as needed */
+          border-top: 1px solid #2578BB;
+          border-right: 1px solid #2578BB;
+          border-left: 1px solid #2578BB;
+          border-bottom: 1px solid #2578BB;
+          border-radius: 6px; /* Adjust the border radius as needed */
+          z-index: 1;
+          overflow-y: auto;
+        }
+        .section {
+            border-bottom: 4px solid #e0e0e0;
+            background-color: #f4f4f4;
+            padding: 15px;
+            height: 15px;
+            width: 98.7%;
+            position: absolute;
+            justify-content: space-between;
+        }
+        .welcome {
+            float: right;
+        }
+        .home {
+            position: absolute;
+            margin-top: 55px;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            margin-top: 70px;
+        }
+        h1 {
+            margin-top: 0;
+            font-weight: normal;
+            position: absolute;
+            margin-top: 30px;
+        }
+        h2 {
+            font-size: 18px;
+            color: white;
+            background-color: #2578BB;
+            padding: 20px;
+            margin-top: -5px;
+            height: 15px;
+            font-weight: normal;
+        }
+        h3 {
+            margin-left: 15px;
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 15px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+            height: 15px;
+        }
+        select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            height: 50px;
+            width: 90px;
+            background-color: #2578BB;
+            color: white;
+            border-radius: 6px;
+            font-size: 20px;
+        }
+        select {
+            width: 400px;
+        }
+        textarea {
+            width: 388px;
+        }
+        hr {
+            width: 90%;
+            margin-left: 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <span>Customer Service & Moderation</span>
+        <div class="welcome">Hi CrispelloVanilla (<a href="#">logout</a>)</div>
+    </div>
+    <!--
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    !-->
+    <div class="sidebar">
+        <h2>Customer Service</h2>
+        <h3>User Admin</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Find user</a></li>
+            <li><a href="#">Find payment</a></li>
+            <li><a href="#">User Asset Transfer</a></li>
+            <li><a href="#">Asset Transfer</a></li>
+            <li><a href="#">User Assets</a></li>
+            <li><a href="#">User/Group Transactions</a></li>
+            <li><a href="#">User Trades</a></li>
+            <li><a href="#">Send Personal Message</a></li>
+            <li><a href="#">User Message</a></li>
+            <li><a href="#">Preset Message</a></li>
+            <li><a href="/MassPasswordReset/index.html">Mass Password Reset</a></li>
+        </ul>
+        <h3>Groups</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Group Admin</a></li>
+            <li><a href="#">Group Mass Reward</a></li>
+        </ul>
+        <h3>Cards</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Lookup Game Cards</a></li>
+            <li><a href="#">Incomm Redemption Reversal</a></li>
+            <li><a href="#">Gift Cards</a></li>
+        </ul>
+        <h3>Billing</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Grant Membership</a></li>
+            <li><a href="#">Adjust Assets, Credit & Currency</a></li>
+            <li><a href="#">Imbursements</a></li>
+            <li><a href="#">Imbursements Blacklist</a></li>
+            <li><a href="/MassRefund/index.html">Mass Reward</a></li>
+            <li><a href="#">Reward using CSV</a></li>
+            <li><a href="#">Bundle Purchase Audit Logs</a></li>
+        </ul>
+        <h3>Private Servers</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Private Server Transactions</a></li>
+        </ul>
+        <h3>Policy Labels</h3>
+        <hr style=";">
+        <ul>
+            <li><a href="#">Mass Set Policy Labels</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Mass Refund or Reward</h1>
+        </div>
+        <div class="form-content">
+            <form>
+                <div class="form-group">
+                    <label>ROBUX Value</label>
+                    <input>
+                </div>
+                <div class="form-group">
+                    <label for="moderation-reason">Message to User(s)</label>
+                    <input>
+                </div>
+                <div class="form-group">
+                    <label for="preset-message">User ID(s)</label>
+                    <textarea></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

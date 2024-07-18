@@ -16,5 +16,13 @@ document.addEventListener('click', function(event) {
         element.classList.remove('hidden2');
       });
     }, 800);
+
+    setTimeout(() => {
+      hidden2Elements.forEach(element => {
+        element.classList.add('hidden2');
+      });
+    }, 1500);
+
+
   }
 });

@@ -1,0 +1,1150 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/Servers/LiveServers/275 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 02:32:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Server Allocation</title>
+        <link rel="shortcut icon" href="../../favicon.ico" />
+        <link href="../../Content/css7af7.css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="../../index.html" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="../../index.html">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="../../Deployments/History.html">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../farms-by-environment/1.html">Farms</a>
+                            </li>
+                            <li>
+                                <a href="../../superfarms-by-environment/1.html">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="../../servergroups-by-environment/1.html">ServerGroups</a>
+                    </li>
+                    <li class="">
+                        <a href="../../ServerJobs/History.html">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../GridDatacenters.html">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Websites/StatusesByEnvironment/1.html">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../../Services/StatusesByEnvironment/1.html">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../../Services/AllocationByEnvironment/1.html">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../../Databases/StatusesByEnvironment/1.html">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../../Databases/DatabaseLookupByEnvironment/1.html">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Websites/Diff.html">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="../../Services/Diff.html">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="../../Databases/Diff.html">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Servers.html">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="../../servers-by-environment/275.html">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="../AllServers.html">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="275.html">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="../ReserveServers.html">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="../MaintenanceServers.html">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="../BeingAllocated.html">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="../ReadyForAllocation.html">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="../Provisioning.html">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="../DefectiveServers.html">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="../MigrationServers.html">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Perfmon/ByServerGroup.html">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="../../Perfmon/ByComponent.html">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Teams/All.html">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Assemblies.html">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Components.html">Components</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Databases.html">Databases</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/ElasticsearchClusters.html">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/RedisClusters.html">Redis</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/ThirdPartyServices.html">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Pods.html">Pods</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Teams.html">Teams</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Systems.html">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/SystemResources.html">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="../../Components.html">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="../../index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+    <h3>Server Allocation</h3>
+    <ul class="nav nav-pills margin-bottom-normal">
+            <li>
+                <a href="5.html">RBX-SanMateo</a>
+            </li>
+            <li>
+                <a href="64.html">RBX-WorkStation</a>
+            </li>
+            <li>
+                <a href="70.html">RBX-Chicago</a>
+            </li>
+            <li>
+                <a href="74.html">RBX-Alpha</a>
+            </li>
+            <li>
+                <a href="144.html">RBX-CHI1</a>
+            </li>
+            <li>
+                <a href="194.html">RBX-ASH1</a>
+            </li>
+            <li>
+                <a href="231.html">AmazonWest-Alpha</a>
+            </li>
+            <li class="active">
+                <a href="275.html">RBX-SNC1</a>
+            </li>
+            <li>
+                <a href="296.html">RBX-ASH1X</a>
+            </li>
+            <li>
+                <a href="330.html">RBX-SNC2</a>
+            </li>
+            <li>
+                <a href="331.html">RBX-ASH2</a>
+            </li>
+    </ul>
+
+
+<form action="https://devops.sitetest1.roblox.local/Deployments/History" id="options-form" method="get">    <div class="panel panel-primary">
+        <div class="panel-body">
+            <div clas="row">
+                <div class="col-xs-2">
+                    <div class="form-group">
+                        <label for="PublicNetworks">Public Network</label>
+                        <select class="form-control input-sm filter" id="PublicNetworks" name="PublicNetworks"><option value="">[ Any Network ]</option>
+</select>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-group">
+                        <label for="HardwareClasses">Hardware Class</label>
+                        <select class="form-control input-sm filter" id="HardwareClasses" name="HardwareClasses"><option value="">[ Any Hardware ]</option>
+<option value="4">App-Intel-v3</option>
+<option value="26">App-Intel-v4</option>
+<option value="59">App-Intel-v5</option>
+<option value="78">AristaNetwork</option>
+<option value="2">DB-CoreData-Intel-v3</option>
+<option value="24">DB-CoreData-Intel-v4</option>
+<option value="29">DB-CoreData-Intel-v4-BigSSD</option>
+<option value="49">DB-CoreData-Intel-v4-GiantSSD</option>
+<option value="67">DB-CoreData-Intel-v5-BigSSD</option>
+<option value="70">DB-CoreData-Intel-v5-GiantSSD</option>
+<option value="95">DB-CoreData-Intel-v5-HugeSSD</option>
+<option value="74">DB-CoreData-Vitess-Intel-v5-GiantSSD</option>
+<option value="96">DB-CoreData-Vitess-Intel-v5-HugeSSD</option>
+<option value="52">DB-CoreDataMirror-Intel-v4</option>
+<option value="51">DB-CoreDataMirror-Intel-v4-BigSSD</option>
+<option value="50">DB-CoreDataMirror-Intel-v4-GiantSSD</option>
+<option value="69">DB-CoreDataMirror-Intel-v5-GiantSSD</option>
+<option value="94">DB-CoreDataMirror-Intel-v5-HugeSSD</option>
+<option value="14">DB-OLAP-Intel-v3</option>
+<option value="5">DB-Standby-Intel-v3</option>
+<option value="48">DB-Utility-Intel-v4</option>
+<option value="13">F5Network</option>
+<option value="22">File-Intel-v3</option>
+<option value="23">File-Intel-v4</option>
+<option value="93">Grid-AMDRome</option>
+<option value="20">Grid-Intel-32core</option>
+<option value="19">Grid-Intel-8core</option>
+<option value="91">Grid-Intel-v5</option>
+<option value="72">Grid-Intel-v6-Eval1</option>
+<option value="21">Grid-VM-8core</option>
+<option value="92">HyperV-AMDRome-Econ</option>
+<option value="9">HyperV-Intel-v3</option>
+<option value="28">HyperV-Intel-v3-BigHDD</option>
+<option value="68">HyperV-Intel-v3-BigMem</option>
+<option value="7">HyperV-Intel-v3-BigSSD</option>
+<option value="25">HyperV-Intel-v4</option>
+<option value="27">HyperV-Intel-v4-BigHDD</option>
+<option value="64">HyperV-Intel-v4-BigSSD</option>
+<option value="60">HyperV-Intel-v5</option>
+<option value="66">HyperV-Intel-v5-BigHDD</option>
+<option value="65">HyperV-Intel-v5-BigSSD</option>
+<option value="12">JuniperNetwork</option>
+<option value="34">KVMConsole</option>
+<option value="3">Linux-Intel-v3</option>
+<option value="89">Nomad-Intel-v3</option>
+<option value="31">PDU</option>
+<option value="90">PortWorx-Intel-v3</option>
+<option value="82">PXE-Override-Centos</option>
+<option value="81">PXE-Override-Ubuntu</option>
+<option value="83">PXE-Override-Windows</option>
+<option value="6">RAM-Intel-v2</option>
+<option value="17">RAM-Intel-v4</option>
+<option value="35">RAM-Intel-v4-BigSSD</option>
+<option value="62">RAM-Intel-v5</option>
+<option value="63">RAM-Intel-v5-BigSSD</option>
+<option value="32">SerialConsole</option>
+<option value="11">VirtualMachine</option>
+<option value="38">VM-LApp-CPU-Large</option>
+<option value="40">VM-LApp-CPU-Micro</option>
+<option value="37">VM-LApp-CPU-Small</option>
+<option value="46">VM-LApp-General-Large</option>
+<option value="45">VM-LApp-General-Medium</option>
+<option value="43">VM-LApp-General-Micro</option>
+<option value="44">VM-LApp-General-Small</option>
+<option value="39">VM-LApp-RAM-Large</option>
+<option value="47">VM-LApp-RAM-Small</option>
+<option value="36">VM-Util-CPU-Small</option>
+<option value="61">Web-AMD-EPYC</option>
+<option value="1">Web-Intel-v3</option>
+<option value="16">Web-Intel-v4</option>
+<option value="73">Web-Intel-v4-Romark</option>
+<option value="58">Web-Intel-v5</option>
+<option value="87">Web-Intel-V5-HAProxy</option>
+<option value="76">Web-Intel-v5-MCRouter</option>
+<option value="77">Web-Intel-v5-MCRouter2</option>
+<option value="79">Web-Intel-V5-Nomad</option>
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="row">
+    <div class="col-xs-2">
+        
+    <h2><a href="../AllServers/275.html">All Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>HyperV-Intel-v5</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>JuniperNetwork</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Nomad-Intel-v3</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Not Classified</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>PortWorx-Intel-v3</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>VirtualMachine</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>15</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>73</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="275.html">Live Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>HyperV-Intel-v5</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>JuniperNetwork</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Nomad-Intel-v3</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>PortWorx-Intel-v3</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>VirtualMachine</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>2</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>40</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../ReserveServers/275.html">Reserve Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>HyperV-Intel-v5</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Nomad-Intel-v3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>PortWorx-Intel-v3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>VirtualMachine</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>13</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>21</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../MaintenanceServers/275.html">Maintenance Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../BeingAllocated/275.html">Being Allocated</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../ReadyForAllocation/275.html">Ready For Allocation</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../Provisioning/275.html">Still Provisioning</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../DefectiveServers/275.html">Defective</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>Not Classified</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>PortWorx-Intel-v3</td>
+                    <td>3</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>9</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../MigrationServers/275.html">Migration</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    </div>
+    <div class="col-xs-10">
+        <h2>Live Servers</h2>
+
+        <table id="mainTable" class="table table-striped table-condensed not-too-small sortable-table">
+            <thead>
+                <tr>
+                    <th>Server ID</th>
+                    <th>HostName</th>
+                    <th>Mac Address</th>
+                    <th>Primary IP</th>
+                    <th>Management IP</th>
+                    <th>Public Network</th>
+                    <th>Server Status</th>
+                    <th>Hardware Class</th>
+                    <th>Created Date</th>
+                    <th>Updated Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/10468.html">10468</a></td>
+                        <td>SNC1-LApp27</td>
+                        <td>b083fed4185b</td>
+                        <td>10.132.0.148</td>
+                        <td>10.133.0.148</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>3/28/2015 4:57:46 AM</td>
+                        <td>7/16/2020 3:22:07 PM</td>
+                    </tr>
+                    <tr class="834 90">
+                        <td><a href="../ServerDetails/10489.html">10489</a></td>
+                        <td>SNC1-LApp12</td>
+                        <td>549f3519a794</td>
+                        <td>10.132.0.160</td>
+                        <td>10.133.0.160</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>PortWorx-Intel-v3</td>
+                        <td>3/28/2015 6:34:51 AM</td>
+                        <td>7/16/2020 3:17:41 PM</td>
+                    </tr>
+                    <tr class="834 90">
+                        <td><a href="../ServerDetails/10491.html">10491</a></td>
+                        <td>SNC1-LApp9</td>
+                        <td>549f3505c32c</td>
+                        <td>10.132.0.164</td>
+                        <td>10.133.0.164</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>PortWorx-Intel-v3</td>
+                        <td>3/28/2015 6:37:03 AM</td>
+                        <td>7/16/2020 3:23:00 PM</td>
+                    </tr>
+                    <tr class="834 90">
+                        <td><a href="../ServerDetails/11661.html">11661</a></td>
+                        <td>SNC1-LApp11</td>
+                        <td>44a8420feee3</td>
+                        <td>10.132.0.159</td>
+                        <td>10.133.0.159</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>PortWorx-Intel-v3</td>
+                        <td>5/7/2015 6:25:49 PM</td>
+                        <td>7/16/2020 3:17:32 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/11663.html">11663</a></td>
+                        <td>SNC1-LApp2</td>
+                        <td>44a8420ff773</td>
+                        <td>10.132.0.134</td>
+                        <td>10.133.0.134</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>5/7/2015 6:27:41 PM</td>
+                        <td>5/20/2020 9:10:11 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/12643.html">12643</a></td>
+                        <td>SNC1-LApp24</td>
+                        <td>000e1e9f3ba0</td>
+                        <td>10.132.0.138</td>
+                        <td>10.133.0.138</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>9/28/2015 4:44:25 PM</td>
+                        <td>7/16/2020 3:19:12 PM</td>
+                    </tr>
+                    <tr class="834 90">
+                        <td><a href="../ServerDetails/12658.html">12658</a></td>
+                        <td>SNC1-LApp15</td>
+                        <td>141877291721</td>
+                        <td>10.132.0.161</td>
+                        <td>10.133.0.161</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>PortWorx-Intel-v3</td>
+                        <td>10/8/2015 11:39:19 AM</td>
+                        <td>7/16/2020 3:18:00 PM</td>
+                    </tr>
+                    <tr class="834 90">
+                        <td><a href="../ServerDetails/13420.html">13420</a></td>
+                        <td>SNC1-LApp17</td>
+                        <td>141877290f51</td>
+                        <td>10.132.0.158</td>
+                        <td>10.133.0.158</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>PortWorx-Intel-v3</td>
+                        <td>12/14/2015 10:57:38 AM</td>
+                        <td>7/16/2020 3:18:22 PM</td>
+                    </tr>
+                    <tr class="834 90">
+                        <td><a href="../ServerDetails/13500.html">13500</a></td>
+                        <td>SNC1-LApp13</td>
+                        <td>14187747fec3</td>
+                        <td>10.132.0.155</td>
+                        <td>10.133.0.155</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>PortWorx-Intel-v3</td>
+                        <td>1/22/2016 11:06:28 AM</td>
+                        <td>7/16/2020 3:17:48 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/8943.html">8943</a></td>
+                        <td>SNC1-LApp8</td>
+                        <td>549f35077ee4</td>
+                        <td>10.132.0.145</td>
+                        <td>10.133.0.145</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>1/22/2015 3:34:30 PM</td>
+                        <td>7/16/2020 3:22:51 PM</td>
+                    </tr>
+                    <tr class="834 90">
+                        <td><a href="../ServerDetails/8977.html">8977</a></td>
+                        <td>SNC1-LApp5</td>
+                        <td>b82a72df8624</td>
+                        <td>10.132.0.149</td>
+                        <td>10.133.0.149</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>PortWorx-Intel-v3</td>
+                        <td>1/22/2015 4:05:08 PM</td>
+                        <td>8/17/2020 11:59:43 AM</td>
+                    </tr>
+                    <tr class="834 90">
+                        <td><a href="../ServerDetails/8978.html">8978</a></td>
+                        <td>SNC1-LApp16</td>
+                        <td>b82a72dfbfb7</td>
+                        <td>10.132.0.151</td>
+                        <td>10.133.0.151</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>PortWorx-Intel-v3</td>
+                        <td>1/22/2015 4:06:03 PM</td>
+                        <td>7/16/2020 3:18:07 PM</td>
+                    </tr>
+                    <tr class="834 90">
+                        <td><a href="../ServerDetails/8987.html">8987</a></td>
+                        <td>SNC1-LApp6</td>
+                        <td>549f35076488</td>
+                        <td>10.132.0.153</td>
+                        <td>10.133.0.153</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>PortWorx-Intel-v3</td>
+                        <td>1/22/2015 4:14:11 PM</td>
+                        <td>7/16/2020 3:22:45 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/8997.html">8997</a></td>
+                        <td>SNC1-LApp25</td>
+                        <td>549f35076a48</td>
+                        <td>10.132.0.141</td>
+                        <td>10.133.0.141</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>1/22/2015 4:23:06 PM</td>
+                        <td>7/16/2020 3:21:54 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/8998.html">8998</a></td>
+                        <td>SNC1-LApp28</td>
+                        <td>b82a72dfb1f9</td>
+                        <td>10.132.0.147</td>
+                        <td>10.133.0.147</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>1/22/2015 4:24:00 PM</td>
+                        <td>7/16/2020 3:22:13 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/9010.html">9010</a></td>
+                        <td>SNC1-LApp1</td>
+                        <td>b82a72deb635</td>
+                        <td>10.132.0.136</td>
+                        <td>10.133.0.136</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>1/22/2015 4:34:48 PM</td>
+                        <td>2/28/2020 1:13:33 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/9013.html">9013</a></td>
+                        <td>SNC1-LApp4</td>
+                        <td>b82a72dfbd5f</td>
+                        <td>10.132.0.135</td>
+                        <td>10.133.0.135</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>1/22/2015 4:37:25 PM</td>
+                        <td>7/16/2020 3:22:26 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/9019.html">9019</a></td>
+                        <td>SNC1-LApp20</td>
+                        <td>b82a72df7e05</td>
+                        <td>10.132.0.139</td>
+                        <td>10.133.0.139</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>1/22/2015 4:42:55 PM</td>
+                        <td>7/16/2020 3:18:35 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/9035.html">9035</a></td>
+                        <td>SNC1-LApp14</td>
+                        <td>b82a72dffdb4</td>
+                        <td>10.132.0.146</td>
+                        <td>10.133.0.146</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>1/22/2015 4:57:25 PM</td>
+                        <td>7/16/2020 3:17:54 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/9036.html">9036</a></td>
+                        <td>SNC1-LApp10</td>
+                        <td>b82a72def11d</td>
+                        <td>10.132.0.143</td>
+                        <td>10.133.0.143</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>1/22/2015 4:58:18 PM</td>
+                        <td>7/16/2020 3:17:26 PM</td>
+                    </tr>
+                    <tr class="834 90">
+                        <td><a href="../ServerDetails/9037.html">9037</a></td>
+                        <td>SNC1-LApp18</td>
+                        <td>549f350771a0</td>
+                        <td>10.132.0.150</td>
+                        <td>10.133.0.150</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>PortWorx-Intel-v3</td>
+                        <td>1/22/2015 4:59:11 PM</td>
+                        <td>7/16/2020 3:18:29 PM</td>
+                    </tr>
+                    <tr class="834 1">
+                        <td><a href="../ServerDetails/9039.html">9039</a></td>
+                        <td>SNC1-Vx1</td>
+                        <td>549f350752a8</td>
+                        <td>10.132.0.176</td>
+                        <td>10.133.0.38</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Web-Intel-v3</td>
+                        <td>1/22/2015 5:01:04 PM</td>
+                        <td>1/12/2021 12:29:44 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/9056.html">9056</a></td>
+                        <td>SNC1-LApp21</td>
+                        <td>549f3507778c</td>
+                        <td>10.132.0.132</td>
+                        <td>10.133.0.132</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>1/22/2015 5:16:27 PM</td>
+                        <td>7/16/2020 3:18:41 PM</td>
+                    </tr>
+                    <tr class="834 1">
+                        <td><a href="../ServerDetails/9073.html">9073</a></td>
+                        <td>SNC1-LApp3</td>
+                        <td>b82a72df3f8a</td>
+                        <td>10.132.0.142</td>
+                        <td>10.133.0.142</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Web-Intel-v3</td>
+                        <td>1/22/2015 5:31:42 PM</td>
+                        <td>7/16/2020 3:22:19 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/9087.html">9087</a></td>
+                        <td>SNC1-LApp22</td>
+                        <td>b82a72e005d4</td>
+                        <td>10.132.0.133</td>
+                        <td>10.133.0.133</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>1/22/2015 5:44:22 PM</td>
+                        <td>7/16/2020 3:18:50 PM</td>
+                    </tr>
+                    <tr class="834 1">
+                        <td><a href="../ServerDetails/9098.html">9098</a></td>
+                        <td>maas-snc1</td>
+                        <td>b82a72df8608</td>
+                        <td>10.132.0.131</td>
+                        <td>10.133.0.3</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Web-Intel-v3</td>
+                        <td>1/22/2015 5:54:24 PM</td>
+                        <td>2/20/2020 10:31:51 PM</td>
+                    </tr>
+                    <tr class="834 89">
+                        <td><a href="../ServerDetails/9103.html">9103</a></td>
+                        <td>SNC1-LApp23</td>
+                        <td>b82a72dfe586</td>
+                        <td>10.132.0.140</td>
+                        <td>10.133.0.140</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Nomad-Intel-v3</td>
+                        <td>1/22/2015 5:58:49 PM</td>
+                        <td>7/16/2020 3:18:56 PM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/110152.html">110152</a></td>
+                        <td>rs1-ap41-c1-snc1</td>
+                        <td>5c4527ac1300</td>
+                        <td>10.132.255.10</td>
+                        <td>10.132.255.10</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>JuniperNetwork</td>
+                        <td>11/12/2019 12:22:46 PM</td>
+                        <td>2/11/2021 2:03:40 AM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/110153.html">110153</a></td>
+                        <td>sw1-ap41-c1-snc1</td>
+                        <td>c8e7f0a73740</td>
+                        <td>10.133.16.2</td>
+                        <td>10.133.16.2</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>JuniperNetwork</td>
+                        <td>11/12/2019 12:29:41 PM</td>
+                        <td>2/11/2021 2:04:29 AM</td>
+                    </tr>
+                    <tr class="876 11">
+                        <td><a href="../ServerDetails/110154.html">110154</a></td>
+                        <td>SNC1-Util1</td>
+                        <td>00155d0f1001</td>
+                        <td>10.132.128.2</td>
+                        <td>10.132.128.2</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>VirtualMachine</td>
+                        <td>11/12/2019 1:13:06 PM</td>
+                        <td>11/13/2019 12:07:32 PM</td>
+                    </tr>
+                    <tr class="876 11">
+                        <td><a href="../ServerDetails/110155.html">110155</a></td>
+                        <td>SNC1-AD1</td>
+                        <td>00155d0f1003</td>
+                        <td>10.132.128.3</td>
+                        <td>10.132.128.3</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>VirtualMachine</td>
+                        <td>11/12/2019 1:31:42 PM</td>
+                        <td>1/22/2021 12:39:18 AM</td>
+                    </tr>
+                    <tr class="876 11">
+                        <td><a href="../ServerDetails/110156.html">110156</a></td>
+                        <td>SNC1-Util2</td>
+                        <td>00155d0f1005</td>
+                        <td>10.132.128.4</td>
+                        <td>10.132.128.4</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>VirtualMachine</td>
+                        <td>11/12/2019 1:32:48 PM</td>
+                        <td>11/13/2019 12:16:44 PM</td>
+                    </tr>
+                    <tr class="876 11">
+                        <td><a href="../ServerDetails/110157.html">110157</a></td>
+                        <td>SNC1-File1</td>
+                        <td>00155d0f1007</td>
+                        <td>10.132.128.5</td>
+                        <td>10.132.128.5</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>VirtualMachine</td>
+                        <td>11/12/2019 1:35:06 PM</td>
+                        <td>11/13/2019 12:16:08 PM</td>
+                    </tr>
+                    <tr class="876 11">
+                        <td><a href="../ServerDetails/110158.html">110158</a></td>
+                        <td>SNC1-Util3</td>
+                        <td>00155d0f1009</td>
+                        <td>10.132.128.6</td>
+                        <td>10.132.128.6</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>VirtualMachine</td>
+                        <td>11/12/2019 1:53:30 PM</td>
+                        <td>11/13/2019 12:17:01 PM</td>
+                    </tr>
+                    <tr class="1266 11">
+                        <td><a href="../ServerDetails/137922.html">137922</a></td>
+                        <td>SNC1-AD2</td>
+                        <td>00155d010282</td>
+                        <td>10.132.1.12</td>
+                        <td>10.132.1.12</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>VirtualMachine</td>
+                        <td>11/6/2020 11:46:52 AM</td>
+                        <td>1/11/2021 12:11:36 PM</td>
+                    </tr>
+                    <tr class="1266 58">
+                        <td><a href="../ServerDetails/135707.html">135707</a></td>
+                        <td>SNC1-LApp46</td>
+                        <td>b49691901b14</td>
+                        <td>10.132.1.17</td>
+                        <td>10.133.0.209</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Web-Intel-v5</td>
+                        <td>10/26/2020 3:29:53 PM</td>
+                        <td>12/17/2020 11:32:12 AM</td>
+                    </tr>
+                    <tr class="1266 58">
+                        <td><a href="../ServerDetails/135709.html">135709</a></td>
+                        <td>SNC1-LApp47</td>
+                        <td>b4969190146c</td>
+                        <td>10.132.1.14</td>
+                        <td>10.133.0.206</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>Web-Intel-v5</td>
+                        <td>10/26/2020 3:30:00 PM</td>
+                        <td>12/17/2020 11:32:25 AM</td>
+                    </tr>
+                    <tr class="1266 60">
+                        <td><a href="../ServerDetails/135711.html">135711</a></td>
+                        <td>SNC1-Vx4</td>
+                        <td>b496919013f4</td>
+                        <td>10.132.1.2</td>
+                        <td>10.133.0.194</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>HyperV-Intel-v5</td>
+                        <td>10/26/2020 3:30:07 PM</td>
+                        <td>11/12/2020 12:57:08 PM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/135777.html">135777</a></td>
+                        <td>rs1-as41-c1-snc1</td>
+                        <td>d0dd496d3240</td>
+                        <td>10.132.255.6</td>
+                        <td>10.132.255.6</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>JuniperNetwork</td>
+                        <td>10/27/2020 3:07:55 AM</td>
+                        <td>2/11/2021 2:05:06 AM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/135778.html">135778</a></td>
+                        <td>sw1-as41-c1-snc1</td>
+                        <td>50c709a0d3aa</td>
+                        <td>10.133.16.5</td>
+                        <td>10.133.16.5</td>
+                        <td></td>
+                        <td>Live</td>
+                            <td>JuniperNetwork</td>
+                        <td>10/27/2020 3:11:35 AM</td>
+                        <td>2/11/2021 2:06:10 AM</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+        </div>
+
+        <script src="../../bundles/scriptsce5b?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="../../bundles/servers58ea?v=IFeo-6SazmKAIwgb0Tix6xAo246G_fRj5DYT1xQG2TM1"></script>
+
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/Servers/LiveServers/275 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 02:32:12 GMT -->
+</html>

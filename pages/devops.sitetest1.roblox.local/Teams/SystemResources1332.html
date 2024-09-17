@@ -1,0 +1,1603 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&TeamID=6 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 04:10:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>System Resource Ownerships</title>
+        <link rel="shortcut icon" href="https://devops.sitetest1.roblox.local/favicon.ico" />
+        <link href="https://devops.sitetest1.roblox.local/Content/css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="https://devops.sitetest1.roblox.local/" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/Deployments/History">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/farms-by-environment/1">Farms</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/superfarms-by-environment/1">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/servergroups-by-environment/1">ServerGroups</a>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/ServerJobs/History">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/GridDatacenters">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Websites/StatusesByEnvironment/1">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/StatusesByEnvironment/1">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/AllocationByEnvironment/1">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/StatusesByEnvironment/1">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/DatabaseLookupByEnvironment/1">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Websites/Diff">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/Diff">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/Diff">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/servers-by-environment">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/AllServers">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/LiveServers">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/ReserveServers">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/MaintenanceServers">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/BeingAllocated">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/ReadyForAllocation">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/Provisioning">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/DefectiveServers">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/MigrationServers">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Perfmon/ByServerGroup">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Perfmon/ByComponent">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/All">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Assemblies">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Components">Components</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Databases">Databases</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/ElasticsearchClusters">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/RedisClusters">Redis</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/ThirdPartyServices">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Pods">Pods</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Teams">Teams</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Systems">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/SystemResources">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="https://devops.sitetest1.roblox.local/Components">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="https://devops.sitetest1.roblox.local/Logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+<form action="https://devops.sitetest1.roblox.local/Teams/SystemResources" id="options-form" method="get">    <div class="panel panel-primary">
+        <div class="panel-heading">
+            System Resource Ownerships
+            <div class="pull-right">7/29/2021 10:07:14 PM CST</div>
+        </div>
+        <div class="panel-body">
+            <div clas="row">
+                    <div class="col-xs-2">
+                        <div class="form-group select2-outer">
+                            <label for="ComponentTypeID"><span class='underline'>C</span>omponent Type</label>
+                            <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field ComponentTypeID must be a number." id="ComponentTypeID" name="ComponentTypeID"><option value="">[ All Component Types ]</option>
+<option selected="selected" value="1">Assembly</option>
+<option value="2">Component</option>
+<option value="3">Database</option>
+<option value="4">Elasticsearch Cluster</option>
+<option value="5">Redis Cluster</option>
+<option value="6">Third Party Service</option>
+<option value="7">Alert</option>
+</select>
+                        </div>
+                    </div>
+                                <div class="col-xs-2">
+                    <div class="form-group select2-outer">
+                        <label for="TeamID"><span class='underline'>T</span>eam</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field TeamID must be a number." id="TeamID" name="TeamID"><option value="">[ All Teams ]</option>
+<option value="14">Application Platform</option>
+<option value="1">Apps</option>
+<option value="2">Avatar</option>
+<option value="17">Care &amp; Safety</option>
+<option value="18">Database Platform</option>
+<option value="3">DataEng</option>
+<option value="4">Game Engine</option>
+<option value="5">Game Services</option>
+<option selected="selected" value="6">Growth</option>
+<option value="15">Infra Core</option>
+<option value="7">InfraCore</option>
+<option value="8">InfraServices</option>
+<option value="9">InfraTools</option>
+<option value="10">International</option>
+<option value="11">ProdEng</option>
+<option value="16">Service Platform</option>
+<option value="12">Social</option>
+<option value="13">Trust &amp; Safety</option>
+</select>
+                    </div>
+<a class="small h6" href="https://devops.sitetest1.roblox.local/Teams/EditTeam/6">Edit Growth Team</a>                </div>
+                <div class="col-xs-2">
+                    <div class="form-group select2-outer">
+                        <label for="PodID"><span class='underline'>P</span>od</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field PodID must be a number." id="PodID" name="PodID"><option value="">[ All Pods ]</option>
+<option value="26">Bots</option>
+<option value="10">Growth</option>
+<option value="14">Monetization</option>
+</select>
+                    </div>
+                </div>
+
+                <div class="col-xs-2">
+                    <div class="form-group select2-outer">
+                        <label for="SystemID"><span class='underline'>S</span>ystem</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field SystemID must be a number." id="SystemID" name="SystemID"><option value="">[ All Systems ]</option>
+<option value="1">Badges</option>
+<option value="5">Into the Unknown</option>
+<option value="4">Tacos</option>
+<option value="3">Universes</option>
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+    <table class="table table-striped table-condensed sortable-table not-too-small">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                    <th>Component Type</th>
+                                <th>Team</th>
+                <th>Pod</th>
+                <th>System</th>
+                <th>Created</th>
+                <th>Updated</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=89&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">89</a>
+                    </td>
+                    <td>
+Roblox.Captcha.Entities                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=26">Bots</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=132&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">132</a>
+                    </td>
+                    <td>
+Roblox.FloodCheckers                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=26">Bots</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=133&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">133</a>
+                    </td>
+                    <td>
+Roblox.FloodCheckers.Redis                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=26">Bots</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=134&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">134</a>
+                    </td>
+                    <td>
+Roblox.FunCaptcha                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=26">Bots</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=195&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">195</a>
+                    </td>
+                    <td>
+Roblox.Platform.Captcha                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=26">Bots</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=224&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">224</a>
+                    </td>
+                    <td>
+Roblox.Platform.Floodcheckers                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=26">Bots</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=10&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">10</a>
+                    </td>
+                    <td>
+Roblox.Contacts.Client                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=34&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">34</a>
+                    </td>
+                    <td>
+Roblox.PhoneNumbers.Client                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=42&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">42</a>
+                    </td>
+                    <td>
+Roblox.Segmentation.Client                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=43&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">43</a>
+                    </td>
+                    <td>
+Roblox.Sms.Client                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=81&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">81</a>
+                    </td>
+                    <td>
+Roblox.BriteVerify                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=94&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">94</a>
+                    </td>
+                    <td>
+Roblox.Classification                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=107&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">107</a>
+                    </td>
+                    <td>
+Roblox.Demographics                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=123&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">123</a>
+                    </td>
+                    <td>
+Roblox.Email                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=139&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">139</a>
+                    </td>
+                    <td>
+Roblox.Gigya                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=161&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">161</a>
+                    </td>
+                    <td>
+Roblox.OrganicAcquisitions.Entities                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=166&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">166</a>
+                    </td>
+                    <td>
+Roblox.Platform.AbTesting.Core                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=167&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">167</a>
+                    </td>
+                    <td>
+Roblox.Platform.AbTesting                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=180&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">180</a>
+                    </td>
+                    <td>
+Roblox.Platform.Authentication.AccountSecurity                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=181&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">181</a>
+                    </td>
+                    <td>
+Roblox.Platform.Authentication.AccountSecurityTickets                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=182&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">182</a>
+                    </td>
+                    <td>
+Roblox.Platform.Authentication                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=205&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">205</a>
+                    </td>
+                    <td>
+Roblox.Platform.Contacts                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=206&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">206</a>
+                    </td>
+                    <td>
+Roblox.Platform.Contacts.Events                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=211&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">211</a>
+                    </td>
+                    <td>
+Roblox.Platform.Demographics                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=216&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">216</a>
+                    </td>
+                    <td>
+Roblox.Platform.Email.Delivery                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=217&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">217</a>
+                    </td>
+                    <td>
+Roblox.Platform.Email                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=252&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">252</a>
+                    </td>
+                    <td>
+Roblox.Platform.Membership.Commands                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=253&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">253</a>
+                    </td>
+                    <td>
+Roblox.Platform.Membership.Commands.Tests                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=254&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">254</a>
+                    </td>
+                    <td>
+Roblox.Platform.Membership                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=255&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">255</a>
+                    </td>
+                    <td>
+Roblox.Platform.Membership.Extensions                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=256&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">256</a>
+                    </td>
+                    <td>
+Roblox.Platform.Membership.Extensions.Tests                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=257&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">257</a>
+                    </td>
+                    <td>
+Roblox.Platform.Membership.Tests                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=258&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">258</a>
+                    </td>
+                    <td>
+Roblox.Platform.Membership.UserDataAudit                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=259&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">259</a>
+                    </td>
+                    <td>
+Roblox.Platform.Membership.UserDataAuditCore                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=260&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">260</a>
+                    </td>
+                    <td>
+Roblox.Platform.MembershipCore                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=287&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">287</a>
+                    </td>
+                    <td>
+Roblox.Platform.OrganicAcquisitions                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=288&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">288</a>
+                    </td>
+                    <td>
+Roblox.Platform.OrganicAcquisitions.Tests                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=299&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">299</a>
+                    </td>
+                    <td>
+Roblox.Platform.PhoneNumberVerification.Core                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=309&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">309</a>
+                    </td>
+                    <td>
+Roblox.Platform.PromotionChannels                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=314&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">314</a>
+                    </td>
+                    <td>
+Roblox.Platform.Retention                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=348&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">348</a>
+                    </td>
+                    <td>
+Roblox.Platform.TwoStepVerification                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=349&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">349</a>
+                    </td>
+                    <td>
+Roblox.Platform.TwoStepVerification.Metrics                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=357&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">357</a>
+                    </td>
+                    <td>
+Roblox.Platform.UserPhoneNumberVerification                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=361&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">361</a>
+                    </td>
+                    <td>
+Roblox.Platform.Verification.Core                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=362&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">362</a>
+                    </td>
+                    <td>
+Roblox.Platform.Verification.Diagnostics                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=363&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">363</a>
+                    </td>
+                    <td>
+Roblox.Platform.Verification.Email                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=364&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">364</a>
+                    </td>
+                    <td>
+Roblox.Platform.Verification.Sms                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=368&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">368</a>
+                    </td>
+                    <td>
+Roblox.PromotionChannels.Entities                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=380&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">380</a>
+                    </td>
+                    <td>
+Roblox.Signups                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=381&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">381</a>
+                    </td>
+                    <td>
+Roblox.SMS                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=382&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">382</a>
+                    </td>
+                    <td>
+Roblox.SocialNetworking                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=398&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">398</a>
+                    </td>
+                    <td>
+Roblox.Web.AbTesting                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=401&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">401</a>
+                    </td>
+                    <td>
+Roblox.Web.Authentication                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=402&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">402</a>
+                    </td>
+                    <td>
+Roblox.Web.Authentication.Metrics                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=403&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">403</a>
+                    </td>
+                    <td>
+Roblox.Web.Authentication.Saml                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=407&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">407</a>
+                    </td>
+                    <td>
+Roblox.Web.Contacts                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=418&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">418</a>
+                    </td>
+                    <td>
+Roblox.Web.Marketing                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=427&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">427</a>
+                    </td>
+                    <td>
+Roblox.Web.Prompts                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=10">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=6&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">6</a>
+                    </td>
+                    <td>
+Roblox.Billing.Client                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=14&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">14</a>
+                    </td>
+                    <td>
+Roblox.Currency.Client                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=32&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">32</a>
+                    </td>
+                    <td>
+Roblox.PayPal.Client                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=35&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">35</a>
+                    </td>
+                    <td>
+Roblox.Platform.BillingV2.PaymentHistory                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=36&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">36</a>
+                    </td>
+                    <td>
+Roblox.Platform.Search.PaymentHistory                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=54&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">54</a>
+                    </td>
+                    <td>
+Roblox.Vantiv.Proxy.Client                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=79&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">79</a>
+                    </td>
+                    <td>
+Roblox.Billing                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=80&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">80</a>
+                    </td>
+                    <td>
+Roblox.BillingTransactionEventPublisher                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=112&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">112</a>
+                    </td>
+                    <td>
+Roblox.Economy.Common                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=113&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">113</a>
+                    </td>
+                    <td>
+Roblox.Economy                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=114&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">114</a>
+                    </td>
+                    <td>
+Roblox.Elasticsearch.Catalog                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=122&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">122</a>
+                    </td>
+                    <td>
+Roblox.Elasticsearch.VirtualSales                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=140&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">140</a>
+                    </td>
+                    <td>
+Roblox.GoogleAPI                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=141&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">141</a>
+                    </td>
+                    <td>
+Roblox.GoogleAPI.Interfaces                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=150&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">150</a>
+                    </td>
+                    <td>
+Roblox.Kount                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=151&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">151</a>
+                    </td>
+                    <td>
+Roblox.LiveGamer                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=153&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">153</a>
+                    </td>
+                    <td>
+Roblox.Marketing                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=164&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">164</a>
+                    </td>
+                    <td>
+Roblox.PayPal.Common                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=169&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">169</a>
+                    </td>
+                    <td>
+Roblox.Platform.AdImpressions                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=187&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">187</a>
+                    </td>
+                    <td>
+Roblox.Platform.Billing                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=188&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">188</a>
+                    </td>
+                    <td>
+Roblox.Platform.BillingV2.Core                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=189&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">189</a>
+                    </td>
+                    <td>
+Roblox.Platform.BillingV2.Diagnostics                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=190&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">190</a>
+                    </td>
+                    <td>
+Roblox.Platform.BillingV2                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=191&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">191</a>
+                    </td>
+                    <td>
+Roblox.Platform.BillingV2.Fraud                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=192&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">192</a>
+                    </td>
+                    <td>
+Roblox.Platform.BillingV2.Shopping                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=210&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">210</a>
+                    </td>
+                    <td>
+Roblox.Platform.CurrencyBudgets                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=225&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">225</a>
+                    </td>
+                    <td>
+Roblox.Platform.Fraud                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=250&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">250</a>
+                    </td>
+                    <td>
+Roblox.Platform.Marketing                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=273&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">273</a>
+                    </td>
+                    <td>
+Roblox.Platform.NativeAds.Analytics                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=274&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">274</a>
+                    </td>
+                    <td>
+Roblox.Platform.NativeAds.Display                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=275&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">275</a>
+                    </td>
+                    <td>
+Roblox.Platform.NativeAds                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=315&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">315</a>
+                    </td>
+                    <td>
+Roblox.Platform.RevenueReports                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=365&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">365</a>
+                    </td>
+                    <td>
+Roblox.Platform.VirtualCurrency                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=366&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">366</a>
+                    </td>
+                    <td>
+Roblox.Platform.VirtualEconomy                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=379&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">379</a>
+                    </td>
+                    <td>
+Roblox.SiftScience                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=391&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">391</a>
+                    </td>
+                    <td>
+Roblox.Trades                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=396&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">396</a>
+                    </td>
+                    <td>
+Roblox.Vantiv                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=404&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">404</a>
+                    </td>
+                    <td>
+Roblox.Web.Billing                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=405&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">405</a>
+                    </td>
+                    <td>
+Roblox.Web.BillingV2                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=422&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">422</a>
+                    </td>
+                    <td>
+Roblox.Web.NativeAds                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=440&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">440</a>
+                    </td>
+                    <td>
+Roblox.Xsolla                    </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=1&amp;TeamID=6">Assembly</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6">Growth</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&amp;TeamID=6&amp;PodID=14">Monetization</a></td>
+                    <td><a href="https://devops.sitetest1.roblox.local/Teams/Systems"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+        </div>
+
+        <script src="https://devops.sitetest1.roblox.local/bundles/scripts?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="https://devops.sitetest1.roblox.local/bundles/teams-components?v=FJuDvpSLKkO1GXbs4YDgM41GVEXaBnsnt_-JU2jPs481"></script>
+
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/Teams/SystemResources?ComponentTypeID=1&TeamID=6 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 04:10:31 GMT -->
+</html>

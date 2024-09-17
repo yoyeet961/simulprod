@@ -1,0 +1,363 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/Databases/Diff by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Jul 2021 20:36:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Databases Diff</title>
+        <link rel="shortcut icon" href="../favicon.ico" />
+        <link href="../Content/css7af7.css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    <link href="../bundles/ng-grid-styles889f.css?v=y_8jTIEUyJGj0lgvLojwGZZkOIcrfu40712OTRhqH881" rel="stylesheet"/>
+
+    <link href="../bundles/diff-common-styles4c3c.css?v=kR4JjxQDlEmE9QqpB2RoWODiYUux_JpU9k_ObVJqIW81" rel="stylesheet"/>
+
+
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="../index.html" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="../index.html">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="../Deployments/History.html">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../farms-by-environment/1.html">Farms</a>
+                            </li>
+                            <li>
+                                <a href="../superfarms-by-environment/1.html">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="../servergroups-by-environment/1.html">ServerGroups</a>
+                    </li>
+                    <li class="">
+                        <a href="../ServerJobs/History.html">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../GridDatacenters.html">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Websites/StatusesByEnvironment/1.html">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../Services/StatusesByEnvironment/1.html">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../Services/AllocationByEnvironment/1.html">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="StatusesByEnvironment/1.html">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="DatabaseLookupByEnvironment/1.html">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Websites/Diff.html">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="../Services/Diff.html">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="Diff.html">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Servers.html">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="../servers-by-environment.html">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/AllServers.html">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/LiveServers.html">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/ReserveServers.html">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/MaintenanceServers.html">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/BeingAllocated.html">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/ReadyForAllocation.html">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/Provisioning.html">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/DefectiveServers.html">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/MigrationServers.html">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Perfmon/ByServerGroup.html">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="../Perfmon/ByComponent.html">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Teams/All.html">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="../Teams/Assemblies.html">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="../Teams/Components.html">Components</a>
+                            </li>
+                            <li>
+                                <a href="../Teams/Databases.html">Databases</a>
+                            </li>
+                            <li>
+                                <a href="../Teams/ElasticsearchClusters.html">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="../Teams/RedisClusters.html">Redis</a>
+                            </li>
+                            <li>
+                                <a href="../Teams/ThirdPartyServices.html">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="../Teams/Pods.html">Pods</a>
+                            </li>
+                            <li>
+                                <a href="../Teams/Teams.html">Teams</a>
+                            </li>
+                            <li>
+                                <a href="../Teams/Systems.html">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="../Teams/SystemResources.html">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="../Components.html">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="../index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+<script>
+    var PageModel = JSON.parse("{\"EnvironmentList\":[{\"ID\":1,\"Name\":\"Production\",\"Abbreviation\":\"Prod\",\"Description\":\"Official ROBLOX Production Environment\",\"ApplicationDomain\":\"roblox.com\",\"IsEnabled\":true,\"Created\":\"\\/Date(1277418560070)\\/\",\"Updated\":\"\\/Date(1475520790000)\\/\"},{\"ID\":13,\"Name\":\"SiteTest1\",\"Abbreviation\":\"ST1\",\"Description\":\"Site Test Environment #1\",\"ApplicationDomain\":\"sitetest1.robloxlabs.com\",\"IsEnabled\":true,\"Created\":\"\\/Date(1320818400000)\\/\",\"Updated\":\"\\/Date(1474601160000)\\/\"},{\"ID\":14,\"Name\":\"SiteTest2\",\"Abbreviation\":\"ST2\",\"Description\":\"Site Test Environment #2\",\"ApplicationDomain\":\"sitetest2.robloxlabs.com\",\"IsEnabled\":true,\"Created\":\"\\/Date(1320818400000)\\/\",\"Updated\":\"\\/Date(1474601160000)\\/\"},{\"ID\":15,\"Name\":\"SiteTest3\",\"Abbreviation\":\"ST3\",\"Description\":\"Site Test Environment #3\",\"ApplicationDomain\":\"sitetest3.robloxlabs.com\",\"IsEnabled\":true,\"Created\":\"\\/Date(1320818400000)\\/\",\"Updated\":\"\\/Date(1403712734970)\\/\"}]}");
+</script>
+
+<div class="app-container" ng-app="DevOpsApp" ng-controller="DatabasesDiffCtrl">
+    <div class="loading-overlay" ng-show="viewModel.isFetching">
+        <div>
+            <div class="spinner">
+                <div class="spinner-container container1">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container2">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container3">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ddl-overlay ng-hide" ng-show="viewModel.isShowingDDL">
+        <div class="translucent" ng-click="closeDDLWindow()"></div>
+        <div class="ddl-content" ng-class="getDDLContentClass()">
+            <div id="ddl-primary-env-container">
+                <div class="header" ng-bind="viewModel.primaryEnvironmentName"></div>
+                <div class="text">
+                    <pre ng-bind="viewModel.primaryEnvironmentDDL"></pre>
+                </div>
+            </div>
+            <div id="ddl-diff-container" class="ng-hide" ng-show="viewModel.isShowingDiff">
+                <div class="header">Diff</div>
+                <pre class="text"><div id="diff-text"></div></pre>
+            </div>
+            <div id="ddl-compare-env-container">
+                <div class="header" ng-bind="viewModel.compareEnvironmentName"></div>
+                <div class="text">
+                    <pre ng-bind="viewModel.compareEnvironmentDDL"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div ng-show="viewModel.message.text" ng-class="viewModel.message.type" ng-bind="viewModel.message.text"></div>
+
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <form ng-submit="fetchData()">
+                        <div class="col-xs-3">
+                            <div class="form-group">
+                                <label for="select-primary-env">Select Environment</label>
+                                <select id="select-primary-env" class="form-control"
+                                        ng-model="filterOptions.primaryEnvironmentID"
+                                        ng-model-options="{getterSetter:true}"
+                                        ng-options="env.ID as env.Name for env in environments"></select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="select-compare-env">Compare With</label>
+                                <select id="select-compare-env" class="form-control"
+                                        ng-model="filterOptions.compareEnvironmentID"
+                                        ng-model-options="{getterSetter:true}"
+                                        ng-options="env.ID as env.Name for env in environments"></select>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-2">
+                            <div class="form-group">
+                                <label>Options</label>
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"
+                                               ng-model="filterOptions.options.ShowMissing">
+                                        Show Missing
+                                    </label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"
+                                               ng-model="filterOptions.options.ShowDifferent">
+                                        Show Different
+                                    </label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"
+                                               ng-model="filterOptions.options.ShowIdentical">
+                                        Show Identical
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="filter-text">Filter (optional, does not search DDL)</label>
+                                <input type="text" id="filter-text" class="form-control" placeholder="Search"
+                                       ng-model="filterOptions.filterText">
+                            </div>
+
+                            <input type="submit" value="Show Diff" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="not-too-small" ng-grid="gridOptions"></div>
+
+        <div ng-show="viewModel.mostRecentlyUpdated">
+            Most recently updated record: <span ng-bind="viewModel.mostRecentlyUpdated"></span>
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+
+        <script src="../bundles/scriptsce5b?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="../bundles/angular-basef18c?v=P93nXeuGEQzW3EfmUJHbu1LgqYQLmE_hD2ZwW8hUzo81"></script>
+
+    <script src="../bundles/ng-gridd756?v=tkRZus_S6zrLb-dF-od69uE7GkSi-jaz9n8ByD2TJ4M1"></script>
+
+    <script src="../bundles/databases-diff-pagef072?v=4npRYHxXocz-R2jVvVRdlyx06v5DuBwC9-DiOKtnBAM1"></script>
+
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/Databases/Diff by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Jul 2021 20:36:14 GMT -->
+</html>

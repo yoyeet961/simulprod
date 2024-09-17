@@ -1,0 +1,299 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/Teams/RedisClusters?TeamID=6&PodID=26 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 04:10:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Redis Cluster Ownership</title>
+        <link rel="shortcut icon" href="https://devops.sitetest1.roblox.local/favicon.ico" />
+        <link href="https://devops.sitetest1.roblox.local/Content/css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="https://devops.sitetest1.roblox.local/" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/Deployments/History">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/farms-by-environment/1">Farms</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/superfarms-by-environment/1">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/servergroups-by-environment/1">ServerGroups</a>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/ServerJobs/History">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/GridDatacenters">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Websites/StatusesByEnvironment/1">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/StatusesByEnvironment/1">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/AllocationByEnvironment/1">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/StatusesByEnvironment/1">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/DatabaseLookupByEnvironment/1">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Websites/Diff">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/Diff">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/Diff">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/servers-by-environment">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/AllServers">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/LiveServers">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/ReserveServers">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/MaintenanceServers">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/BeingAllocated">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/ReadyForAllocation">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/Provisioning">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/DefectiveServers">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/MigrationServers">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Perfmon/ByServerGroup">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Perfmon/ByComponent">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/All">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Assemblies">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Components">Components</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Databases">Databases</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/ElasticsearchClusters">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/RedisClusters">Redis</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/ThirdPartyServices">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Pods">Pods</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Teams">Teams</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Systems">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/SystemResources">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="https://devops.sitetest1.roblox.local/Components">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="https://devops.sitetest1.roblox.local/Logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+<form action="https://devops.sitetest1.roblox.local/Teams/RedisClusters" id="options-form" method="get">    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Redis Cluster Ownership
+            <div class="pull-right">7/29/2021 9:49:40 PM CST</div>
+        </div>
+        <div class="panel-body">
+            <div clas="row">
+                                <div class="col-xs-3">
+                    <div class="form-group select2-outer">
+                        <label for="TeamID"><span class='underline'>T</span>eam</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field TeamID must be a number." id="TeamID" name="TeamID"><option value="">[ All Teams ]</option>
+<option value="14">Application Platform</option>
+<option value="1">Apps</option>
+<option value="2">Avatar</option>
+<option value="17">Care &amp; Safety</option>
+<option value="18">Database Platform</option>
+<option value="3">DataEng</option>
+<option value="4">Game Engine</option>
+<option value="5">Game Services</option>
+<option selected="selected" value="6">Growth</option>
+<option value="15">Infra Core</option>
+<option value="7">InfraCore</option>
+<option value="8">InfraServices</option>
+<option value="9">InfraTools</option>
+<option value="10">International</option>
+<option value="11">ProdEng</option>
+<option value="16">Service Platform</option>
+<option value="12">Social</option>
+<option value="13">Trust &amp; Safety</option>
+</select>
+                    </div>
+<a class="small h6" href="https://devops.sitetest1.roblox.local/Teams/EditTeam/6">Edit Growth Team</a>                </div>
+                <div class="col-xs-3">
+                    <div class="form-group select2-outer">
+                        <label for="PodID"><span class='underline'>P</span>od</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field PodID must be a number." id="PodID" name="PodID"><option value="">[ All Pods ]</option>
+<option selected="selected" value="26">Bots</option>
+<option value="10">Growth</option>
+<option value="14">Monetization</option>
+</select>
+                    </div>
+<a class="small h6" href="https://devops.sitetest1.roblox.local/Teams/EditPod/26">Edit Bots Pod</a>                </div>
+            </div>
+<a class="btn btn-default btn-sm pull-right" href="https://devops.sitetest1.roblox.local/Teams/AddComponent?ComponentTypeID=5">Add New Redis Cluster</a>        </div>
+    </div>
+</form>
+    <table class="table table-striped table-condensed sortable-table not-too-small">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                                <th>Team</th>
+                <th>Pod</th>
+                <th>Created</th>
+                <th>Updated</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                <tr>
+                        <td>
+                            <a href="https://devops.sitetest1.roblox.local/Teams/EditTeamOwnershipComponent?ComponentID=8&amp;ComponentType=RedisCluster&amp;RedirectComponentTypeID=5">8</a>
+                        </td>
+                        <td>
+RedisFloodcheckers                        </td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/RedisClusters?TeamID=6&amp;PodID=26">Growth</a></td>
+                        <td><a href="https://devops.sitetest1.roblox.local/Teams/RedisClusters?TeamID=6&amp;PodID=26">Bots</a></td>
+                        <td>8/27/2018 10:20:43 PM</td>
+                        <td>8/27/2018 10:20:43 PM</td>
+                </tr>
+        </tbody>
+    </table>
+
+
+        </div>
+
+        <script src="https://devops.sitetest1.roblox.local/bundles/scripts?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="https://devops.sitetest1.roblox.local/bundles/teams-components?v=FJuDvpSLKkO1GXbs4YDgM41GVEXaBnsnt_-JU2jPs481"></script>
+
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/Teams/RedisClusters?TeamID=6&PodID=26 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 04:10:06 GMT -->
+</html>

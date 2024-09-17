@@ -1,0 +1,1875 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/Servers/MaintenanceServers/70 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 02:23:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Server Allocation</title>
+        <link rel="shortcut icon" href="../../favicon.ico" />
+        <link href="../../Content/css7af7.css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="../../index.html" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="../../index.html">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="../../Deployments/History.html">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../farms-by-environment/1.html">Farms</a>
+                            </li>
+                            <li>
+                                <a href="../../superfarms-by-environment/1.html">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="../../servergroups-by-environment/1.html">ServerGroups</a>
+                    </li>
+                    <li class="">
+                        <a href="../../ServerJobs/History.html">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../GridDatacenters.html">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Websites/StatusesByEnvironment/1.html">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../../Services/StatusesByEnvironment/1.html">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../../Services/AllocationByEnvironment/1.html">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../../Databases/StatusesByEnvironment/1.html">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../../Databases/DatabaseLookupByEnvironment/1.html">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Websites/Diff.html">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="../../Services/Diff.html">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="../../Databases/Diff.html">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Servers.html">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="../../servers-by-environment/70.html">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="../AllServers.html">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="../LiveServers.html">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="../ReserveServers.html">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="70.html">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="../BeingAllocated.html">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="../ReadyForAllocation.html">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="../Provisioning.html">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="../DefectiveServers.html">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="../MigrationServers.html">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Perfmon/ByServerGroup.html">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="../../Perfmon/ByComponent.html">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Teams/All.html">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Assemblies.html">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Components.html">Components</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Databases.html">Databases</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/ElasticsearchClusters.html">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/RedisClusters.html">Redis</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/ThirdPartyServices.html">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Pods.html">Pods</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Teams.html">Teams</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Systems.html">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/SystemResources.html">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="../../Components.html">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="../../index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+    <h3>Server Allocation</h3>
+    <ul class="nav nav-pills margin-bottom-normal">
+            <li>
+                <a href="5.html">RBX-SanMateo</a>
+            </li>
+            <li>
+                <a href="64.html">RBX-WorkStation</a>
+            </li>
+            <li class="active">
+                <a href="70.html">RBX-Chicago</a>
+            </li>
+            <li>
+                <a href="74.html">RBX-Alpha</a>
+            </li>
+            <li>
+                <a href="144.html">RBX-CHI1</a>
+            </li>
+            <li>
+                <a href="194.html">RBX-ASH1</a>
+            </li>
+            <li>
+                <a href="231.html">AmazonWest-Alpha</a>
+            </li>
+            <li>
+                <a href="275.html">RBX-SNC1</a>
+            </li>
+            <li>
+                <a href="296.html">RBX-ASH1X</a>
+            </li>
+            <li>
+                <a href="330.html">RBX-SNC2</a>
+            </li>
+            <li>
+                <a href="331.html">RBX-ASH2</a>
+            </li>
+    </ul>
+
+
+<form action="https://devops.sitetest1.roblox.local/Deployments/History" id="options-form" method="get">    <div class="panel panel-primary">
+        <div class="panel-body">
+            <div clas="row">
+                <div class="col-xs-2">
+                    <div class="form-group">
+                        <label for="PublicNetworks">Public Network</label>
+                        <select class="form-control input-sm filter" id="PublicNetworks" name="PublicNetworks"><option value="">[ Any Network ]</option>
+<option value="68">Prime-Public-API1</option>
+<option value="69">Prime-Public-API2</option>
+<option value="70">Prime-Public-API3</option>
+<option value="71">Prime-Public-API4</option>
+<option value="167">Prime-Public-API5</option>
+<option value="168">Prime-Public-API6</option>
+<option value="169">Prime-Public-API7</option>
+<option value="170">Prime-Public-API8</option>
+<option value="217">Prime-Public-ChatApi</option>
+<option value="165">Prime-PublicDB2-Zayo</option>
+<option value="53">Prime-PublicDB-Zayo</option>
+<option value="194">Prime-Public-EphemeralCounters</option>
+<option value="214">Prime-Public-EventIngest</option>
+<option value="212">Prime-Public-GamePersistence</option>
+<option value="211">Prime-Public-Games</option>
+<option value="189">Prime-Public-Internal1</option>
+<option value="190">Prime-Public-Internal2</option>
+<option value="191">Prime-Public-Internal3</option>
+<option value="192">Prime-Public-Internal4</option>
+<option value="140">Prime-Public-Mobile</option>
+<option value="215">Prime-Public-Notifications</option>
+<option value="193">Prime-Public-Ownership</option>
+<option value="218">Prime-Public-Presence</option>
+<option value="141">Prime-Public-Proxy</option>
+<option value="175">Prime-Public-Proxy2</option>
+<option value="176">Prime-Public-Proxy3</option>
+<option value="177">Prime-Public-Proxy4</option>
+<option value="213">Prime-Public-RealTimeNotifications</option>
+<option value="142">Prime-Public-Search</option>
+<option value="216">Prime-Public-TextFilter</option>
+<option value="210">Prime-Public-Thumbnails</option>
+<option value="202">Prime-Public-Voting</option>
+<option value="143">Prime-Public-WikiBlog</option>
+<option value="56">Prime-Public-WWW1</option>
+<option value="57">Prime-Public-WWW2</option>
+<option value="58">Prime-Public-WWW3</option>
+<option value="67">Prime-Public-WWW4</option>
+<option value="171">Prime-Public-WWW5</option>
+<option value="172">Prime-Public-WWW6</option>
+<option value="173">Prime-Public-WWW7</option>
+<option value="174">Prime-Public-WWW8</option>
+</select>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-group">
+                        <label for="HardwareClasses">Hardware Class</label>
+                        <select class="form-control input-sm filter" id="HardwareClasses" name="HardwareClasses"><option value="">[ Any Hardware ]</option>
+<option value="4">App-Intel-v3</option>
+<option value="26">App-Intel-v4</option>
+<option value="59">App-Intel-v5</option>
+<option value="78">AristaNetwork</option>
+<option value="2">DB-CoreData-Intel-v3</option>
+<option value="24">DB-CoreData-Intel-v4</option>
+<option value="29">DB-CoreData-Intel-v4-BigSSD</option>
+<option value="49">DB-CoreData-Intel-v4-GiantSSD</option>
+<option value="67">DB-CoreData-Intel-v5-BigSSD</option>
+<option value="70">DB-CoreData-Intel-v5-GiantSSD</option>
+<option value="95">DB-CoreData-Intel-v5-HugeSSD</option>
+<option value="74">DB-CoreData-Vitess-Intel-v5-GiantSSD</option>
+<option value="96">DB-CoreData-Vitess-Intel-v5-HugeSSD</option>
+<option value="52">DB-CoreDataMirror-Intel-v4</option>
+<option value="51">DB-CoreDataMirror-Intel-v4-BigSSD</option>
+<option value="50">DB-CoreDataMirror-Intel-v4-GiantSSD</option>
+<option value="69">DB-CoreDataMirror-Intel-v5-GiantSSD</option>
+<option value="94">DB-CoreDataMirror-Intel-v5-HugeSSD</option>
+<option value="14">DB-OLAP-Intel-v3</option>
+<option value="5">DB-Standby-Intel-v3</option>
+<option value="48">DB-Utility-Intel-v4</option>
+<option value="13">F5Network</option>
+<option value="22">File-Intel-v3</option>
+<option value="23">File-Intel-v4</option>
+<option value="93">Grid-AMDRome</option>
+<option value="20">Grid-Intel-32core</option>
+<option value="19">Grid-Intel-8core</option>
+<option value="91">Grid-Intel-v5</option>
+<option value="72">Grid-Intel-v6-Eval1</option>
+<option value="21">Grid-VM-8core</option>
+<option value="92">HyperV-AMDRome-Econ</option>
+<option value="9">HyperV-Intel-v3</option>
+<option value="28">HyperV-Intel-v3-BigHDD</option>
+<option value="68">HyperV-Intel-v3-BigMem</option>
+<option value="7">HyperV-Intel-v3-BigSSD</option>
+<option value="25">HyperV-Intel-v4</option>
+<option value="27">HyperV-Intel-v4-BigHDD</option>
+<option value="64">HyperV-Intel-v4-BigSSD</option>
+<option value="60">HyperV-Intel-v5</option>
+<option value="66">HyperV-Intel-v5-BigHDD</option>
+<option value="65">HyperV-Intel-v5-BigSSD</option>
+<option value="12">JuniperNetwork</option>
+<option value="34">KVMConsole</option>
+<option value="3">Linux-Intel-v3</option>
+<option value="89">Nomad-Intel-v3</option>
+<option value="31">PDU</option>
+<option value="90">PortWorx-Intel-v3</option>
+<option value="82">PXE-Override-Centos</option>
+<option value="81">PXE-Override-Ubuntu</option>
+<option value="83">PXE-Override-Windows</option>
+<option value="6">RAM-Intel-v2</option>
+<option value="17">RAM-Intel-v4</option>
+<option value="35">RAM-Intel-v4-BigSSD</option>
+<option value="62">RAM-Intel-v5</option>
+<option value="63">RAM-Intel-v5-BigSSD</option>
+<option value="32">SerialConsole</option>
+<option value="11">VirtualMachine</option>
+<option value="38">VM-LApp-CPU-Large</option>
+<option value="40">VM-LApp-CPU-Micro</option>
+<option value="37">VM-LApp-CPU-Small</option>
+<option value="46">VM-LApp-General-Large</option>
+<option value="45">VM-LApp-General-Medium</option>
+<option value="43">VM-LApp-General-Micro</option>
+<option value="44">VM-LApp-General-Small</option>
+<option value="39">VM-LApp-RAM-Large</option>
+<option value="47">VM-LApp-RAM-Small</option>
+<option value="36">VM-Util-CPU-Small</option>
+<option value="61">Web-AMD-EPYC</option>
+<option value="1">Web-Intel-v3</option>
+<option value="16">Web-Intel-v4</option>
+<option value="73">Web-Intel-v4-Romark</option>
+<option value="58">Web-Intel-v5</option>
+<option value="87">Web-Intel-V5-HAProxy</option>
+<option value="76">Web-Intel-v5-MCRouter</option>
+<option value="77">Web-Intel-v5-MCRouter2</option>
+<option value="79">Web-Intel-V5-Nomad</option>
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="row">
+    <div class="col-xs-2">
+        
+    <h2><a href="../AllServers/70.html">All Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>App-Intel-v3</td>
+                    <td>64</td>
+                </tr>
+                <tr>
+                    <td>App-Intel-v4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v4-BigSSD</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>DB-OLAP-Intel-v3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-Standby-Intel-v3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-Utility-Intel-v4</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>F5Network</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v3</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v3-BigSSD</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v4</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v4-BigHDD</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>JuniperNetwork</td>
+                    <td>137</td>
+                </tr>
+                <tr>
+                    <td>Not Classified</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v2</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v4</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v4-BigSSD</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>VirtualMachine</td>
+                    <td>74</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v3</td>
+                    <td>171</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v4</td>
+                    <td>105</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>2</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>702</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../LiveServers/70.html">Live Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../ReserveServers/70.html">Reserve Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>VirtualMachine</td>
+                    <td>1</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>1</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="70.html">Maintenance Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>App-Intel-v3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-Utility-Intel-v4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>JuniperNetwork</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>VirtualMachine</td>
+                    <td>68</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>1</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>87</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../BeingAllocated/70.html">Being Allocated</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../ReadyForAllocation/70.html">Ready For Allocation</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../Provisioning/70.html">Still Provisioning</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>HyperV-Intel-v4</td>
+                    <td>1</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>1</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../DefectiveServers/70.html">Defective</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>App-Intel-v4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-OLAP-Intel-v3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v4</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>1</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>14</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../MigrationServers/70.html">Migration</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>App-Intel-v3</td>
+                    <td>63</td>
+                </tr>
+                <tr>
+                    <td>App-Intel-v4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v4-BigSSD</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>DB-Standby-Intel-v3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-Utility-Intel-v4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>F5Network</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v3</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v3-BigSSD</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v4-BigHDD</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>JuniperNetwork</td>
+                    <td>124</td>
+                </tr>
+                <tr>
+                    <td>Not Classified</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v2</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v4</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v4-BigSSD</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v3</td>
+                    <td>167</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v4</td>
+                    <td>102</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>593</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    </div>
+    <div class="col-xs-10">
+        <h2>Maintenance Servers</h2>
+
+        <table id="mainTable" class="table table-striped table-condensed not-too-small sortable-table">
+            <thead>
+                <tr>
+                    <th>Server ID</th>
+                    <th>HostName</th>
+                    <th>Mac Address</th>
+                    <th>Primary IP</th>
+                    <th>Management IP</th>
+                    <th>Public Network</th>
+                    <th>Server Status</th>
+                    <th>Hardware Class</th>
+                    <th>Created Date</th>
+                    <th>Updated Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/8843.html">8843</a></td>
+                        <td>RP-SW41-48</td>
+                        <td></td>
+                        <td>172.20.41.48</td>
+                        <td>172.20.41.48</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>1/20/2015 8:03:17 AM</td>
+                        <td>8/27/2018 10:21:24 AM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/8850.html">8850</a></td>
+                        <td>RP-SW31-48</td>
+                        <td></td>
+                        <td>172.20.31.48</td>
+                        <td>172.20.31.48</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>1/20/2015 8:03:17 AM</td>
+                        <td>11/29/2018 9:14:34 PM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/8853.html">8853</a></td>
+                        <td>RP-SW41-45</td>
+                        <td></td>
+                        <td>172.20.41.45</td>
+                        <td>172.20.41.45</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>1/20/2015 8:03:17 AM</td>
+                        <td>8/27/2018 10:21:34 AM</td>
+                    </tr>
+                    <tr class="53 4">
+                        <td><a href="../ServerDetails/9142.html">9142</a></td>
+                        <td>RP-App7</td>
+                        <td>b82a72dfdc5b</td>
+                        <td>10.120.45.31</td>
+                        <td>172.20.45.31</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>App-Intel-v3</td>
+                        <td>1/22/2015 6:34:35 PM</td>
+                        <td>4/22/2019 8:22:09 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/9157.html">9157</a></td>
+                        <td>RP-App1</td>
+                        <td></td>
+                        <td>10.120.35.61</td>
+                        <td></td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>1/23/2015 4:35:10 PM</td>
+                        <td>4/17/2019 10:41:31 AM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/9160.html">9160</a></td>
+                        <td>RP-Util6</td>
+                        <td></td>
+                        <td>10.120.35.58</td>
+                        <td>172.20.35.58</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>1/25/2015 11:40:58 AM</td>
+                        <td>4/18/2019 7:15:11 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/9166.html">9166</a></td>
+                        <td>RP-Util8</td>
+                        <td></td>
+                        <td>10.120.35.60</td>
+                        <td></td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>1/30/2015 2:35:35 PM</td>
+                        <td>4/18/2019 7:56:26 PM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/9224.html">9224</a></td>
+                        <td>RP-FW33-37</td>
+                        <td></td>
+                        <td>172.20.33.37</td>
+                        <td>172.20.33.37</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>1/21/2015 9:20:28 AM</td>
+                        <td>5/11/2017 11:20:12 AM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/11545.html">11545</a></td>
+                        <td>RP-App41</td>
+                        <td>00155d95790a</td>
+                        <td>10.120.36.65</td>
+                        <td>10.120.36.65</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>4/4/2015 11:02:10 AM</td>
+                        <td>4/18/2019 8:48:02 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/11694.html">11694</a></td>
+                        <td>RP-DB39</td>
+                        <td>00155d240146</td>
+                        <td>10.120.35.73</td>
+                        <td>10.120.35.73</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>5/15/2015 7:23:24 PM</td>
+                        <td>4/17/2019 3:31:51 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/11708.html">11708</a></td>
+                        <td>RP-LWeb1</td>
+                        <td></td>
+                        <td>10.120.35.75</td>
+                        <td></td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>5/28/2015 3:53:43 PM</td>
+                        <td>4/15/2019 5:32:50 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/11739.html">11739</a></td>
+                        <td>RP-App48</td>
+                        <td>00155d236410</td>
+                        <td>10.120.35.78</td>
+                        <td>10.120.35.78</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>6/17/2015 4:23:18 PM</td>
+                        <td>4/18/2019 6:03:44 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/11820.html">11820</a></td>
+                        <td>RP-LUtil5</td>
+                        <td>00155d236422</td>
+                        <td>10.120.25.53</td>
+                        <td>10.120.25.53</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>6/24/2015 3:57:34 PM</td>
+                        <td>4/18/2019 8:06:18 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/12043.html">12043</a></td>
+                        <td>RP-Util10</td>
+                        <td>00155d236424</td>
+                        <td>10.120.25.54</td>
+                        <td>10.120.25.54</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>7/10/2015 4:02:14 PM</td>
+                        <td>4/18/2019 7:57:12 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/12048.html">12048</a></td>
+                        <td>RP-Util12</td>
+                        <td>020a78231a01</td>
+                        <td>10.120.26.52</td>
+                        <td>10.120.26.52</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>7/17/2015 12:01:14 PM</td>
+                        <td>4/18/2019 7:58:51 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/12589.html">12589</a></td>
+                        <td>RP-LWeb5</td>
+                        <td>00155d23642d</td>
+                        <td>10.120.35.77</td>
+                        <td>10.120.35.77</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/23/2015 9:53:23 PM</td>
+                        <td>4/18/2019 7:52:06 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/12595.html">12595</a></td>
+                        <td>RP-LDB2</td>
+                        <td>00155d236436</td>
+                        <td>10.120.35.82</td>
+                        <td>10.120.35.82</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/24/2015 10:04:14 AM</td>
+                        <td>4/18/2019 7:51:57 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/14009.html">14009</a></td>
+                        <td>RP-App58</td>
+                        <td>00155d952014</td>
+                        <td>10.120.200.3</td>
+                        <td>10.120.200.3</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>2/4/2016 4:35:03 PM</td>
+                        <td>4/18/2019 6:03:47 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/14810.html">14810</a></td>
+                        <td>RP-Util14</td>
+                        <td>00155d23644f</td>
+                        <td>10.120.200.5</td>
+                        <td>10.120.200.5</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>2/21/2016 12:09:17 PM</td>
+                        <td>4/18/2019 7:14:52 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/14812.html">14812</a></td>
+                        <td>RP-Util15</td>
+                        <td>00155d95201c</td>
+                        <td>10.120.200.4</td>
+                        <td>10.120.200.4</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>2/23/2016 4:55:41 PM</td>
+                        <td>4/18/2019 6:11:04 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/14814.html">14814</a></td>
+                        <td>RP-Util16</td>
+                        <td>00155d236453</td>
+                        <td>10.120.200.1</td>
+                        <td>10.120.200.1</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>2/24/2016 4:35:00 PM</td>
+                        <td>4/18/2019 7:14:58 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/15060.html">15060</a></td>
+                        <td>RP-DB47</td>
+                        <td>00155d952020</td>
+                        <td>10.120.200.6</td>
+                        <td>10.120.200.6</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>3/11/2016 7:36:39 PM</td>
+                        <td>4/17/2019 3:32:13 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/15216.html">15216</a></td>
+                        <td>RP-DB48</td>
+                        <td>00155d952024</td>
+                        <td>10.120.200.7</td>
+                        <td>10.120.200.7</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>3/27/2016 1:11:47 AM</td>
+                        <td>4/17/2019 3:32:28 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/15404.html">15404</a></td>
+                        <td>RP-Util17</td>
+                        <td>00155d236457</td>
+                        <td>10.120.200.8</td>
+                        <td>10.120.200.8</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>4/5/2016 11:37:32 PM</td>
+                        <td>4/18/2019 5:36:06 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/17417.html">17417</a></td>
+                        <td>RP-Util18</td>
+                        <td>00155d23645b</td>
+                        <td>10.120.200.9</td>
+                        <td>10.120.200.9</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>4/22/2016 5:03:35 PM</td>
+                        <td>4/18/2019 7:15:05 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/17992.html">17992</a></td>
+                        <td>RP-Util19</td>
+                        <td>00155d23645f</td>
+                        <td>10.120.200.10</td>
+                        <td>10.120.200.10</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>4/25/2016 5:33:15 PM</td>
+                        <td>4/18/2019 7:01:18 PM</td>
+                    </tr>
+                    <tr class="53 11">
+                        <td><a href="../ServerDetails/19472.html">19472</a></td>
+                        <td>RP-LWeb7</td>
+                        <td>00155d952028</td>
+                        <td>10.120.200.11</td>
+                        <td>10.120.200.11</td>
+                        <td>Prime-PublicDB-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>5/5/2016 4:31:18 PM</td>
+                        <td>4/18/2019 6:03:52 PM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/25793.html">25793</a></td>
+                        <td>RP-SW71-46</td>
+                        <td></td>
+                        <td>172.20.71.46</td>
+                        <td>172.20.71.46</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>7/25/2016 8:59:24 PM</td>
+                        <td>7/7/2017 8:06:36 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/26354.html">26354</a></td>
+                        <td>RP-Util20</td>
+                        <td>00155d240162</td>
+                        <td>10.120.200.16</td>
+                        <td>10.120.200.16</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/12/2016 6:42:10 PM</td>
+                        <td>4/18/2019 7:01:31 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/26408.html">26408</a></td>
+                        <td>RP-Util21</td>
+                        <td>00155d240166</td>
+                        <td>10.120.200.17</td>
+                        <td>10.120.200.17</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/13/2016 5:08:44 PM</td>
+                        <td>4/18/2019 7:01:40 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/29313.html">29313</a></td>
+                        <td>RP-LUtil6</td>
+                        <td>00155d24017e</td>
+                        <td>10.120.200.23</td>
+                        <td>10.120.200.23</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/30/2016 1:12:14 PM</td>
+                        <td>4/18/2019 8:55:57 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/29320.html">29320</a></td>
+                        <td>RP-LApp130</td>
+                        <td>00155d240182</td>
+                        <td>10.120.200.24</td>
+                        <td>10.120.200.24</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/30/2016 1:31:50 PM</td>
+                        <td>4/18/2019 8:09:38 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/29328.html">29328</a></td>
+                        <td>RP-LApp131</td>
+                        <td>00155d240186</td>
+                        <td>10.120.200.25</td>
+                        <td>10.120.200.25</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/30/2016 1:45:00 PM</td>
+                        <td>4/18/2019 8:09:45 PM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/34463.html">34463</a></td>
+                        <td>2M261902BL</td>
+                        <td>5820b108eb26</td>
+                        <td>172.20.22.18</td>
+                        <td>172.20.22.18</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>Web-Intel-v4</td>
+                        <td>10/14/2016 12:36:11 AM</td>
+                        <td>2/6/2017 4:28:51 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/38850.html">38850</a></td>
+                        <td>RP-LApp202</td>
+                        <td>00155de6a505</td>
+                        <td>10.120.200.45</td>
+                        <td>10.120.200.45</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>11/17/2016 5:00:07 PM</td>
+                        <td>4/18/2019 4:37:17 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/38853.html">38853</a></td>
+                        <td>RP-LApp203</td>
+                        <td>00155de64d05</td>
+                        <td>10.120.200.46</td>
+                        <td>10.120.200.46</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>11/17/2016 5:23:01 PM</td>
+                        <td>4/18/2019 4:37:20 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/38858.html">38858</a></td>
+                        <td>RP-LApp204</td>
+                        <td>00155de6a005</td>
+                        <td>10.120.200.47</td>
+                        <td>10.120.200.47</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>11/17/2016 6:24:41 PM</td>
+                        <td>4/18/2019 4:37:23 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/38869.html">38869</a></td>
+                        <td>RP-LApp205</td>
+                        <td>00155de6a509</td>
+                        <td>10.120.200.48</td>
+                        <td>10.120.200.48</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>11/17/2016 7:50:13 PM</td>
+                        <td>4/18/2019 4:39:14 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/38888.html">38888</a></td>
+                        <td>RP-LApp206</td>
+                        <td>00155de64d09</td>
+                        <td>10.120.200.49</td>
+                        <td>10.120.200.49</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>11/17/2016 9:49:28 PM</td>
+                        <td>4/18/2019 4:39:17 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/38896.html">38896</a></td>
+                        <td>RP-LApp207</td>
+                        <td>00155de6a009</td>
+                        <td>10.120.200.50</td>
+                        <td>10.120.200.50</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>11/17/2016 10:43:43 PM</td>
+                        <td>4/18/2019 4:39:20 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/40293.html">40293</a></td>
+                        <td>RP-LWeb8</td>
+                        <td>00155d24019a</td>
+                        <td>10.120.200.18</td>
+                        <td>10.120.200.18</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>12/7/2016 5:53:28 PM</td>
+                        <td>4/18/2019 7:52:09 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/40295.html">40295</a></td>
+                        <td>RP-LWeb9</td>
+                        <td>00155d24019e</td>
+                        <td>10.120.200.19</td>
+                        <td>10.120.200.19</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>12/7/2016 6:01:51 PM</td>
+                        <td>4/18/2019 7:52:11 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/40297.html">40297</a></td>
+                        <td>RP-LDB4</td>
+                        <td>00155d2401a2</td>
+                        <td>10.120.200.20</td>
+                        <td>10.120.200.20</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>12/8/2016 1:12:58 AM</td>
+                        <td>4/18/2019 7:52:00 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/40299.html">40299</a></td>
+                        <td>RP-LDB5</td>
+                        <td>00155d2401a6</td>
+                        <td>10.120.200.21</td>
+                        <td>10.120.200.21</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>12/8/2016 1:21:31 AM</td>
+                        <td>4/18/2019 7:52:03 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/40626.html">40626</a></td>
+                        <td>RP-DB114</td>
+                        <td>00155de6e001</td>
+                        <td>10.120.200.85</td>
+                        <td>10.220.200.85</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>1/13/2017 4:49:33 AM</td>
+                        <td>7/9/2018 4:14:33 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/40860.html">40860</a></td>
+                        <td>RP-LWeb11</td>
+                        <td>00155d952033</td>
+                        <td>10.120.200.96</td>
+                        <td>10.120.200.96</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>1/17/2017 5:02:14 PM</td>
+                        <td>4/18/2019 6:03:49 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/41018.html">41018</a></td>
+                        <td>RP-Util30</td>
+                        <td>00155d23646b</td>
+                        <td>10.120.200.86</td>
+                        <td>10.220.200.86</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>1/23/2017 12:15:51 PM</td>
+                        <td>4/18/2019 7:39:09 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/41059.html">41059</a></td>
+                        <td>RP-Util31</td>
+                        <td>00155d95760d</td>
+                        <td>10.120.200.102</td>
+                        <td>10.220.200.102</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>1/26/2017 3:25:49 PM</td>
+                        <td>4/18/2019 8:00:32 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/41067.html">41067</a></td>
+                        <td>RP-App122</td>
+                        <td>00155d95791c</td>
+                        <td>10.120.200.103</td>
+                        <td>10.220.200.103</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>1/26/2017 6:24:03 PM</td>
+                        <td>4/18/2019 6:03:41 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/41466.html">41466</a></td>
+                        <td>RP-LUtil8</td>
+                        <td>00155d954301</td>
+                        <td>10.120.200.104</td>
+                        <td>10.220.200.104</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>1/28/2017 8:17:32 PM</td>
+                        <td>4/18/2019 6:44:47 PM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/43177.html">43177</a></td>
+                        <td>RP-SW80-24</td>
+                        <td></td>
+                        <td>172.20.80.24</td>
+                        <td>172.20.80.24</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>2/28/2017 12:00:00 AM</td>
+                        <td>7/13/2018 11:33:19 AM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/43179.html">43179</a></td>
+                        <td>RP-SW80-27</td>
+                        <td></td>
+                        <td>172.20.80.27</td>
+                        <td>172.20.80.27</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>2/28/2017 12:00:00 AM</td>
+                        <td>7/13/2018 11:33:25 AM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/43180.html">43180</a></td>
+                        <td>RP-SW80-28</td>
+                        <td></td>
+                        <td>172.20.80.28</td>
+                        <td>172.20.80.28</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>2/28/2017 12:00:00 AM</td>
+                        <td>7/13/2018 11:33:26 AM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/43553.html">43553</a></td>
+                        <td>RP-SW90-24</td>
+                        <td></td>
+                        <td>172.20.90.24</td>
+                        <td>172.20.90.24</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>3/20/2017 12:00:00 AM</td>
+                        <td>7/31/2018 5:46:24 PM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/43554.html">43554</a></td>
+                        <td>RP-SW90-27</td>
+                        <td></td>
+                        <td>172.20.90.27</td>
+                        <td>172.20.90.27</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>3/20/2017 12:00:00 AM</td>
+                        <td>7/31/2018 5:46:34 PM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/43556.html">43556</a></td>
+                        <td>RP-SW90-28</td>
+                        <td></td>
+                        <td>172.20.90.28</td>
+                        <td>172.20.90.28</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>3/20/2017 12:00:00 AM</td>
+                        <td>7/31/2018 5:47:24 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/49484.html">49484</a></td>
+                        <td>RP-LWeb12</td>
+                        <td>00155de6e009</td>
+                        <td>10.120.200.161</td>
+                        <td>10.220.200.161</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>4/25/2017 11:21:34 AM</td>
+                        <td>4/18/2019 9:05:48 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/49601.html">49601</a></td>
+                        <td>RP-DB146</td>
+                        <td>00155d2401ca</td>
+                        <td>10.220.200.162</td>
+                        <td>10.220.200.162</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>4/26/2017 2:42:21 PM</td>
+                        <td>11/15/2018 12:44:58 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/49603.html">49603</a></td>
+                        <td>RP-DB147</td>
+                        <td>00155d2401ce</td>
+                        <td>10.120.200.163</td>
+                        <td>10.220.200.163</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>4/26/2017 2:56:00 PM</td>
+                        <td>4/18/2019 6:26:51 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/49605.html">49605</a></td>
+                        <td>RP-DB148</td>
+                        <td>00155d2401d2</td>
+                        <td>10.120.200.164</td>
+                        <td>10.220.200.164</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>4/26/2017 3:09:46 PM</td>
+                        <td>4/18/2019 6:26:56 PM</td>
+                    </tr>
+                    <tr class="165 11">
+                        <td><a href="../ServerDetails/73496.html">73496</a></td>
+                        <td>RP-App150</td>
+                        <td>00155d2401d6</td>
+                        <td>10.120.200.174</td>
+                        <td>10.220.200.174</td>
+                        <td>Prime-PublicDB2-Zayo</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>6/1/2017 9:06:54 AM</td>
+                        <td>4/18/2019 8:48:11 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/73835.html">73835</a></td>
+                        <td>RP-Util33</td>
+                        <td>00155d954314</td>
+                        <td>10.120.200.177</td>
+                        <td>10.220.200.177</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>6/19/2017 9:33:12 PM</td>
+                        <td>7/4/2018 9:47:35 AM</td>
+                    </tr>
+                    <tr class="164 48">
+                        <td><a href="../ServerDetails/74911.html">74911</a></td>
+                        <td>RP-LDB7</td>
+                        <td>0cc47a9f17f8</td>
+                        <td>10.120.84.132</td>
+                        <td>172.20.84.132</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>DB-Utility-Intel-v4</td>
+                        <td>7/18/2017 5:08:38 PM</td>
+                        <td>4/18/2019 7:23:28 PM</td>
+                    </tr>
+                    <tr class="164 48">
+                        <td><a href="../ServerDetails/74913.html">74913</a></td>
+                        <td>RP-LDB8</td>
+                        <td>0cc47a9f180e</td>
+                        <td>10.120.84.32</td>
+                        <td>172.20.84.32</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>DB-Utility-Intel-v4</td>
+                        <td>7/18/2017 5:09:05 PM</td>
+                        <td>4/18/2019 7:33:16 PM</td>
+                    </tr>
+                    <tr class="164 48">
+                        <td><a href="../ServerDetails/74914.html">74914</a></td>
+                        <td>RP-LDB6</td>
+                        <td>0cc47a9f1834</td>
+                        <td>10.120.84.131</td>
+                        <td>172.20.84.131</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>DB-Utility-Intel-v4</td>
+                        <td>7/18/2017 5:09:06 PM</td>
+                        <td>3/1/2019 2:53:36 AM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/75074.html">75074</a></td>
+                        <td>RP-LApp383</td>
+                        <td>00155d558109</td>
+                        <td>10.120.200.165</td>
+                        <td>10.220.200.165</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>7/31/2017 7:22:42 PM</td>
+                        <td>3/25/2019 5:06:04 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/76510.html">76510</a></td>
+                        <td>RP-LApp438</td>
+                        <td>00155d957924</td>
+                        <td>10.120.200.192</td>
+                        <td>10.220.200.192</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/15/2017 5:59:34 PM</td>
+                        <td>4/18/2019 8:25:37 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/76511.html">76511</a></td>
+                        <td>RP-LApp439</td>
+                        <td>00155d954608</td>
+                        <td>10.120.200.193</td>
+                        <td>10.220.200.193</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/15/2017 5:59:38 PM</td>
+                        <td>4/18/2019 8:16:59 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/76618.html">76618</a></td>
+                        <td>RP-LUtil9</td>
+                        <td>00155d95761d</td>
+                        <td>10.120.200.194</td>
+                        <td>10.220.200.194</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/18/2017 1:03:24 PM</td>
+                        <td>4/18/2019 6:55:47 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/76655.html">76655</a></td>
+                        <td>RP-LUtil12</td>
+                        <td>00155d957629</td>
+                        <td>10.120.200.196</td>
+                        <td>10.220.200.196</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/19/2017 11:32:10 AM</td>
+                        <td>4/18/2019 6:55:36 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/76675.html">76675</a></td>
+                        <td>RP-LApp440</td>
+                        <td>00155de6e00c</td>
+                        <td>10.120.200.195</td>
+                        <td>10.220.200.195</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/19/2017 8:47:56 PM</td>
+                        <td>4/18/2019 9:04:22 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/76682.html">76682</a></td>
+                        <td>RP-LApp441</td>
+                        <td>00155de6e010</td>
+                        <td>10.120.200.197</td>
+                        <td>10.220.200.197</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>9/19/2017 9:43:44 PM</td>
+                        <td>4/18/2019 9:04:28 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/77704.html">77704</a></td>
+                        <td>RP-LApp444</td>
+                        <td>00155d236473</td>
+                        <td>10.120.200.212</td>
+                        <td>10.220.200.212</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>10/12/2017 7:29:46 PM</td>
+                        <td>4/18/2019 7:18:46 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/77705.html">77705</a></td>
+                        <td>RP-LApp445</td>
+                        <td>00155d954324</td>
+                        <td>10.120.200.213</td>
+                        <td>10.220.200.213</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>10/12/2017 7:29:53 PM</td>
+                        <td>4/18/2019 7:18:52 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/77829.html">77829</a></td>
+                        <td>RP-LUtil14</td>
+                        <td>00155d957645</td>
+                        <td>10.120.200.198</td>
+                        <td>10.220.200.198</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>10/14/2017 11:41:56 AM</td>
+                        <td>4/18/2019 6:55:40 PM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/78645.html">78645</a></td>
+                        <td>RP-SW50-28</td>
+                        <td></td>
+                        <td>172.20.50.28</td>
+                        <td>172.20.50.28</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>11/9/2017 12:00:00 AM</td>
+                        <td>8/27/2018 3:06:32 PM</td>
+                    </tr>
+                    <tr class="12">
+                        <td><a href="../ServerDetails/78646.html">78646</a></td>
+                        <td>RP-SW50-24</td>
+                        <td></td>
+                        <td>172.20.50.24</td>
+                        <td>172.20.50.24</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>JuniperNetwork</td>
+                        <td>11/9/2017 12:00:00 AM</td>
+                        <td>8/27/2018 3:06:46 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/78687.html">78687</a></td>
+                        <td>RP-LApp488</td>
+                        <td>00155d95460c</td>
+                        <td>10.120.200.146</td>
+                        <td>10.220.200.146</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>11/15/2017 3:23:46 PM</td>
+                        <td>4/18/2019 6:23:22 PM</td>
+                    </tr>
+                    <tr class="142 11">
+                        <td><a href="../ServerDetails/79072.html">79072</a></td>
+                        <td>RP-LWeb14</td>
+                        <td>00155d95432c</td>
+                        <td>10.120.200.151</td>
+                        <td>10.220.200.151</td>
+                        <td>Prime-Public-Search</td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>12/12/2017 5:23:52 PM</td>
+                        <td>4/18/2019 8:22:15 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/79074.html">79074</a></td>
+                        <td>RP-LApp493</td>
+                        <td>00155d95432f</td>
+                        <td>10.120.200.153</td>
+                        <td>10.220.200.153</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>12/12/2017 5:24:24 PM</td>
+                        <td>4/18/2019 8:19:05 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/79256.html">79256</a></td>
+                        <td>RP-LApp495</td>
+                        <td>00155d954333</td>
+                        <td>10.120.200.155</td>
+                        <td>10.220.200.155</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>12/16/2017 2:41:56 AM</td>
+                        <td>4/18/2019 7:23:56 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/80954.html">80954</a></td>
+                        <td>RP-LUtil19</td>
+                        <td>00155de6e018</td>
+                        <td>10.120.200.156</td>
+                        <td>10.220.200.156</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>1/22/2018 1:53:34 PM</td>
+                        <td>4/18/2019 6:39:59 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/84077.html">84077</a></td>
+                        <td>RP-Util44</td>
+                        <td>00155d957660</td>
+                        <td>10.120.200.190</td>
+                        <td>10.220.200.190</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>3/6/2018 12:45:54 PM</td>
+                        <td>4/18/2019 6:46:40 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/84078.html">84078</a></td>
+                        <td>RP-LUtil20</td>
+                        <td>00155d957664</td>
+                        <td>10.120.200.199</td>
+                        <td>10.220.200.199</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>3/6/2018 12:49:41 PM</td>
+                        <td>4/18/2019 8:27:08 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/84079.html">84079</a></td>
+                        <td>RP-LUtil21</td>
+                        <td>00155d957668</td>
+                        <td>10.120.200.200</td>
+                        <td>10.220.200.200</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>3/6/2018 1:57:55 PM</td>
+                        <td>4/18/2019 6:55:44 PM</td>
+                    </tr>
+                    <tr class="164 11">
+                        <td><a href="../ServerDetails/87912.html">87912</a></td>
+                        <td>RP-Util57</td>
+                        <td>00155de67d0d</td>
+                        <td>10.120.200.220</td>
+                        <td>10.220.200.220</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>VirtualMachine</td>
+                        <td>5/1/2018 3:51:34 PM</td>
+                        <td>4/18/2019 9:13:48 PM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/94066.html">94066</a></td>
+                        <td>2M28240501</td>
+                        <td>f40343ac3390</td>
+                        <td>10.129.81.1</td>
+                        <td>10.129.81.1</td>
+                        <td></td>
+                        <td>Maintenance</td>
+                            <td>Web-Intel-v5</td>
+                        <td>7/19/2018 2:19:08 PM</td>
+                        <td>8/20/2018 10:04:02 PM</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+        </div>
+
+        <script src="../../bundles/scriptsce5b?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="../../bundles/servers58ea?v=IFeo-6SazmKAIwgb0Tix6xAo246G_fRj5DYT1xQG2TM1"></script>
+
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/Servers/MaintenanceServers/70 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 02:23:52 GMT -->
+</html>

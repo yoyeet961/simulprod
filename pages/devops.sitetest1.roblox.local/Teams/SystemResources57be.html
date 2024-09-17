@@ -1,0 +1,4052 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=3 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 03:06:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>System Resource Ownerships</title>
+        <link rel="shortcut icon" href="../favicon.ico" />
+        <link href="../Content/css7af7.css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="../index.html" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="../index.html">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="../Deployments/History.html">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../farms-by-environment/1.html">Farms</a>
+                            </li>
+                            <li>
+                                <a href="../superfarms-by-environment/1.html">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="../servergroups-by-environment/1.html">ServerGroups</a>
+                    </li>
+                    <li class="">
+                        <a href="../ServerJobs/History.html">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../GridDatacenters.html">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Websites/StatusesByEnvironment/1.html">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../Services/StatusesByEnvironment/1.html">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../Services/AllocationByEnvironment/1.html">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../Databases/StatusesByEnvironment/1.html">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../Databases/DatabaseLookupByEnvironment/1.html">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Websites/Diff.html">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="../Services/Diff.html">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="../Databases/Diff.html">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Servers.html">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="../servers-by-environment.html">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/AllServers.html">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/LiveServers.html">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/ReserveServers.html">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/MaintenanceServers.html">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/BeingAllocated.html">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/ReadyForAllocation.html">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/Provisioning.html">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/DefectiveServers.html">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/MigrationServers.html">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Perfmon/ByServerGroup.html">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="../Perfmon/ByComponent.html">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="All.html">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="Assemblies.html">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="Components.html">Components</a>
+                            </li>
+                            <li>
+                                <a href="Databases.html">Databases</a>
+                            </li>
+                            <li>
+                                <a href="ElasticsearchClusters.html">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="RedisClusters.html">Redis</a>
+                            </li>
+                            <li>
+                                <a href="ThirdPartyServices.html">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="Pods.html">Pods</a>
+                            </li>
+                            <li>
+                                <a href="Teams.html">Teams</a>
+                            </li>
+                            <li>
+                                <a href="Systems.html">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="SystemResources.html">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="../Components.html">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="../index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+<form action="https://devops.sitetest1.roblox.local/Teams/SystemResources" id="options-form" method="get">    <div class="panel panel-primary">
+        <div class="panel-heading">
+            System Resource Ownerships
+            <div class="pull-right">7/29/2021 4:29:04 PM CST</div>
+        </div>
+        <div class="panel-body">
+            <div clas="row">
+                    <div class="col-xs-2">
+                        <div class="form-group select2-outer">
+                            <label for="ComponentTypeID"><span class='underline'>C</span>omponent Type</label>
+                            <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field ComponentTypeID must be a number." id="ComponentTypeID" name="ComponentTypeID"><option value="">[ All Component Types ]</option>
+<option value="1">Assembly</option>
+<option value="2">Component</option>
+<option selected="selected" value="3">Database</option>
+<option value="4">Elasticsearch Cluster</option>
+<option value="5">Redis Cluster</option>
+<option value="6">Third Party Service</option>
+<option value="7">Alert</option>
+</select>
+                        </div>
+                    </div>
+                                <div class="col-xs-2">
+                    <div class="form-group select2-outer">
+                        <label for="TeamID"><span class='underline'>T</span>eam</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field TeamID must be a number." id="TeamID" name="TeamID"><option value="">[ All Teams ]</option>
+<option value="14">Application Platform</option>
+<option value="1">Apps</option>
+<option value="2">Avatar</option>
+<option value="17">Care &amp; Safety</option>
+<option value="18">Database Platform</option>
+<option value="3">DataEng</option>
+<option value="4">Game Engine</option>
+<option value="5">Game Services</option>
+<option value="6">Growth</option>
+<option value="15">Infra Core</option>
+<option value="7">InfraCore</option>
+<option value="8">InfraServices</option>
+<option value="9">InfraTools</option>
+<option value="10">International</option>
+<option value="11">ProdEng</option>
+<option value="16">Service Platform</option>
+<option value="12">Social</option>
+<option value="13">Trust &amp; Safety</option>
+</select>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="form-group select2-outer">
+                        <label for="PodID"><span class='underline'>P</span>od</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field PodID must be a number." id="PodID" name="PodID"><option value="">[ All Pods ]</option>
+<option value="24">App Telemetry</option>
+<option value="1">Apps</option>
+<option value="2">Avatar</option>
+<option value="25">Avatar Platform</option>
+<option value="26">Bots</option>
+<option value="3">Build &amp; Deploy</option>
+<option value="27">Care &amp; Safety</option>
+<option value="4">Chat</option>
+<option value="5">Consoles</option>
+<option value="6">Core Services</option>
+<option value="7">Core Services &amp; Infra</option>
+<option value="28">Database Platform</option>
+<option value="8">DataEng</option>
+<option value="9">Game Services</option>
+<option value="29">Gaming Core</option>
+<option value="30">Globalization</option>
+<option value="10">Growth</option>
+<option value="11">International</option>
+<option value="12">Matchmaking</option>
+<option value="13">Mobile Core</option>
+<option value="14">Monetization</option>
+<option value="31">Platform Services</option>
+<option value="15">ProdEng</option>
+<option value="16">QA</option>
+<option value="32">Reach &amp; Analytics</option>
+<option value="17">Scalability</option>
+<option value="33">Search ML Events</option>
+<option value="18">Social</option>
+<option value="34">Standards and Building Blocks</option>
+<option value="19">Systems</option>
+<option value="20">Tools</option>
+<option value="21">Tools &amp; Automation</option>
+<option value="22">Trust &amp; Safety</option>
+<option value="23">WebCore</option>
+</select>
+                    </div>
+                </div>
+
+                <div class="col-xs-2">
+                    <div class="form-group select2-outer">
+                        <label for="SystemID"><span class='underline'>S</span>ystem</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field SystemID must be a number." id="SystemID" name="SystemID"><option value="">[ All Systems ]</option>
+<option value="1">Badges</option>
+<option value="5">Into the Unknown</option>
+<option value="4">Tacos</option>
+<option value="3">Universes</option>
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+    <table class="table table-striped table-condensed sortable-table not-too-small">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                    <th>Component Type</th>
+                                <th>Team</th>
+                <th>Pod</th>
+                <th>System</th>
+                <th>Created</th>
+                <th>Updated</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3eff.html?ComponentID=79&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">79</a>
+                    </td>
+                    <td>
+Roblox                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td><a href="SystemResources2976.html?ComponentTypeID=3&amp;TeamID=7">InfraCore</a></td>
+                    <td><a href="SystemResources4ca1.html?ComponentTypeID=3&amp;PodID=23">WebCore</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:18 PM</td>
+                    <td>8/27/2018 10:20:18 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent83cd.html?ComponentID=317&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">317</a>
+                    </td>
+                    <td>
+Roblox2Configuration                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta557.html?ComponentID=184&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">184</a>
+                    </td>
+                    <td>
+RobloxAbTesting                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent9a62.html?ComponentID=342&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">342</a>
+                    </td>
+                    <td>
+RobloxAbTesting_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent1578.html?ComponentID=359&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">359</a>
+                    </td>
+                    <td>
+RobloxAccessApprovals                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent077a.html?ComponentID=258&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">258</a>
+                    </td>
+                    <td>
+RobloxAccountCountriesAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent451b.html?ComponentID=259&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">259</a>
+                    </td>
+                    <td>
+RobloxAccountLocalesAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent13aa.html?ComponentID=241&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">241</a>
+                    </td>
+                    <td>
+RobloxAccountLocalization                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta80c.html?ComponentID=80&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">80</a>
+                    </td>
+                    <td>
+RobloxAccountManagement_Archive                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6d41.html?ComponentID=231&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">231</a>
+                    </td>
+                    <td>
+RobloxAccountPhoneNumbersAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5cb6.html?ComponentID=237&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">237</a>
+                    </td>
+                    <td>
+RobloxAccountPinHashesAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentf0f2.html?ComponentID=81&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">81</a>
+                    </td>
+                    <td>
+RobloxAccountPresence                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3ccd.html?ComponentID=216&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">216</a>
+                    </td>
+                    <td>
+RobloxAccounts                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent7228.html?ComponentID=255&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">255</a>
+                    </td>
+                    <td>
+RobloxAccountsAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentde23.html?ComponentID=217&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">217</a>
+                    </td>
+                    <td>
+RobloxAccountSecurity                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentf174.html?ComponentID=192&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">192</a>
+                    </td>
+                    <td>
+RobloxAccoutrements                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent9161.html?ComponentID=202&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">202</a>
+                    </td>
+                    <td>
+RobloxAdDW                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentffe9.html?ComponentID=347&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">347</a>
+                    </td>
+                    <td>
+RobloxAdDW_Archived                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent48e6.html?ComponentID=174&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">174</a>
+                    </td>
+                    <td>
+RobloxAdImpressions                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent86c0.html?ComponentID=82&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">82</a>
+                    </td>
+                    <td>
+RobloxAds                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0f47.html?ComponentID=322&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">322</a>
+                    </td>
+                    <td>
+RobloxAffiliates                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent294d.html?ComponentID=83&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">83</a>
+                    </td>
+                    <td>
+RobloxAggregation                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentffc9.html?ComponentID=186&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">186</a>
+                    </td>
+                    <td>
+RobloxAggregation_Archive                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3b3c.html?ComponentID=199&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">199</a>
+                    </td>
+                    <td>
+RobloxAnalyticsReporting                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent04b7.html?ComponentID=327&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">327</a>
+                    </td>
+                    <td>
+RobloxAnonymizedUsers                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta0ef.html?ComponentID=328&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">328</a>
+                    </td>
+                    <td>
+RobloxAnonymizedUsers_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc6ec.html?ComponentID=84&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">84</a>
+                    </td>
+                    <td>
+RobloxApiProxy                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd54b.html?ComponentID=169&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">169</a>
+                    </td>
+                    <td>
+RobloxApiProxy_OLD                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentfc59.html?ComponentID=354&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">354</a>
+                    </td>
+                    <td>
+RobloxApplicationAuthorizations                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd13e.html?ComponentID=157&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">157</a>
+                    </td>
+                    <td>
+RobloxApps                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentdd3c.html?ComponentID=170&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">170</a>
+                    </td>
+                    <td>
+RobloxApps_OLD                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent16e1.html?ComponentID=85&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">85</a>
+                    </td>
+                    <td>
+RobloxAssetCounters                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentef97.html?ComponentID=168&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">168</a>
+                    </td>
+                    <td>
+RobloxAssetCreations                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2334.html?ComponentID=262&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">262</a>
+                    </td>
+                    <td>
+RobloxAssetDetailsQuality                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0af7.html?ComponentID=318&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">318</a>
+                    </td>
+                    <td>
+RobloxAssetFormats                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0e5c.html?ComponentID=86&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">86</a>
+                    </td>
+                    <td>
+RobloxAssetHashes                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente6f4.html?ComponentID=87&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">87</a>
+                    </td>
+                    <td>
+RobloxAssetMedia                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente645.html?ComponentID=177&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">177</a>
+                    </td>
+                    <td>
+RobloxAssetNamespaces                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb717.html?ComponentID=182&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">182</a>
+                    </td>
+                    <td>
+RobloxAssetRecommendations                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent7a24.html?ComponentID=252&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">252</a>
+                    </td>
+                    <td>
+RobloxAssetReviewAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent8e6c.html?ComponentID=88&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">88</a>
+                    </td>
+                    <td>
+RobloxAssets                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentfab5.html?ComponentID=313&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">313</a>
+                    </td>
+                    <td>
+RobloxAssets_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent33de.html?ComponentID=89&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">89</a>
+                    </td>
+                    <td>
+RobloxAssetSales                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent22d3.html?ComponentID=238&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">238</a>
+                    </td>
+                    <td>
+RobloxAssetsAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentaa58.html?ComponentID=341&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">341</a>
+                    </td>
+                    <td>
+RobloxAssetsAudit_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentde19.html?ComponentID=158&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">158</a>
+                    </td>
+                    <td>
+RobloxAssetSearchMaster                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentdcb6.html?ComponentID=329&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">329</a>
+                    </td>
+                    <td>
+RobloxAssetSearchMaster_archive                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent8039.html?ComponentID=90&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">90</a>
+                    </td>
+                    <td>
+RobloxAssetSecurity                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3783.html?ComponentID=91&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">91</a>
+                    </td>
+                    <td>
+RobloxAssetSets                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent322a.html?ComponentID=92&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">92</a>
+                    </td>
+                    <td>
+RobloxAssetStatistics                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent7fca.html?ComponentID=93&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">93</a>
+                    </td>
+                    <td>
+RobloxAssetStatisticsAggregation                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent4a02.html?ComponentID=187&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">187</a>
+                    </td>
+                    <td>
+RobloxAssetStatisticsAggregation_Archive                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent9192.html?ComponentID=94&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">94</a>
+                    </td>
+                    <td>
+RobloxAssetTags                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent28b0.html?ComponentID=159&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">159</a>
+                    </td>
+                    <td>
+RobloxAssetThumbnailDependencies                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6b0e.html?ComponentID=248&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">248</a>
+                    </td>
+                    <td>
+RobloxAssetVersions                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta3e0.html?ComponentID=316&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">316</a>
+                    </td>
+                    <td>
+RobloxAssetVersions_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentdc7f.html?ComponentID=95&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">95</a>
+                    </td>
+                    <td>
+RobloxAuth                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentef0f.html?ComponentID=96&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">96</a>
+                    </td>
+                    <td>
+RobloxAuthentication                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent48db.html?ComponentID=306&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">306</a>
+                    </td>
+                    <td>
+RobloxAuthenticationV2                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent744c.html?ComponentID=348&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">348</a>
+                    </td>
+                    <td>
+RobloxAuthenticator                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent7661.html?ComponentID=350&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">350</a>
+                    </td>
+                    <td>
+RobloxAvatarCatalogDeduplication                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentec6f.html?ComponentID=356&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">356</a>
+                    </td>
+                    <td>
+RobloxAvatarCatalogPermissions                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc349.html?ComponentID=332&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">332</a>
+                    </td>
+                    <td>
+RobloxAvatarEmotes                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb341.html?ComponentID=333&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">333</a>
+                    </td>
+                    <td>
+RobloxAvatarEmotes_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5d2e.html?ComponentID=321&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">321</a>
+                    </td>
+                    <td>
+RobloxAvatarPolicies                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent39fc.html?ComponentID=97&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">97</a>
+                    </td>
+                    <td>
+RobloxAvatars                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3501.html?ComponentID=257&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">257</a>
+                    </td>
+                    <td>
+RobloxAvatars_06_25                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent8a79.html?ComponentID=253&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">253</a>
+                    </td>
+                    <td>
+RobloxBackupTesting                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentdbdd.html?ComponentID=193&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">193</a>
+                    </td>
+                    <td>
+RobloxBadges                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente7d8.html?ComponentID=239&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">239</a>
+                    </td>
+                    <td>
+RobloxBadgesV2                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd65d.html?ComponentID=98&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">98</a>
+                    </td>
+                    <td>
+RobloxBilling                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2a7f.html?ComponentID=244&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">244</a>
+                    </td>
+                    <td>
+RobloxBundles                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente459.html?ComponentID=297&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">297</a>
+                    </td>
+                    <td>
+RobloxCanonicalImages                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3b24.html?ComponentID=99&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">99</a>
+                    </td>
+                    <td>
+RobloxChat                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent988a.html?ComponentID=315&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">315</a>
+                    </td>
+                    <td>
+RobloxChat_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentedb3.html?ComponentID=290&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">290</a>
+                    </td>
+                    <td>
+RobloxChatParticipants                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent4245.html?ComponentID=228&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">228</a>
+                    </td>
+                    <td>
+RobloxClans                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentbb22.html?ComponentID=206&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">206</a>
+                    </td>
+                    <td>
+RobloxClickThroughAgreements                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentca76.html?ComponentID=309&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">309</a>
+                    </td>
+                    <td>
+RobloxClickThroughAgreements_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent219b.html?ComponentID=100&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">100</a>
+                    </td>
+                    <td>
+RobloxClientSettings                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent1df1.html?ComponentID=233&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">233</a>
+                    </td>
+                    <td>
+RobloxCollectibles                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc59e.html?ComponentID=221&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">221</a>
+                    </td>
+                    <td>
+RobloxComments                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6734.html?ComponentID=101&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">101</a>
+                    </td>
+                    <td>
+RobloxConfiguration                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5e52.html?ComponentID=254&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">254</a>
+                    </td>
+                    <td>
+RobloxContacts                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent7cea.html?ComponentID=102&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">102</a>
+                    </td>
+                    <td>
+RobloxContent                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd236.html?ComponentID=337&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">337</a>
+                    </td>
+                    <td>
+RobloxContentLocalization                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentf126.html?ComponentID=339&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">339</a>
+                    </td>
+                    <td>
+RobloxContentLocalization_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentaebb.html?ComponentID=103&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">103</a>
+                    </td>
+                    <td>
+RobloxContentRatings                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta075.html?ComponentID=104&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">104</a>
+                    </td>
+                    <td>
+RobloxContests                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentfd51.html?ComponentID=265&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">265</a>
+                    </td>
+                    <td>
+RobloxContests_archive                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent179d.html?ComponentID=105&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">105</a>
+                    </td>
+                    <td>
+RobloxCurrency                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb837.html?ComponentID=190&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">190</a>
+                    </td>
+                    <td>
+RobloxCurrencyBudgets                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentddf8.html?ComponentID=302&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">302</a>
+                    </td>
+                    <td>
+RobloxCurrencyRobuxHolds                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc4f8.html?ComponentID=246&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">246</a>
+                    </td>
+                    <td>
+RobloxDailyLogins                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent976e.html?ComponentID=201&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">201</a>
+                    </td>
+                    <td>
+RobloxDataWarehouse                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5248.html?ComponentID=203&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">203</a>
+                    </td>
+                    <td>
+RobloxDataWarehouseStaging                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3d20.html?ComponentID=269&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">269</a>
+                    </td>
+                    <td>
+RobloxDBIPChangeAGTest                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent68a6.html?ComponentID=160&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">160</a>
+                    </td>
+                    <td>
+RobloxDemographics                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6414.html?ComponentID=106&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">106</a>
+                    </td>
+                    <td>
+RobloxDeployments                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc068.html?ComponentID=299&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">299</a>
+                    </td>
+                    <td>
+RobloxDeployments_Prime_20190422                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent1c0a.html?ComponentID=334&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">334</a>
+                    </td>
+                    <td>
+RobloxDeveloperAnalytics                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente73c.html?ComponentID=166&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">166</a>
+                    </td>
+                    <td>
+RobloxDeveloperProducts                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2688.html?ComponentID=189&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">189</a>
+                    </td>
+                    <td>
+RobloxDeviceVoting                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent4f0e.html?ComponentID=107&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">107</a>
+                    </td>
+                    <td>
+RobloxDistribution                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5b8d.html?ComponentID=275&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">275</a>
+                    </td>
+                    <td>
+RobloxDW                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent752c.html?ComponentID=108&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">108</a>
+                    </td>
+                    <td>
+RobloxEconomy                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd471.html?ComponentID=326&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">326</a>
+                    </td>
+                    <td>
+RobloxEconomyDevStats                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6aff.html?ComponentID=176&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">176</a>
+                    </td>
+                    <td>
+RobloxEconomyReports                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent4fef.html?ComponentID=212&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">212</a>
+                    </td>
+                    <td>
+RobloxEmailAddresses                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5b71.html?ComponentID=319&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">319</a>
+                    </td>
+                    <td>
+RobloxEngagementPayouts                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent981e.html?ComponentID=320&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">320</a>
+                    </td>
+                    <td>
+RobloxEngagementPayouts_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent1aeb.html?ComponentID=109&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">109</a>
+                    </td>
+                    <td>
+RobloxEphemeralCounters                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5f1a.html?ComponentID=250&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">250</a>
+                    </td>
+                    <td>
+RobloxEventsIngestValidation                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent71d7.html?ComponentID=243&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">243</a>
+                    </td>
+                    <td>
+RobloxFavoriteCounters                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent29a3.html?ComponentID=220&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">220</a>
+                    </td>
+                    <td>
+RobloxFavorites                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentddfe.html?ComponentID=110&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">110</a>
+                    </td>
+                    <td>
+RobloxFeeds                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentba47.html?ComponentID=223&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">223</a>
+                    </td>
+                    <td>
+RobloxFileLocations                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent67f2.html?ComponentID=111&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">111</a>
+                    </td>
+                    <td>
+RobloxFiles                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3cdd.html?ComponentID=183&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">183</a>
+                    </td>
+                    <td>
+RobloxFilesV2                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent121c.html?ComponentID=213&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">213</a>
+                    </td>
+                    <td>
+RobloxFollowings                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2701.html?ComponentID=112&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">112</a>
+                    </td>
+                    <td>
+RobloxForums                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent77ae.html?ComponentID=293&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">293</a>
+                    </td>
+                    <td>
+RobloxForums_archive                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent09b8.html?ComponentID=214&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">214</a>
+                    </td>
+                    <td>
+RobloxFriendRequests                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent27e0.html?ComponentID=310&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">310</a>
+                    </td>
+                    <td>
+RobloxFriendRequests_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente5f8.html?ComponentID=178&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">178</a>
+                    </td>
+                    <td>
+RobloxFriendships                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent09f2.html?ComponentID=180&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">180</a>
+                    </td>
+                    <td>
+RobloxFriendshipsLegacy                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent4d1d.html?ComponentID=286&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">286</a>
+                    </td>
+                    <td>
+RobloxFriendshipSources                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb76a.html?ComponentID=235&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">235</a>
+                    </td>
+                    <td>
+RobloxGameAttributes                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentad9e.html?ComponentID=161&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">161</a>
+                    </td>
+                    <td>
+RobloxGameCounters                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta30a.html?ComponentID=272&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">272</a>
+                    </td>
+                    <td>
+RobloxGameLocalization                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3d4d.html?ComponentID=113&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">113</a>
+                    </td>
+                    <td>
+RobloxGamePasses                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent8047.html?ComponentID=162&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">162</a>
+                    </td>
+                    <td>
+RobloxGamePersistence                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentfc74.html?ComponentID=114&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">114</a>
+                    </td>
+                    <td>
+RobloxGames                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta13d.html?ComponentID=115&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">115</a>
+                    </td>
+                    <td>
+RobloxGameService                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentbb91.html?ComponentID=116&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">116</a>
+                    </td>
+                    <td>
+RobloxGamesRecentlyVisited                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent265b.html?ComponentID=240&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">240</a>
+                    </td>
+                    <td>
+RobloxGameTemplates                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentebdd.html?ComponentID=305&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">305</a>
+                    </td>
+                    <td>
+RobloxGiftCards                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentcb29.html?ComponentID=117&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">117</a>
+                    </td>
+                    <td>
+RobloxGrid                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentf600.html?ComponentID=118&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">118</a>
+                    </td>
+                    <td>
+RobloxGridV2                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2edb.html?ComponentID=229&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">229</a>
+                    </td>
+                    <td>
+RobloxGroupCounters                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd26c.html?ComponentID=227&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">227</a>
+                    </td>
+                    <td>
+RobloxGroupMembership                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent8bdc.html?ComponentID=208&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">208</a>
+                    </td>
+                    <td>
+RobloxGroupPosts                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent070a.html?ComponentID=207&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">207</a>
+                    </td>
+                    <td>
+RobloxGroupRoleSets                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentdf64.html?ComponentID=314&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">314</a>
+                    </td>
+                    <td>
+RobloxGroupRoleSets_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc075.html?ComponentID=119&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">119</a>
+                    </td>
+                    <td>
+RobloxGroups                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent4ced.html?ComponentID=365&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">365</a>
+                    </td>
+                    <td>
+RobloxIarcCertification                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5fad.html?ComponentID=279&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">279</a>
+                    </td>
+                    <td>
+RobloxIdentities                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent910c.html?ComponentID=344&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">344</a>
+                    </td>
+                    <td>
+RobloxIdipAccessLogs                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd8e0.html?ComponentID=120&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">120</a>
+                    </td>
+                    <td>
+RobloxInfrastructure                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent175d.html?ComponentID=364&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">364</a>
+                    </td>
+                    <td>
+RobloxInfrastructure_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente5ad.html?ComponentID=198&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">198</a>
+                    </td>
+                    <td>
+RobloxInfrastructure_Testing                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc403.html?ComponentID=121&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">121</a>
+                    </td>
+                    <td>
+RobloxInfrastructureAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent97ee.html?ComponentID=300&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">300</a>
+                    </td>
+                    <td>
+RobloxInfrastructureAudit_Prime_20190422                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd05f.html?ComponentID=266&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">266</a>
+                    </td>
+                    <td>
+RobloxInfrastructureTeams                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd155.html?ComponentID=284&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">284</a>
+                    </td>
+                    <td>
+RobloxInGameContentTables                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb791.html?ComponentID=122&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">122</a>
+                    </td>
+                    <td>
+RobloxInteractionCounters                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentfb37.html?ComponentID=197&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">197</a>
+                    </td>
+                    <td>
+RobloxIpAddresses                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2d48.html?ComponentID=351&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">351</a>
+                    </td>
+                    <td>
+RobloxItemManagementFees                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentdf68.html?ComponentID=307&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">307</a>
+                    </td>
+                    <td>
+RobloxItemManifolds                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent1cd7.html?ComponentID=234&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">234</a>
+                    </td>
+                    <td>
+RobloxItemStatusesAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0e77.html?ComponentID=296&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">296</a>
+                    </td>
+                    <td>
+RobloxItemTags                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent4853.html?ComponentID=205&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">205</a>
+                    </td>
+                    <td>
+RobloxKettle                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent844e.html?ComponentID=352&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">352</a>
+                    </td>
+                    <td>
+RobloxLanguageNormalization                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta0cc.html?ComponentID=353&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">353</a>
+                    </td>
+                    <td>
+RobloxLanguageNormalization_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent63b6.html?ComponentID=165&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">165</a>
+                    </td>
+                    <td>
+RobloxLatencyMeasurements                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentcbed.html?ComponentID=219&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">219</a>
+                    </td>
+                    <td>
+RobloxLocales                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentfe7a.html?ComponentID=268&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">268</a>
+                    </td>
+                    <td>
+RobloxLocales_archive                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentce8d.html?ComponentID=242&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">242</a>
+                    </td>
+                    <td>
+RobloxLocalization                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentf52f.html?ComponentID=218&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">218</a>
+                    </td>
+                    <td>
+RobloxMacAddresses                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent8e9f.html?ComponentID=261&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">261</a>
+                    </td>
+                    <td>
+RobloxMachineLearningModels                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6e3b.html?ComponentID=323&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">323</a>
+                    </td>
+                    <td>
+RobloxMachineTranslation                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0c0f.html?ComponentID=123&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">123</a>
+                    </td>
+                    <td>
+RobloxMaintenance                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent70f9.html?ComponentID=301&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">301</a>
+                    </td>
+                    <td>
+RobloxMaintenance_Prime_20190422                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb6b6.html?ComponentID=124&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">124</a>
+                    </td>
+                    <td>
+RobloxMarketing                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0086.html?ComponentID=280&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">280</a>
+                    </td>
+                    <td>
+RobloxMatchmaking                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta5c1.html?ComponentID=125&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">125</a>
+                    </td>
+                    <td>
+RobloxMegaGrid                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd5ae.html?ComponentID=126&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">126</a>
+                    </td>
+                    <td>
+RobloxMessages                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentf47a.html?ComponentID=127&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">127</a>
+                    </td>
+                    <td>
+RobloxMetrics                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent597c.html?ComponentID=194&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">194</a>
+                    </td>
+                    <td>
+RobloxMetrics_Archive                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent1405.html?ComponentID=128&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">128</a>
+                    </td>
+                    <td>
+RobloxMetricsClient                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6d03.html?ComponentID=129&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">129</a>
+                    </td>
+                    <td>
+RobloxMetricsSandbox                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent235e.html?ComponentID=130&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">130</a>
+                    </td>
+                    <td>
+RobloxModeration                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta365.html?ComponentID=274&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">274</a>
+                    </td>
+                    <td>
+RobloxModerationAutomationAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent9c0c.html?ComponentID=131&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">131</a>
+                    </td>
+                    <td>
+RobloxModerationNew                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc542.html?ComponentID=283&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">283</a>
+                    </td>
+                    <td>
+RobloxModerationPolicy                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent4df3.html?ComponentID=249&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">249</a>
+                    </td>
+                    <td>
+RobloxModerationReportsAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentaaa1.html?ComponentID=357&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">357</a>
+                    </td>
+                    <td>
+RobloxNomadUsageResourceDashboard                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0ec9.html?ComponentID=361&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">361</a>
+                    </td>
+                    <td>
+RobloxNonces                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2dc1.html?ComponentID=195&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">195</a>
+                    </td>
+                    <td>
+RobloxNotifications                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3e15.html?ComponentID=172&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">172</a>
+                    </td>
+                    <td>
+RobloxObservation                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2469.html?ComponentID=132&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">132</a>
+                    </td>
+                    <td>
+RobloxPermissions                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3a4c.html?ComponentID=133&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">133</a>
+                    </td>
+                    <td>
+RobloxPlaceAccessPermissions                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentcf80.html?ComponentID=355&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">355</a>
+                    </td>
+                    <td>
+RobloxPlaceSequestration                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd3c9.html?ComponentID=225&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">225</a>
+                    </td>
+                    <td>
+RobloxPlaceShowcases                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3271.html?ComponentID=171&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">171</a>
+                    </td>
+                    <td>
+RobloxPoints                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent8330.html?ComponentID=134&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">134</a>
+                    </td>
+                    <td>
+RobloxPremiumFeatures                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentf607.html?ComponentID=312&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">312</a>
+                    </td>
+                    <td>
+RobloxPremiumFeatures_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent346c.html?ComponentID=325&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">325</a>
+                    </td>
+                    <td>
+RobloxPremiumFeaturesActivationTasks                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc0a8.html?ComponentID=135&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">135</a>
+                    </td>
+                    <td>
+RobloxPremiumFeaturesTesting                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent02ce.html?ComponentID=136&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">136</a>
+                    </td>
+                    <td>
+RobloxPresence                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentcfcd.html?ComponentID=236&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">236</a>
+                    </td>
+                    <td>
+RobloxPresence_Archive                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc811.html?ComponentID=335&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">335</a>
+                    </td>
+                    <td>
+RobloxProductExperimentationPlatform                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent260f.html?ComponentID=336&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">336</a>
+                    </td>
+                    <td>
+RobloxProductExperimentationPlatform_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentccc8.html?ComponentID=181&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">181</a>
+                    </td>
+                    <td>
+RobloxPromotionChannels                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentfd8f.html?ComponentID=251&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">251</a>
+                    </td>
+                    <td>
+RobloxPunishmentReviewAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent101c.html?ComponentID=282&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">282</a>
+                    </td>
+                    <td>
+RobloxPushNotificationDefinition                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc95a.html?ComponentID=196&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">196</a>
+                    </td>
+                    <td>
+RobloxPushNotifications                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc16c.html?ComponentID=338&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">338</a>
+                    </td>
+                    <td>
+RobloxQuotas                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent85dc.html?ComponentID=340&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">340</a>
+                    </td>
+                    <td>
+RobloxQuotas_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta224.html?ComponentID=273&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">273</a>
+                    </td>
+                    <td>
+RobloxRatings                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent20f5.html?ComponentID=276&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">276</a>
+                    </td>
+                    <td>
+RobloxRatingsAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta016.html?ComponentID=137&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">137</a>
+                    </td>
+                    <td>
+RobloxReporting                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb89a.html?ComponentID=358&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">358</a>
+                    </td>
+                    <td>
+RobloxRestrictedHours                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentbb5c.html?ComponentID=215&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">215</a>
+                    </td>
+                    <td>
+RobloxRoles                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent1aff.html?ComponentID=291&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">291</a>
+                    </td>
+                    <td>
+RobloxRules                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5a96.html?ComponentID=138&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">138</a>
+                    </td>
+                    <td>
+RobloxSearchLog                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent7c30.html?ComponentID=211&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">211</a>
+                    </td>
+                    <td>
+RobloxSecretServer                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent915e.html?ComponentID=139&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">139</a>
+                    </td>
+                    <td>
+RobloxSegmentation                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3f70.html?ComponentID=140&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">140</a>
+                    </td>
+                    <td>
+RobloxSEO                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentafc0.html?ComponentID=270&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">270</a>
+                    </td>
+                    <td>
+RobloxServerIPChangeTest                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5305.html?ComponentID=141&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">141</a>
+                    </td>
+                    <td>
+RobloxServices                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent07ae.html?ComponentID=167&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">167</a>
+                    </td>
+                    <td>
+RobloxShops                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent618a.html?ComponentID=188&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">188</a>
+                    </td>
+                    <td>
+RobloxShowcases                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta03f.html?ComponentID=288&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">288</a>
+                    </td>
+                    <td>
+RobloxStaticContent                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0631.html?ComponentID=142&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">142</a>
+                    </td>
+                    <td>
+RobloxStatistics                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent140a.html?ComponentID=143&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">143</a>
+                    </td>
+                    <td>
+RobloxStudio                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent1085.html?ComponentID=360&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">360</a>
+                    </td>
+                    <td>
+RobloxStudioUserSettings                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6487.html?ComponentID=289&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">289</a>
+                    </td>
+                    <td>
+RobloxSurveyCounters                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3ef1-2.html?ComponentID=277&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">277</a>
+                    </td>
+                    <td>
+RobloxSurveyResponses                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3afb.html?ComponentID=281&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">281</a>
+                    </td>
+                    <td>
+RobloxSurveys                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0080.html?ComponentID=179&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">179</a>
+                    </td>
+                    <td>
+RobloxSystemEvents                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent039d.html?ComponentID=204&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">204</a>
+                    </td>
+                    <td>
+RobloxTableau                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5497.html?ComponentID=362&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">362</a>
+                    </td>
+                    <td>
+RobloxTalentHub                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2007.html?ComponentID=287&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">287</a>
+                    </td>
+                    <td>
+RobloxTeamOwnership                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5e52-2.html?ComponentID=271&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">271</a>
+                    </td>
+                    <td>
+RobloxTempConnectionstring                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc124.html?ComponentID=232&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">232</a>
+                    </td>
+                    <td>
+RobloxTestToggle                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2198.html?ComponentID=144&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">144</a>
+                    </td>
+                    <td>
+RobloxThemes                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent8c9a.html?ComponentID=267&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">267</a>
+                    </td>
+                    <td>
+RobloxThemes_Archive                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent7eca.html?ComponentID=285&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">285</a>
+                    </td>
+                    <td>
+RobloxThemesV2                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent8678.html?ComponentID=175&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">175</a>
+                    </td>
+                    <td>
+RobloxThrottling                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent8807.html?ComponentID=145&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">145</a>
+                    </td>
+                    <td>
+RobloxThumbnails                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0c72.html?ComponentID=146&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">146</a>
+                    </td>
+                    <td>
+RobloxThumbnailsCoordination                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent90dc-2.html?ComponentID=163&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">163</a>
+                    </td>
+                    <td>
+RobloxTimeSeries                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent611c.html?ComponentID=147&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">147</a>
+                    </td>
+                    <td>
+RobloxTrades                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5009.html?ComponentID=148&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">148</a>
+                    </td>
+                    <td>
+RobloxTransactionHistory                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent44bb.html?ComponentID=245&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">245</a>
+                    </td>
+                    <td>
+RobloxTranslation                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta899.html?ComponentID=303&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">303</a>
+                    </td>
+                    <td>
+RobloxTranslationAnalyticsReports                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc732.html?ComponentID=292&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">292</a>
+                    </td>
+                    <td>
+RobloxTranslationAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent1c0c.html?ComponentID=263&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">263</a>
+                    </td>
+                    <td>
+RobloxTranslationStorage                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6e5d.html?ComponentID=363&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">363</a>
+                    </td>
+                    <td>
+RobloxTwoStepVerification                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5c34.html?ComponentID=230&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">230</a>
+                    </td>
+                    <td>
+RobloxTwoStepVerificationSettingsAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb879.html?ComponentID=260&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">260</a>
+                    </td>
+                    <td>
+RobloxUA                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc98e.html?ComponentID=308&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">308</a>
+                    </td>
+                    <td>
+RobloxUGCValidation                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5cfd.html?ComponentID=304&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">304</a>
+                    </td>
+                    <td>
+RobloxUniversalAppConfigurations                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta87a.html?ComponentID=164&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">164</a>
+                    </td>
+                    <td>
+RobloxUniverses                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentaba2.html?ComponentID=149&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">149</a>
+                    </td>
+                    <td>
+RobloxUserAssetEscrows                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent7239.html?ComponentID=222&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">222</a>
+                    </td>
+                    <td>
+RobloxUserAssetExpirations                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent4d97.html?ComponentID=224&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">224</a>
+                    </td>
+                    <td>
+RobloxUserAssetOptions                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6b20.html?ComponentID=150&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">150</a>
+                    </td>
+                    <td>
+RobloxUserAssets                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent8e0f.html?ComponentID=330&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">330</a>
+                    </td>
+                    <td>
+RobloxUserAssetsV2                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent93f6.html?ComponentID=331&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">331</a>
+                    </td>
+                    <td>
+RobloxUserAssetsV2_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentbbb5.html?ComponentID=349&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">349</a>
+                    </td>
+                    <td>
+RobloxUserAvatars                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0aec.html?ComponentID=151&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">151</a>
+                    </td>
+                    <td>
+RobloxUserCounters                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta8fc.html?ComponentID=256&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">256</a>
+                    </td>
+                    <td>
+RobloxUserDataProtection                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentf404.html?ComponentID=247&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">247</a>
+                    </td>
+                    <td>
+RobloxUserFeeds                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentfbc3.html?ComponentID=278&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">278</a>
+                    </td>
+                    <td>
+RobloxUsernames                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent894d.html?ComponentID=191&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">191</a>
+                    </td>
+                    <td>
+RobloxUserPrivacy                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent431a.html?ComponentID=210&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">210</a>
+                    </td>
+                    <td>
+RobloxUserRetention                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent119c.html?ComponentID=152&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">152</a>
+                    </td>
+                    <td>
+RobloxUsers                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent9c61.html?ComponentID=298&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">298</a>
+                    </td>
+                    <td>
+RobloxUsers_archive                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent98a7.html?ComponentID=226&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">226</a>
+                    </td>
+                    <td>
+RobloxUsersAudit                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente831.html?ComponentID=153&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">153</a>
+                    </td>
+                    <td>
+RobloxUserSettings                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente073.html?ComponentID=209&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">209</a>
+                    </td>
+                    <td>
+RobloxUserStatuses                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentf1b3-2.html?ComponentID=311&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">311</a>
+                    </td>
+                    <td>
+RobloxUserStatuses_ReadOnly                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentba5e.html?ComponentID=154&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">154</a>
+                    </td>
+                    <td>
+RobloxVersions                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentf040.html?ComponentID=345&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">345</a>
+                    </td>
+                    <td>
+RobloxVipServers                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5cd7.html?ComponentID=324&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">324</a>
+                    </td>
+                    <td>
+RobloxVirtualCurrencyGateway                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0c58.html?ComponentID=155&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">155</a>
+                    </td>
+                    <td>
+RobloxVoting                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente096-2.html?ComponentID=156&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">156</a>
+                    </td>
+                    <td>
+RobloxVotingCounters                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6737.html?ComponentID=185&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">185</a>
+                    </td>
+                    <td>
+RobloxXbox                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent9954.html?ComponentID=200&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">200</a>
+                    </td>
+                    <td>
+DELETE-TableauDB                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente8a3.html?ComponentID=346&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">346</a>
+                    </td>
+                    <td>
+DELETE-TableauDB_archived                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentfd97.html?ComponentID=294&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">294</a>
+                    </td>
+                    <td>
+robloxDummyDB1                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente183.html?ComponentID=295&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">295</a>
+                    </td>
+                    <td>
+robloxDummyDB1_restoretest                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent16cc.html?ComponentID=343&amp;ComponentType=Database&amp;RedirectComponentTypeID=0">343</a>
+                    </td>
+                    <td>
+robloxDummyDB2                    </td>
+                        <td><a href="SystemResources57be.html?componentTypeID=3">Database</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+        </div>
+
+        <script src="../bundles/scriptsce5b?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="../bundles/teams-components075a?v=FJuDvpSLKkO1GXbs4YDgM41GVEXaBnsnt_-JU2jPs481"></script>
+
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/Teams/SystemResources?componentTypeID=3 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 03:06:06 GMT -->
+</html>

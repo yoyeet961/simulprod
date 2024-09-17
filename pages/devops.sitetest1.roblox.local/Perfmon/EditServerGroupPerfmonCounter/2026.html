@@ -1,0 +1,498 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/Perfmon/EditServerGroupPerfmonCounter/2026 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 04:09:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Server Group Perfmon Counter</title>
+        <link rel="shortcut icon" href="https://devops.sitetest1.roblox.local/favicon.ico" />
+        <link href="https://devops.sitetest1.roblox.local/Content/css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="https://devops.sitetest1.roblox.local/" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/Deployments/History">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/farms-by-environment/1">Farms</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/superfarms-by-environment/1">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/servergroups-by-environment/1">ServerGroups</a>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/ServerJobs/History">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/GridDatacenters">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Websites/StatusesByEnvironment/1">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/StatusesByEnvironment/1">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/AllocationByEnvironment/1">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/StatusesByEnvironment/1">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/DatabaseLookupByEnvironment/1">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Websites/Diff">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/Diff">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/Diff">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/servers-by-environment/2026">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/AllServers">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/LiveServers">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/ReserveServers">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/MaintenanceServers">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/BeingAllocated">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/ReadyForAllocation">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/Provisioning">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/DefectiveServers">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/MigrationServers">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Perfmon/ByServerGroup">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Perfmon/ByComponent">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/All">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Assemblies">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Components">Components</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Databases">Databases</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/ElasticsearchClusters">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/RedisClusters">Redis</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/ThirdPartyServices">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Pods">Pods</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Teams">Teams</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Systems">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/SystemResources">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="https://devops.sitetest1.roblox.local/Components">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="https://devops.sitetest1.roblox.local/Logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+<form action="https://devops.sitetest1.roblox.local/Perfmon/DeleteServerGroupPerfmonCounter" id="delete-form" method="post"><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Id" name="Id" type="hidden" value="2026" /></form>
+<form action="https://devops.sitetest1.roblox.local/Perfmon/CreateOrUpdateServerGroupPerfmonCounter" method="post"><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Id" name="Id" type="hidden" value="2026" />    <div class="modal edit-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Server Group Perfmon Counter</h4>
+            </div>
+
+            <div class="modal-body" id="setup-perfmon-container">
+                
+
+                <div class="form-group">
+                    <label for="ServerGroupId">Server Group</label>
+                    <select class="form-control" data-val="true" data-val-number="The field Server Group must be a number." data-val-required="The Server Group field is required." id="ServerGroupId" name="ServerGroupId"><option value="107">AWS-AutoScaler</option>
+<option value="285">AWS-CLI</option>
+<option value="39">AdminWeb</option>
+<option value="182">AppsWeb</option>
+<option value="242">Argus-CareAndSafety</option>
+<option value="1">AssetSearch</option>
+<option value="45">BuildAutomation</option>
+<option value="173">BuildFarm</option>
+<option value="29">Business Intel</option>
+<option value="166">Chef</option>
+<option value="167">Chef-BackEnd</option>
+<option value="172">Chef-Knife</option>
+<option value="119">Chronograf</option>
+<option value="69">ClientCrashReporter</option>
+<option value="445">Cockroach-DB</option>
+<option value="450">ConsulClusterNonVoter</option>
+<option value="54">ContentSite</option>
+<option value="9">CoreData</option>
+<option value="28">CoreDataMirrors</option>
+<option value="254">CorpTest</option>
+<option value="209">CustomerService-Monitoring</option>
+<option value="183">DataCache</option>
+<option value="453">DataInfra-POC</option>
+<option value="47">DataSpiders</option>
+<option value="235">DebugSymbolsRepository</option>
+<option value="122">DellRepository</option>
+<option value="66">DevOpsWeb</option>
+<option value="27">Diag</option>
+<option value="221">DockerHost</option>
+<option value="253">ELK-PanopticLogs</option>
+<option value="90">ES-Catalog-AWS</option>
+<option value="88">ES-Catalog-OpsTest1</option>
+<option value="208">EV-Signing</option>
+<option value="37">EndUserVPN</option>
+<option value="457">EntitiesSearch-DB</option>
+<option value="64">FoundationWeb</option>
+<option value="0">Global</option>
+<option value="121">Grafana</option>
+<option value="214">GridScanner</option>
+<option value="133">HPRepository</option>
+<option value="190">Hazelcast</option>
+<option value="50">IISCrasherSite</option>
+<option value="120">InfluxDB</option>
+<option value="252">InfluxDB-Perfmon</option>
+<option value="325">InfluxDB-Telemetry</option>
+<option value="369">InfluxDB-TelemetryInfluxEnterprise</option>
+<option value="295">InfluxDB-TimeSeries</option>
+<option value="446">InfoSecTesting</option>
+<option value="127">InternalAPI</option>
+<option value="293">Kapacitor</option>
+<option value="240">LDAP-Proxy</option>
+<option value="135">LenovoRepository</option>
+<option value="199">Linux-Chef-Managed</option>
+<option value="188">LinuxSandbox</option>
+<option value="245">Log-Aggregator</option>
+<option value="136">LogAnalysis</option>
+<option value="310">McRouter</option>
+<option value="264">McRouter-Thumbnails</option>
+<option value="424">Mcrouter-AbTesting</option>
+<option value="357">Mcrouter-AccountLocalization</option>
+<option value="420">Mcrouter-AnonymizedUsers</option>
+<option value="351">Mcrouter-AssetFormats</option>
+<option value="352">Mcrouter-AssetFormatsShared</option>
+<option value="451">Mcrouter-AssetMedia</option>
+<option value="339">Mcrouter-Assets</option>
+<option value="407">Mcrouter-Authentication</option>
+<option value="345">Mcrouter-Avatars</option>
+<option value="358">Mcrouter-Billing</option>
+<option value="347">Mcrouter-Chat</option>
+<option value="392">Mcrouter-ContentLocalization</option>
+<option value="370">Mcrouter-Currency</option>
+<option value="359">Mcrouter-Demographics</option>
+<option value="346">Mcrouter-Economy</option>
+<option value="360">Mcrouter-EmailAddresses</option>
+<option value="314">Mcrouter-Friends</option>
+<option value="367">Mcrouter-FriendsShared</option>
+<option value="410">Mcrouter-GameLocalization</option>
+<option value="385">Mcrouter-GameSearchUITreatment</option>
+<option value="396">Mcrouter-GameSearchUITreatments</option>
+<option value="433">Mcrouter-GroupRoleSets</option>
+<option value="319">Mcrouter-Groups</option>
+<option value="361">Mcrouter-IPAddresses</option>
+<option value="311">Mcrouter-LoadTesting</option>
+<option value="350">Mcrouter-Localization</option>
+<option value="329">Mcrouter-Marketing</option>
+<option value="372">Mcrouter-Notifications</option>
+<option value="321">Mcrouter-Object</option>
+<option value="313">Mcrouter-Ownership</option>
+<option value="454">Mcrouter-OwnershipVTwo</option>
+<option value="403">Mcrouter-Passwords</option>
+<option value="340">Mcrouter-Permissions</option>
+<option value="341">Mcrouter-PresenceShared</option>
+<option value="393">Mcrouter-Quotas</option>
+<option value="320">Mcrouter-Universes</option>
+<option value="380">Mcrouter-UniversesInternal</option>
+<option value="441">Mcrouter-UserFollowings</option>
+<option value="439">Mcrouter-UserFollowingsShared</option>
+<option value="336">Mcrouter-Users</option>
+<option value="322">Mcrouter-Web</option>
+<option value="20">Memcached</option>
+<option value="425">Memcached-AbTesting</option>
+<option value="362">Memcached-AccountLocalization</option>
+<option value="421">Memcached-AnonymizedUsers</option>
+<option value="354">Memcached-AssetFormats</option>
+<option value="355">Memcached-AssetFormatsShared</option>
+<option value="452">Memcached-AssetMedia</option>
+<option value="342">Memcached-Assets</option>
+<option value="408">Memcached-Authentication</option>
+<option value="348">Memcached-Avatars</option>
+<option value="363">Memcached-Billing</option>
+<option value="84">Memcached-Chat</option>
+<option value="394">Memcached-ContentLocalization</option>
+<option value="371">Memcached-Currency</option>
+<option value="364">Memcached-Demographics</option>
+<option value="349">Memcached-Economy</option>
+<option value="365">Memcached-EmailAddresses</option>
+<option value="261">Memcached-Friends</option>
+<option value="297">Memcached-FriendsService</option>
+<option value="368">Memcached-FriendsShared</option>
+<option value="411">Memcached-GameLocalization</option>
+<option value="386">Memcached-GameSearchUITreatment</option>
+<option value="397">Memcached-GameSearchUITreatments</option>
+<option value="434">Memcached-GroupRoleSets</option>
+<option value="288">Memcached-Groups</option>
+<option value="366">Memcached-IPAddresses</option>
+<option value="312">Memcached-LoadTesting</option>
+<option value="353">Memcached-Localization</option>
+<option value="330">Memcached-Marketing</option>
+<option value="266">Memcached-McRouter-Thumbnails</option>
+<option value="315">Memcached-Mcrouter-Ownership</option>
+<option value="373">Memcached-Notifications</option>
+<option value="85">Memcached-Object</option>
+<option value="298">Memcached-Ownership</option>
+<option value="455">Memcached-OwnershipVTwo</option>
+<option value="404">Memcached-Passwords</option>
+<option value="343">Memcached-Permissions</option>
+<option value="291">Memcached-Presence</option>
+<option value="344">Memcached-PresenceShared</option>
+<option value="395">Memcached-Quotas</option>
+<option value="262">Memcached-Thumbnails</option>
+<option value="267">Memcached-Universes</option>
+<option value="381">Memcached-UniversesInternal</option>
+<option value="442">Memcached-UserFollowings</option>
+<option value="440">Memcached-UserFollowingsShared</option>
+<option value="337">Memcached-Users</option>
+<option value="86">Memcached-Web</option>
+<option value="184">MessageBus</option>
+<option value="31">MessageQueue</option>
+<option value="377">Meto-DB</option>
+<option value="40">MobileWeb</option>
+<option value="216">NetworkTools</option>
+<option value="229">Nomad</option>
+<option value="387">Nomad-Ubuntu</option>
+<option value="418">Nomad-Windows</option>
+<option value="109">NotificationsWeb</option>
+<option value="72">OpsTools</option>
+<option value="324">OpsWeb</option>
+<option value="206">PrintSpooler</option>
+<option value="95">ProjectManagement</option>
+<option value="308">Prometheus</option>
+<option value="52">ProxyWeb</option>
+<option value="279">ProxyWeb-China</option>
+<option value="356">PublicVIPProxy</option>
+<option value="201">QATools</option>
+<option value="56">RabbitMQ</option>
+<option value="205">ReleasePortal</option>
+<option value="204">ReleaseSite</option>
+<option value="256">ResearchAndDevelopment</option>
+<option value="61">RobloxDeveloperWiki</option>
+<option value="307">Romark</option>
+<option value="55">SOLRAccounts</option>
+<option value="21">SOLRCatalog</option>
+<option value="197">SQL-Quorum</option>
+<option value="456">ScooldForum</option>
+<option value="154">SecretServer</option>
+<option value="10">Services</option>
+<option value="30">ServicesAPI</option>
+<option value="49">ServicesDataStores</option>
+<option value="12">ServicesFarm</option>
+<option value="82">ServicesObservation</option>
+<option value="106">ServicesUnmonitored</option>
+<option value="11">ServicesWeb</option>
+<option value="36">ServicesWebIPhone</option>
+<option value="234">SiteTest3OnlyWebsites</option>
+<option value="57">SourceControl</option>
+<option value="134">SupermicroRepository</option>
+<option value="38">SystemsMonitoring</option>
+<option value="156">TeamCity Development</option>
+<option value="180">TextSearch</option>
+<option value="449">Traffic-DNS</option>
+<option value="379">Traffic-glb</option>
+<option value="378">Traffic-haproxy</option>
+<option value="461">Traffic-outproxy</option>
+<option value="459">Traffic-outproxy-</option>
+<option value="460">Traffic-outproxy-FooBar</option>
+<option value="437">VanitySite</option>
+<option value="438">VanitySiteLuobu</option>
+<option value="444">VictoriaMetrics</option>
+<option selected="selected" value="33">VirtualHost</option>
+<option value="198">VirtualHost-BuildAutomation</option>
+<option value="217">VirtualHost-DevOps</option>
+<option value="196">VirtualHost-ELK</option>
+<option value="97">VirtualHost-ElasticSearch</option>
+<option value="225">VirtualHost-Infra</option>
+<option value="258">VirtualHost-Portworx</option>
+<option value="224">VirtualHost-SQLQuorum</option>
+<option value="215">VirtualHost-TestSiteDatabases</option>
+<option value="202">VirtualHost-TestSites</option>
+<option value="115">VirtualMachineManagement</option>
+<option value="203">VisualStudioExtensions</option>
+<option value="305">Vitess-API</option>
+<option value="300">Vitess-Admin</option>
+<option value="304">Vitess-Benchmark</option>
+<option value="303">Vitess-ControlPlane</option>
+<option value="299">Vitess-DB</option>
+<option value="302">Vitess-Locks</option>
+<option value="301">Vitess-Proxy</option>
+<option value="8">Web</option>
+<option value="155">WebDAV</option>
+<option value="189">WebMicroServices</option>
+<option value="26">WikiBlog</option>
+<option value="116">WindowsLicensing</option>
+<option value="458">internalDNS-POC</option>
+<option value="447">postgres-DB</option>
+<option value="89">roblox-prod-catalog</option>
+</select>
+                    <span class="field-validation-valid" data-valmsg-for="ServerGroupId" data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="ObjectName">Category/Object Name</label>
+                    <input class="form-control" data-val="true" data-val-required="The Category/Object Name field is required." id="ObjectName" name="ObjectName" type="text" value="Hyper-V Hypervisor Logical Processor" />
+                    <span class="field-validation-valid" data-valmsg-for="ObjectName" data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="CounterName">Counter Name</label>
+                    <input class="form-control" data-val="true" data-val-required="The Counter Name field is required." id="CounterName" name="CounterName" type="text" value="% Total Run Time" />
+                    <span class="field-validation-valid" data-valmsg-for="CounterName" data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="InstanceName">Instance Name</label>
+                    <input class="form-control" id="InstanceName" name="InstanceName" type="text" value="_Total" />
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label><input checked="checked" data-val="true" data-val-required="The Is Enabled field is required." id="IsEnabled" name="IsEnabled" type="checkbox" value="true" /><input name="IsEnabled" type="hidden" value="false" /> Enabled</label>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="modal-footer">
+                    <button class="btn btn-danger pull-left" id="delete-button">Delete</button>
+                <input type="submit" class="btn btn-primary" value="Update">
+            </div>
+        </div>
+    </div>
+</form>
+
+        </div>
+
+        <script src="https://devops.sitetest1.roblox.local/bundles/scripts?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="https://devops.sitetest1.roblox.local/bundles/perfmon-page?v=wF4-A7zZuGvrOJC8b5nyloAmGvOQ-SWF3h-ZF_aj9Q41"></script>
+
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/Perfmon/EditServerGroupPerfmonCounter/2026 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 04:09:48 GMT -->
+</html>

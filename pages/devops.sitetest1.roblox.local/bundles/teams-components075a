@@ -1,0 +1,1 @@
+$(document).ready(function(){Roblox.select2helpers.setupStandardSelect2s();Roblox.select2helpers.setupSelect2FormSubmit($("#options-form"));Roblox.select2helpers.setupKeyboardShortcuts()})

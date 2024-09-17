@@ -1,0 +1,399 @@
+.pointer {
+    cursor: pointer;
+}
+
+span.ErrorMessage {
+    font-weight: bold;
+    color: red;
+}
+div.adminDash 
+{
+    color:#585858;
+}
+div#recaptcha_area
+{
+    margin: 0 auto;
+    margin-left: -40px;
+}
+
+div.NavigationPaneFloat .navSection
+{
+    padding-left:10px;
+}
+div.NavigationPaneFloat ul 
+{
+    margin:0px;
+    margin-bottom:10px;
+}
+
+span.robux, .currency.CurrencyColor1 {
+    background: url('/web/20200601005829im_/https://dole.simulping.com/UnsecureContent/images/img-robux.png') no-repeat 0px 1px;
+    color: #060;    
+    font-weight: bold;
+    padding: 0px 0px 2px 20px;
+    font-size: 12px;
+}
+
+span.tickets, .currency.CurrencyColor2 {
+    background: url('/web/20200601005829im_/https://dole.simulping.com/UnsecureContent/images/Tickets.png') no-repeat 0px 1px;
+    color: #A61;
+    padding: 0px 0px 2px 20px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+div.navHeader
+{
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: #4D4D4D;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+body 
+{
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:13px;
+    background-color: #FCFCFC;
+    margin: 0;  
+}
+
+div.header 
+{
+    margin:0 0 10px;
+    background: #F0F0F0;
+    text-align: right;
+    padding: 5px 5px 5px 5px;
+    border-top: 2px solid #3679BC;
+    height: 18px;
+}
+a 
+{
+    color: #095fb5;
+    text-decoration: none;
+}
+a:hover 
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+div.header div.headerFloatLeft span.redBoldWarn 
+{    color: red;
+	font-weight: bold;
+}
+div.ContentPaneFloat 
+{    
+    padding-left: 230px;
+    min-height:500px;
+}
+div.NavigationPaneFloat 
+{
+    float:left;
+    width:220px;
+    padding: 0 10px;
+}
+h1 
+{
+    margin-top:35px;
+    margin-bottom:12px;
+    font-size: 40px;
+    font-weight: bold;
+    color:#363636;
+    letter-spacing:-2px;
+}
+h2 
+{
+    font-size:16px;
+    font-weight:bold;
+    text-transform: uppercase;
+    color:#000;
+}
+/*  Legacy */
+.StandardTabWhite,
+.StandardTabGrayActive,
+.StandardTabGray
+{
+    display:inline-block;
+	height:26px;
+	z-index: 2;
+	position:relative;
+	*display:inline;
+    *zoom:1;
+}
+.StandardTabWhite span
+{
+    *padding-right:14px;
+}
+.StandardTabGray
+{
+    background-color: #b4cde9;
+    margin-right: 4px;
+}
+li.ConfigTabs 
+{
+    padding: 6px 10px 0px 10px;
+}
+.StandardTabGrayActive
+{
+    margin-right: 4px;
+}
+
+.StandardTabGray a,
+.StandardTabGrayActive a
+{
+    color: White;
+}
+.StandardTabGray a:hover,
+.StandardTabGrayActive a:hover
+{
+    text-decoration:none;
+}
+
+.StandardTabGray:hover,
+.StandardTabGrayActive
+{
+    background-color: #6c98cb;
+    color: White;
+}
+
+
+div.header div.headerFloatLeft 
+{
+    float:left;
+}
+div.header div.headerFloatRight 
+{
+    float:right;
+}
+.BadgeLists { width:150px;}
+.LoyaltyDateTextbox { width:80px}
+
+
+
+/* login page */
+div.Signin 
+{
+    margin: 0 auto;
+    width: 198px;
+    margin-top: 150px;
+    color: #666;
+}
+
+div.Signin .formRow
+{
+    margin-bottom: 5px;
+}
+div.Signin .formRow label 
+{
+    display: block;
+}
+div.Signin .formRow input
+{
+    border: 1px solid #999;
+    padding: 3px;
+    width: 190px;
+}
+
+div.Signin .formRowSubmit
+{
+    text-align: right;
+    margin-top: 12px;
+}
+div.Signin .formRowSubmit input 
+{
+    border: 1px solid #999;
+    padding: 3px 6px;
+    border-radius: 3px;
+    margin: 0;
+}
+div.Signin .formRowSubmit input:hover 
+{
+    cursor: pointer;
+    background: white;
+    color: #666;
+}
+
+/* Dividers */
+.divider-top {
+    border-top: 1px solid #ccc;
+}
+.divider-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.divider-left {
+    border-left: 1px solid #ccc;
+}
+.divider-right {
+    border-right: 1px solid #ccc;
+}
+
+.error-message {
+    color: black;
+    background-color: #FAE5E5;
+    border: solid 1px #c00;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 3px 10px;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000 !important;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+
+/* paging */
+.pager {
+    margin: 4px 7px 2px 4px;
+}
+.pager.first,
+.pager.last {
+    display: none;
+}
+.pager.previous {
+    display: inline-block;
+    background: url('/web/20200601005829im_/https://dole.simulping.com/UnsecureContent/images/buttons/btn-silver-left-27.png') no-repeat top left;
+    width: 27px;
+    height: 27px;
+}
+.pager.next {
+    display: inline-block;
+    background: url('/web/20200601005829im_/https://dole.simulping.com/UnsecureContent/images/buttons/btn-silver-right-27.png') no-repeat top left;
+    width: 27px;
+    height: 27px;
+}
+.page.text {
+    position: relative;
+    top: -8px;
+    padding: 5px;
+    *top:-4px;
+}
+.pager.previous:hover,
+.pager.next:hover {
+    background-position: bottom left;
+    cursor: pointer;
+}
+.pager.disabled,
+.pager.disabled:hover
+{
+    background-position: 0px -27px;
+    cursor: default;
+}
+
+.btn-group .btn-rightalone {
+	margin-right: 3px;
+}
+
+/* better paging */
+.paging-container-div-top
+{
+    text-align: center;
+    margin: 5px 0px 0px 0px;
+}
+.paging-container-div-top div
+{
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+}
+
+.paging-input {
+    width: 35px;
+    text-align: center;
+}
+
+/* bootstrap override */
+.nav > li > a {
+    padding: 2px 10px; 
+}
+
+.panel {
+  background: #FCFCFC;  
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: -0px;
+}
+
+.dropdown-menu.service-buttons {
+	min-width: 30px;
+}
+
+.modal-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.well-closest {
+	margin-bottom: 3px;
+}
+
+.panel-closest {
+	padding: 5px;
+}
+
+.row-separate {
+	margin-bottom: 3px;
+}
+
+.ui-autocomplete{ 
+  position: fixed; 
+  top: 100%;
+  left: 0;
+  z-index: 1051 !important;
+  left: 0;
+  cursor: default; 
+}
+
+/* end bootstrap override */
+
+.no-padding {
+    padding: 0;
+}
+
+#duo_iframe {
+    border: none;
+    width: 100%;
+    /* ReSharper disable CssBrowserCompatibility */
+    min-width: 304px;
+    /* ReSharper restore CssBrowserCompatibility */
+    max-width: 620px;
+    height: 330px;
+    display: block;
+    margin-top: 50px;
+    margin: 50px auto 0 auto;
+}
+
+
+#duo_form {
+    display: none;

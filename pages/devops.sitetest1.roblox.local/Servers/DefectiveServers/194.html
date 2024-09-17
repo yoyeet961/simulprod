@@ -1,0 +1,2526 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/Servers/DefectiveServers/194 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 02:32:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Server Allocation</title>
+        <link rel="shortcut icon" href="../../favicon.ico" />
+        <link href="../../Content/css7af7.css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="../../index.html" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="../../index.html">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="../../Deployments/History.html">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../farms-by-environment/1.html">Farms</a>
+                            </li>
+                            <li>
+                                <a href="../../superfarms-by-environment/1.html">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="../../servergroups-by-environment/1.html">ServerGroups</a>
+                    </li>
+                    <li class="">
+                        <a href="../../ServerJobs/History.html">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../GridDatacenters.html">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Websites/StatusesByEnvironment/1.html">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../../Services/StatusesByEnvironment/1.html">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../../Services/AllocationByEnvironment/1.html">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../../Databases/StatusesByEnvironment/1.html">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../../Databases/DatabaseLookupByEnvironment/1.html">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Websites/Diff.html">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="../../Services/Diff.html">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="../../Databases/Diff.html">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Servers.html">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="../../servers-by-environment/194.html">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="../AllServers.html">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="../LiveServers.html">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="../ReserveServers.html">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="../MaintenanceServers.html">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="../BeingAllocated.html">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="../ReadyForAllocation.html">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="../Provisioning.html">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="194.html">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="../MigrationServers.html">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Perfmon/ByServerGroup.html">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="../../Perfmon/ByComponent.html">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../Teams/All.html">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Assemblies.html">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Components.html">Components</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Databases.html">Databases</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/ElasticsearchClusters.html">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/RedisClusters.html">Redis</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/ThirdPartyServices.html">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Pods.html">Pods</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Teams.html">Teams</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/Systems.html">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="../../Teams/SystemResources.html">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="../../Components.html">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="../../index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+    <h3>Server Allocation</h3>
+    <ul class="nav nav-pills margin-bottom-normal">
+            <li>
+                <a href="5.html">RBX-SanMateo</a>
+            </li>
+            <li>
+                <a href="64.html">RBX-WorkStation</a>
+            </li>
+            <li>
+                <a href="70.html">RBX-Chicago</a>
+            </li>
+            <li>
+                <a href="74.html">RBX-Alpha</a>
+            </li>
+            <li>
+                <a href="144.html">RBX-CHI1</a>
+            </li>
+            <li class="active">
+                <a href="194.html">RBX-ASH1</a>
+            </li>
+            <li>
+                <a href="231.html">AmazonWest-Alpha</a>
+            </li>
+            <li>
+                <a href="275.html">RBX-SNC1</a>
+            </li>
+            <li>
+                <a href="296.html">RBX-ASH1X</a>
+            </li>
+            <li>
+                <a href="330.html">RBX-SNC2</a>
+            </li>
+            <li>
+                <a href="331.html">RBX-ASH2</a>
+            </li>
+    </ul>
+
+
+<form action="https://devops.sitetest1.roblox.local/Deployments/History" id="options-form" method="get">    <div class="panel panel-primary">
+        <div class="panel-body">
+            <div clas="row">
+                <div class="col-xs-2">
+                    <div class="form-group">
+                        <label for="PublicNetworks">Public Network</label>
+                        <select class="form-control input-sm filter" id="PublicNetworks" name="PublicNetworks"><option value="">[ Any Network ]</option>
+</select>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-group">
+                        <label for="HardwareClasses">Hardware Class</label>
+                        <select class="form-control input-sm filter" id="HardwareClasses" name="HardwareClasses"><option value="">[ Any Hardware ]</option>
+<option value="4">App-Intel-v3</option>
+<option value="26">App-Intel-v4</option>
+<option value="59">App-Intel-v5</option>
+<option value="78">AristaNetwork</option>
+<option value="2">DB-CoreData-Intel-v3</option>
+<option value="24">DB-CoreData-Intel-v4</option>
+<option value="29">DB-CoreData-Intel-v4-BigSSD</option>
+<option value="49">DB-CoreData-Intel-v4-GiantSSD</option>
+<option value="67">DB-CoreData-Intel-v5-BigSSD</option>
+<option value="70">DB-CoreData-Intel-v5-GiantSSD</option>
+<option value="95">DB-CoreData-Intel-v5-HugeSSD</option>
+<option value="74">DB-CoreData-Vitess-Intel-v5-GiantSSD</option>
+<option value="96">DB-CoreData-Vitess-Intel-v5-HugeSSD</option>
+<option value="52">DB-CoreDataMirror-Intel-v4</option>
+<option value="51">DB-CoreDataMirror-Intel-v4-BigSSD</option>
+<option value="50">DB-CoreDataMirror-Intel-v4-GiantSSD</option>
+<option value="69">DB-CoreDataMirror-Intel-v5-GiantSSD</option>
+<option value="94">DB-CoreDataMirror-Intel-v5-HugeSSD</option>
+<option value="14">DB-OLAP-Intel-v3</option>
+<option value="5">DB-Standby-Intel-v3</option>
+<option value="48">DB-Utility-Intel-v4</option>
+<option value="13">F5Network</option>
+<option value="22">File-Intel-v3</option>
+<option value="23">File-Intel-v4</option>
+<option value="93">Grid-AMDRome</option>
+<option value="20">Grid-Intel-32core</option>
+<option value="19">Grid-Intel-8core</option>
+<option value="91">Grid-Intel-v5</option>
+<option value="72">Grid-Intel-v6-Eval1</option>
+<option value="21">Grid-VM-8core</option>
+<option value="92">HyperV-AMDRome-Econ</option>
+<option value="9">HyperV-Intel-v3</option>
+<option value="28">HyperV-Intel-v3-BigHDD</option>
+<option value="68">HyperV-Intel-v3-BigMem</option>
+<option value="7">HyperV-Intel-v3-BigSSD</option>
+<option value="25">HyperV-Intel-v4</option>
+<option value="27">HyperV-Intel-v4-BigHDD</option>
+<option value="64">HyperV-Intel-v4-BigSSD</option>
+<option value="60">HyperV-Intel-v5</option>
+<option value="66">HyperV-Intel-v5-BigHDD</option>
+<option value="65">HyperV-Intel-v5-BigSSD</option>
+<option value="12">JuniperNetwork</option>
+<option value="34">KVMConsole</option>
+<option value="3">Linux-Intel-v3</option>
+<option value="89">Nomad-Intel-v3</option>
+<option value="31">PDU</option>
+<option value="90">PortWorx-Intel-v3</option>
+<option value="82">PXE-Override-Centos</option>
+<option value="81">PXE-Override-Ubuntu</option>
+<option value="83">PXE-Override-Windows</option>
+<option value="6">RAM-Intel-v2</option>
+<option value="17">RAM-Intel-v4</option>
+<option value="35">RAM-Intel-v4-BigSSD</option>
+<option value="62">RAM-Intel-v5</option>
+<option value="63">RAM-Intel-v5-BigSSD</option>
+<option value="32">SerialConsole</option>
+<option value="11">VirtualMachine</option>
+<option value="38">VM-LApp-CPU-Large</option>
+<option value="40">VM-LApp-CPU-Micro</option>
+<option value="37">VM-LApp-CPU-Small</option>
+<option value="46">VM-LApp-General-Large</option>
+<option value="45">VM-LApp-General-Medium</option>
+<option value="43">VM-LApp-General-Micro</option>
+<option value="44">VM-LApp-General-Small</option>
+<option value="39">VM-LApp-RAM-Large</option>
+<option value="47">VM-LApp-RAM-Small</option>
+<option value="36">VM-Util-CPU-Small</option>
+<option value="61">Web-AMD-EPYC</option>
+<option value="1">Web-Intel-v3</option>
+<option value="16">Web-Intel-v4</option>
+<option value="73">Web-Intel-v4-Romark</option>
+<option value="58">Web-Intel-v5</option>
+<option value="87">Web-Intel-V5-HAProxy</option>
+<option value="76">Web-Intel-v5-MCRouter</option>
+<option value="77">Web-Intel-v5-MCRouter2</option>
+<option value="79">Web-Intel-V5-Nomad</option>
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="row">
+    <div class="col-xs-2">
+        
+    <h2><a href="../AllServers/194.html">All Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>App-Intel-v4</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>AristaNetwork</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v4-BigSSD</td>
+                    <td>39</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v4-GiantSSD</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v5-BigSSD</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v5-GiantSSD</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreDataMirror-Intel-v4-BigSSD</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreDataMirror-Intel-v4-GiantSSD</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Vitess-Intel-v5-GiantSSD</td>
+                    <td>163</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v4</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v4-BigHDD</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v5</td>
+                    <td>155</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v5-BigHDD</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>JuniperNetwork</td>
+                    <td>222</td>
+                </tr>
+                <tr>
+                    <td>Not Classified</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v4-BigSSD</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>VirtualMachine</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v4</td>
+                    <td>497</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>2816</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>4198</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../LiveServers/194.html">Live Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>App-Intel-v4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>AristaNetwork</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v4-BigSSD</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v4-GiantSSD</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v5-BigSSD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v5-GiantSSD</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreDataMirror-Intel-v4-BigSSD</td>
+                    <td>39</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreDataMirror-Intel-v4-GiantSSD</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Vitess-Intel-v5-GiantSSD</td>
+                    <td>39</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v4</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v4-BigHDD</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v5-BigHDD</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>JuniperNetwork</td>
+                    <td>222</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v4-BigSSD</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>VirtualMachine</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v4</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>469</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>928</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../ReserveServers/194.html">Reserve Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>App-Intel-v4</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v4-BigSSD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v5-BigSSD</td>
+                    <td>51</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreDataMirror-Intel-v4-BigSSD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Vitess-Intel-v5-GiantSSD</td>
+                    <td>121</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v5</td>
+                    <td>145</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v5-BigHDD</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v4-BigSSD</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>VirtualMachine</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v4</td>
+                    <td>423</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>2244</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>3006</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../MaintenanceServers/194.html">Maintenance Servers</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>App-Intel-v4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreDataMirror-Intel-v4-GiantSSD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v5-BigHDD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Not Classified</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v4</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>23</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>46</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../BeingAllocated/194.html">Being Allocated</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>App-Intel-v4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v4-GiantSSD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v5-BigHDD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v4-BigSSD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v4</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>7</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>37</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../ReadyForAllocation/194.html">Ready For Allocation</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>Web-Intel-v4</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>2</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../Provisioning/194.html">Still Provisioning</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="194.html">Defective</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>App-Intel-v4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v4-GiantSSD</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Intel-v5-BigSSD</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreDataMirror-Intel-v4-GiantSSD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>DB-CoreData-Vitess-Intel-v5-GiantSSD</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v5</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Not Classified</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>RAM-Intel-v4-BigSSD</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v4</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>43</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>136</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><a href="../MigrationServers/194.html">Migration</a></h2>
+    <table class="table table-striped table-condensed not-too-small sortable-table">
+        <thead>
+            <tr>
+                <th>Hardware Class</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+                <tr>
+                    <td>DB-CoreData-Vitess-Intel-v5-GiantSSD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>HyperV-Intel-v5</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Not Classified</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Web-Intel-v5</td>
+                    <td>6</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>9</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    </div>
+    <div class="col-xs-10">
+        <h2>Defective Servers</h2>
+
+        <table id="mainTable" class="table table-striped table-condensed not-too-small sortable-table">
+            <thead>
+                <tr>
+                    <th>Server ID</th>
+                    <th>HostName</th>
+                    <th>Mac Address</th>
+                    <th>Primary IP</th>
+                    <th>Management IP</th>
+                    <th>Public Network</th>
+                    <th>Server Status</th>
+                    <th>Hardware Class</th>
+                    <th>Created Date</th>
+                    <th>Updated Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr class="393 49">
+                        <td><a href="../ServerDetails/94477.html">94477</a></td>
+                        <td>ASH1-DB2</td>
+                        <td>ac1f6b40adc0</td>
+                        <td>10.130.0.40</td>
+                        <td>10.131.16.168</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>DB-CoreData-Intel-v4-GiantSSD</td>
+                        <td>7/25/2018 12:18:03 PM</td>
+                        <td>10/28/2020 12:27:48 AM</td>
+                    </tr>
+                    <tr class="388 49">
+                        <td><a href="../ServerDetails/94558.html">94558</a></td>
+                        <td>ASH1-DB7</td>
+                        <td>d094662fe6b5</td>
+                        <td>10.130.0.168</td>
+                        <td>10.131.32.168</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>DB-CoreData-Intel-v4-GiantSSD</td>
+                        <td>7/31/2018 5:32:49 PM</td>
+                        <td>7/9/2020 2:59:58 AM</td>
+                    </tr>
+                    <tr class="393 50">
+                        <td><a href="../ServerDetails/95284.html">95284</a></td>
+                        <td>ASH1-LApp478</td>
+                        <td>ac1f6b40af2a</td>
+                        <td>10.130.0.44</td>
+                        <td>10.131.16.172</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>DB-CoreDataMirror-Intel-v4-GiantSSD</td>
+                        <td>8/9/2018 5:07:16 PM</td>
+                        <td>10/7/2020 10:17:17 PM</td>
+                    </tr>
+                    <tr class="395 49">
+                        <td><a href="../ServerDetails/95993.html">95993</a></td>
+                        <td>ASH1-DB99</td>
+                        <td>ac1f6b40adc4</td>
+                        <td>10.130.0.104</td>
+                        <td>10.131.17.40</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>DB-CoreData-Intel-v4-GiantSSD</td>
+                        <td>8/21/2018 5:34:53 PM</td>
+                        <td>10/28/2020 12:48:52 AM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/100768.html">100768</a></td>
+                        <td>JK7J9N2</td>
+                        <td>7cd30ae6e47a</td>
+                        <td>224.131.35.32</td>
+                        <td>224.131.35.32</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/14/2019 1:42:50 AM</td>
+                        <td>11/15/2019 2:57:14 AM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/100789.html">100789</a></td>
+                        <td>NM17BS007258</td>
+                        <td>ac1f6b40ab54</td>
+                        <td>10.131.17.38</td>
+                        <td>10.131.17.38</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/14/2019 8:40:17 PM</td>
+                        <td>7/13/2020 11:15:40 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/101319.html">101319</a></td>
+                        <td>ZM176S029187</td>
+                        <td>ac1f6b1aa5c0</td>
+                        <td>10.131.19.19</td>
+                        <td>10.131.19.19</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>2/23/2019 12:54:33 AM</td>
+                        <td>9/25/2019 1:00:53 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/101327.html">101327</a></td>
+                        <td>ZM176S028131</td>
+                        <td>ac1f6b1a97fc</td>
+                        <td>10.131.19.27</td>
+                        <td>10.131.19.27</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>2/23/2019 1:08:14 AM</td>
+                        <td>9/25/2019 1:01:39 PM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/101332.html">101332</a></td>
+                        <td>ZM16BS054059</td>
+                        <td>0cc47a9ad412</td>
+                        <td>10.131.19.32</td>
+                        <td>10.131.19.32</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>2/23/2019 1:17:35 AM</td>
+                        <td>11/14/2019 9:01:32 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/101355.html">101355</a></td>
+                        <td>ZM176S028889</td>
+                        <td>ac1f6b1aa380</td>
+                        <td>10.131.18.23</td>
+                        <td>10.131.18.23</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>2/23/2019 11:16:49 PM</td>
+                        <td>2/20/2020 8:30:34 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/101359.html">101359</a></td>
+                        <td>ZM176S025773</td>
+                        <td>ac1f6b1aa610</td>
+                        <td>10.131.18.27</td>
+                        <td>10.131.18.27</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>2/23/2019 11:26:51 PM</td>
+                        <td>4/8/2020 3:30:02 AM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/101368.html">101368</a></td>
+                        <td>ZM16CS019468</td>
+                        <td>0cc47a9c0f58</td>
+                        <td>10.131.18.41</td>
+                        <td>10.131.18.41</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>2/24/2019 12:28:03 AM</td>
+                        <td>11/14/2019 8:59:49 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/101533.html">101533</a></td>
+                        <td>ZM176S028898</td>
+                        <td>ac1f6b1aa392</td>
+                        <td>10.131.18.19</td>
+                        <td>10.131.18.19</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/28/2019 9:37:35 PM</td>
+                        <td>7/15/2020 7:23:26 PM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/101534.html">101534</a></td>
+                        <td>ZM16BS057300</td>
+                        <td>0cc47a9ad6ea</td>
+                        <td>10.131.19.7</td>
+                        <td>10.131.19.7</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>2/28/2019 9:37:46 PM</td>
+                        <td>11/15/2019 2:41:04 AM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/103297.html">103297</a></td>
+                        <td>8BFZLN2</td>
+                        <td>7cd30a5327c0</td>
+                        <td>10.131.35.27</td>
+                        <td>10.131.35.27</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>4/30/2019 4:55:06 PM</td>
+                        <td>5/1/2019 1:06:44 AM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/103312.html">103312</a></td>
+                        <td>4G98MN2</td>
+                        <td>7cd30ad7f6bc</td>
+                        <td>10.131.35.22</td>
+                        <td>10.131.35.22</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>5/1/2019 8:00:21 PM</td>
+                        <td>5/2/2019 4:03:33 AM</td>
+                    </tr>
+                    <tr class="735 35">
+                        <td><a href="../ServerDetails/104031.html">104031</a></td>
+                        <td>ZM176S028856</td>
+                        <td>ac1f6b1aa342</td>
+                        <td></td>
+                        <td>10.131.21.23</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>6/5/2019 3:42:06 AM</td>
+                        <td>4/16/2020 6:55:43 PM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/107088.html">107088</a></td>
+                        <td>ZM175S009889</td>
+                        <td>ac1f6b17f3be</td>
+                        <td>10.131.20.134</td>
+                        <td>10.131.20.134</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>8/21/2019 12:56:16 AM</td>
+                        <td>11/15/2019 2:40:29 AM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/107103.html">107103</a></td>
+                        <td>ZM16BS025951</td>
+                        <td>0cc47a99251c</td>
+                        <td>10.131.20.30</td>
+                        <td>10.131.20.30</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>8/21/2019 1:27:10 AM</td>
+                        <td>12/4/2019 9:25:42 PM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/107108.html">107108</a></td>
+                        <td>ZM175S009275</td>
+                        <td>ac1f6b17eeee</td>
+                        <td>10.130.2.6</td>
+                        <td>10.131.20.6</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>8/21/2019 1:28:56 AM</td>
+                        <td>11/15/2019 2:35:16 AM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/107127.html">107127</a></td>
+                        <td>ZM176S028274</td>
+                        <td>ac1f6b1a9908</td>
+                        <td>10.131.20.156</td>
+                        <td>10.131.20.156</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>8/21/2019 1:52:24 AM</td>
+                        <td>11/21/2019 1:39:53 AM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/107137.html">107137</a></td>
+                        <td>ZM176S028189</td>
+                        <td>ac1f6b1a9866</td>
+                        <td>10.131.20.165</td>
+                        <td>10.131.20.165</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>8/21/2019 2:01:25 AM</td>
+                        <td>11/15/2019 2:52:55 AM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/107159.html">107159</a></td>
+                        <td>ZM176S027970</td>
+                        <td>ac1f6b1a96d8</td>
+                        <td>10.131.20.41</td>
+                        <td>10.131.20.41</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>8/21/2019 4:19:07 PM</td>
+                        <td>11/15/2019 2:41:14 AM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/108325.html">108325</a></td>
+                        <td>ZM16CS019749</td>
+                        <td>0cc47a9c1182</td>
+                        <td>10.131.20.171</td>
+                        <td>10.131.20.171</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>9/20/2019 1:28:05 AM</td>
+                        <td>11/22/2019 8:03:20 PM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/108327.html">108327</a></td>
+                        <td>ZM16CS019445</td>
+                        <td>0cc47a9c0f28</td>
+                        <td>10.131.20.170</td>
+                        <td>10.131.20.170</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>9/20/2019 1:28:16 AM</td>
+                        <td>11/28/2019 12:36:04 AM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/108347.html">108347</a></td>
+                        <td>ZM175S009161</td>
+                        <td>ac1f6b17ee08</td>
+                        <td>224.131.21.6</td>
+                        <td>10.131.21.6</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>9/23/2019 4:14:18 PM</td>
+                        <td>12/19/2019 4:10:26 PM</td>
+                    </tr>
+                    <tr class="735 16">
+                        <td><a href="../ServerDetails/108363.html">108363</a></td>
+                        <td>ASH1-Web124</td>
+                        <td>0cc47a9c1370</td>
+                        <td>10.131.21.39</td>
+                        <td>10.131.21.39</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>9/23/2019 4:30:00 PM</td>
+                        <td>2/8/2020 8:05:42 PM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/108371.html">108371</a></td>
+                        <td>ZM16CS019989</td>
+                        <td>0cc47a9c135c</td>
+                        <td>10.131.21.37</td>
+                        <td>10.131.21.37</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>9/23/2019 4:30:19 PM</td>
+                        <td>11/15/2019 2:52:32 AM</td>
+                    </tr>
+                    <tr class="739 16">
+                        <td><a href="../ServerDetails/108447.html">108447</a></td>
+                        <td>ZM175S009216</td>
+                        <td>ac1f6b17ee74</td>
+                        <td>224.131.22.6</td>
+                        <td>224.131.22.6</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>9/25/2019 3:02:57 AM</td>
+                        <td>12/19/2019 4:10:28 PM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/108455.html">108455</a></td>
+                        <td>ZM16BS057044</td>
+                        <td>0cc47a9ad4f4</td>
+                        <td>10.131.22.30</td>
+                        <td>10.131.22.30</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>9/25/2019 3:18:13 AM</td>
+                        <td>11/22/2019 7:50:40 PM</td>
+                    </tr>
+                    <tr class="739 16">
+                        <td><a href="../ServerDetails/108456.html">108456</a></td>
+                        <td>ASH1-Web173</td>
+                        <td>ac1f6b1a987c</td>
+                        <td>10.131.22.38</td>
+                        <td>10.131.22.38</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>9/25/2019 3:18:17 AM</td>
+                        <td>2/10/2020 3:48:35 AM</td>
+                    </tr>
+                    <tr class="26">
+                        <td><a href="../ServerDetails/108469.html">108469</a></td>
+                        <td>ZM175S009450</td>
+                        <td>ac1f6b17f04e</td>
+                        <td>10.131.22.139</td>
+                        <td>10.131.22.139</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>App-Intel-v4</td>
+                        <td>9/25/2019 5:30:00 PM</td>
+                        <td>9/26/2019 4:21:24 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108470.html">108470</a></td>
+                        <td>ZM176S029149</td>
+                        <td>ac1f6b1aa574</td>
+                        <td>10.131.22.155</td>
+                        <td>10.131.22.155</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/25/2019 5:30:04 PM</td>
+                        <td>9/26/2019 7:35:07 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108475.html">108475</a></td>
+                        <td>ZM176S028827</td>
+                        <td>ac1f6b1aa306</td>
+                        <td>10.131.22.147</td>
+                        <td>10.131.22.147</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/25/2019 5:30:13 PM</td>
+                        <td>9/26/2019 5:19:59 PM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/108476.html">108476</a></td>
+                        <td>ZM175S009559</td>
+                        <td>ac1f6b17f126</td>
+                        <td>10.130.3.73</td>
+                        <td>10.131.22.137</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>9/25/2019 5:30:14 PM</td>
+                        <td>11/21/2019 9:40:21 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108484.html">108484</a></td>
+                        <td>ZM176S028834</td>
+                        <td>ac1f6b1aa314</td>
+                        <td>10.131.22.151</td>
+                        <td>10.131.22.151</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/25/2019 5:32:27 PM</td>
+                        <td>7/15/2020 8:41:59 PM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/108487.html">108487</a></td>
+                        <td>ZM175S009574</td>
+                        <td>ac1f6b17f144</td>
+                        <td>10.131.22.136</td>
+                        <td>10.131.22.136</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>9/25/2019 5:34:50 PM</td>
+                        <td>11/15/2019 2:40:32 AM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/108501.html">108501</a></td>
+                        <td>ZM177S002938</td>
+                        <td>ac1f6b1af228</td>
+                        <td>10.131.22.165</td>
+                        <td>10.131.22.165</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>9/25/2019 5:44:08 PM</td>
+                        <td>11/26/2019 6:27:47 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108518.html">108518</a></td>
+                        <td>ZM176S028880</td>
+                        <td>ac1f6b1aa370</td>
+                        <td>10.131.23.19</td>
+                        <td>10.131.23.19</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/26/2019 12:49:36 AM</td>
+                        <td>11/21/2019 10:28:59 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108522.html">108522</a></td>
+                        <td>ZM176S030207</td>
+                        <td>ac1f6b1aa660</td>
+                        <td>10.131.23.27</td>
+                        <td>10.131.23.27</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/26/2019 12:49:47 AM</td>
+                        <td>9/26/2019 8:20:56 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108532.html">108532</a></td>
+                        <td>ZM177S005538</td>
+                        <td>ac1f6b1b220a</td>
+                        <td>10.131.23.23</td>
+                        <td>10.131.23.23</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/26/2019 12:51:58 AM</td>
+                        <td>9/26/2019 7:35:07 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108561.html">108561</a></td>
+                        <td>ZM176S030195</td>
+                        <td>ac1f6b1aa648</td>
+                        <td>10.131.23.147</td>
+                        <td>10.131.23.147</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/26/2019 1:12:27 AM</td>
+                        <td>9/26/2019 3:21:04 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108564.html">108564</a></td>
+                        <td>ZM177S005611</td>
+                        <td>ac1f6b1b229a</td>
+                        <td>10.131.23.155</td>
+                        <td>10.131.23.155</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/26/2019 1:12:35 AM</td>
+                        <td>9/26/2019 5:19:20 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108566.html">108566</a></td>
+                        <td>ZM177S002983</td>
+                        <td>ac1f6b1af27e</td>
+                        <td>10.131.23.151</td>
+                        <td>10.131.23.151</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/26/2019 1:15:56 AM</td>
+                        <td>9/26/2019 8:44:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/108576.html">108576</a></td>
+                        <td>ZM176S029228</td>
+                        <td>ac1f6b1aa60c</td>
+                        <td>10.131.23.146</td>
+                        <td>10.131.23.146</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>9/26/2019 1:37:51 AM</td>
+                        <td>7/14/2020 4:04:11 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108594.html">108594</a></td>
+                        <td>ZM176S029062</td>
+                        <td>ac1f6b1aa4cc</td>
+                        <td>10.131.24.23</td>
+                        <td>10.131.24.23</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/26/2019 1:51:48 AM</td>
+                        <td>7/15/2020 12:50:59 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108597.html">108597</a></td>
+                        <td>ZM176S028979</td>
+                        <td>ac1f6b1aa42c</td>
+                        <td>10.131.24.19</td>
+                        <td>10.131.24.19</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/26/2019 1:52:01 AM</td>
+                        <td>7/15/2020 4:04:03 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108600.html">108600</a></td>
+                        <td>ZM176S025776</td>
+                        <td>ac1f6b1aa614</td>
+                        <td>10.131.24.27</td>
+                        <td>10.131.24.27</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>9/26/2019 1:52:04 AM</td>
+                        <td>9/26/2019 5:19:32 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/108610.html">108610</a></td>
+                        <td>ZM176S028101</td>
+                        <td>ac1f6b1a97c8</td>
+                        <td>10.131.24.34</td>
+                        <td>10.131.24.34</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>9/26/2019 1:58:02 AM</td>
+                        <td>9/26/2019 10:53:06 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108784.html">108784</a></td>
+                        <td>ZM176S027994</td>
+                        <td>ac1f6b1a9704</td>
+                        <td>10.131.24.155</td>
+                        <td>10.131.24.155</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/2/2019 11:07:23 PM</td>
+                        <td>11/22/2019 6:27:39 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108790.html">108790</a></td>
+                        <td>ZM176S029181</td>
+                        <td>ac1f6b1aa5b4</td>
+                        <td>10.131.24.147</td>
+                        <td>10.131.24.147</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/2/2019 11:31:52 PM</td>
+                        <td>10/3/2019 2:28:44 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108791.html">108791</a></td>
+                        <td>ZM177S002853</td>
+                        <td>ac1f6b1af180</td>
+                        <td>10.131.24.151</td>
+                        <td>10.131.24.151</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/2/2019 11:31:54 PM</td>
+                        <td>11/22/2019 2:13:32 AM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/108806.html">108806</a></td>
+                        <td>ZM176S030193</td>
+                        <td>ac1f6b1aa644</td>
+                        <td>10.131.24.149</td>
+                        <td>10.131.24.149</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>10/2/2019 11:45:23 PM</td>
+                        <td>7/14/2020 10:10:43 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108901.html">108901</a></td>
+                        <td>ZM176S030194</td>
+                        <td>ac1f6b1aa646</td>
+                        <td>10.131.25.23</td>
+                        <td>10.131.25.23</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/3/2019 11:49:30 PM</td>
+                        <td>11/27/2019 3:15:03 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108904.html">108904</a></td>
+                        <td>ZM177S005536</td>
+                        <td>ac1f6b1b2206</td>
+                        <td>10.131.25.27</td>
+                        <td>10.131.25.27</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/3/2019 11:49:38 PM</td>
+                        <td>11/27/2019 1:27:25 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108907.html">108907</a></td>
+                        <td>ZM176S029086</td>
+                        <td>ac1f6b1aa4fa</td>
+                        <td>10.131.25.19</td>
+                        <td>10.131.25.19</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/3/2019 11:54:12 PM</td>
+                        <td>11/27/2019 2:54:57 AM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/108919.html">108919</a></td>
+                        <td>ZM176S028178</td>
+                        <td>ac1f6b1a9850</td>
+                        <td>10.131.25.35</td>
+                        <td>10.131.25.35</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>10/4/2019 12:03:25 AM</td>
+                        <td>11/15/2019 2:52:45 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108945.html">108945</a></td>
+                        <td>ZM176S028776</td>
+                        <td>ac1f6b1aa2a2</td>
+                        <td>10.131.25.151</td>
+                        <td>10.131.25.151</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/4/2019 12:11:38 AM</td>
+                        <td>11/27/2019 10:05:10 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108951.html">108951</a></td>
+                        <td>ZM177S002950</td>
+                        <td>ac1f6b1af240</td>
+                        <td>10.131.25.147</td>
+                        <td>10.131.25.147</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/4/2019 12:11:52 AM</td>
+                        <td>11/27/2019 9:45:19 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108953.html">108953</a></td>
+                        <td>ZM176S030189</td>
+                        <td>ac1f6b1aa63e</td>
+                        <td>10.131.25.155</td>
+                        <td>10.131.25.155</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/4/2019 12:11:52 AM</td>
+                        <td>11/27/2019 9:33:04 AM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/108968.html">108968</a></td>
+                        <td>ZM176S028408</td>
+                        <td>ac1f6b1a9a0a</td>
+                        <td>10.131.25.164</td>
+                        <td>10.131.25.164</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>10/4/2019 12:22:43 AM</td>
+                        <td>11/26/2019 11:58:05 PM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108972.html">108972</a></td>
+                        <td>ZM176S029194</td>
+                        <td>ac1f6b1aa5ce</td>
+                        <td>10.131.26.23</td>
+                        <td>10.131.26.23</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/4/2019 12:22:56 AM</td>
+                        <td>11/27/2019 3:16:33 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108973.html">108973</a></td>
+                        <td>ZM176S028086</td>
+                        <td>ac1f6b1a97ac</td>
+                        <td>10.131.26.27</td>
+                        <td>10.131.26.27</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/4/2019 12:23:00 AM</td>
+                        <td>11/27/2019 3:16:35 AM</td>
+                    </tr>
+                    <tr class="35">
+                        <td><a href="../ServerDetails/108975.html">108975</a></td>
+                        <td>ZM177S005645</td>
+                        <td>ac1f6b1b22de</td>
+                        <td>10.131.26.19</td>
+                        <td>10.131.26.19</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>RAM-Intel-v4-BigSSD</td>
+                        <td>10/4/2019 12:23:01 AM</td>
+                        <td>11/27/2019 5:00:18 AM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/108977.html">108977</a></td>
+                        <td>ZM166S039475</td>
+                        <td>ac1f6b17edbe</td>
+                        <td>10.131.25.160</td>
+                        <td>10.131.25.160</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>10/4/2019 12:25:38 AM</td>
+                        <td>11/27/2019 9:34:38 AM</td>
+                    </tr>
+                    <tr class="16">
+                        <td><a href="../ServerDetails/109002.html">109002</a></td>
+                        <td>ZM175S009525</td>
+                        <td>ac1f6b17f0e4</td>
+                        <td>10.131.26.10</td>
+                        <td>10.131.26.10</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v4</td>
+                        <td>10/4/2019 12:33:48 AM</td>
+                        <td>7/15/2020 7:40:36 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/111471.html">111471</a></td>
+                        <td>10FP0S2</td>
+                        <td>b4969134eab8</td>
+                        <td>10.131.25.177</td>
+                        <td>10.131.25.177</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>12/9/2019 1:39:41 PM</td>
+                        <td>12/9/2019 9:42:37 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/112758.html">112758</a></td>
+                        <td>OM198S045342</td>
+                        <td>ac1f6bbc5404</td>
+                        <td>10.131.80.161</td>
+                        <td>10.131.80.161</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>1/31/2020 1:18:31 AM</td>
+                        <td>7/18/2020 1:18:29 AM</td>
+                    </tr>
+                    <tr class="984 58">
+                        <td><a href="../ServerDetails/112851.html">112851</a></td>
+                        <td>ASH1-Web645</td>
+                        <td>ac1f6bbc55b8</td>
+                        <td>10.131.81.168</td>
+                        <td>10.131.81.168</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>2/1/2020 12:30:39 PM</td>
+                        <td>3/5/2020 8:40:13 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/112872.html">112872</a></td>
+                        <td>OM198S054237</td>
+                        <td>ac1f6bbc5cc4</td>
+                        <td>10.131.82.15</td>
+                        <td>10.131.82.15</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/1/2020 3:40:20 PM</td>
+                        <td>2/2/2020 1:12:29 AM</td>
+                    </tr>
+                    <tr class="986 58">
+                        <td><a href="../ServerDetails/112874.html">112874</a></td>
+                        <td>ASH1-LApp355</td>
+                        <td>ac1f6bbc5cc6</td>
+                        <td>10.131.82.17</td>
+                        <td>10.131.82.17</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>2/1/2020 3:43:47 PM</td>
+                        <td>7/9/2020 7:39:43 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/113114.html">113114</a></td>
+                        <td>OM198S002477</td>
+                        <td>ac1f6bbc56f8</td>
+                        <td>10.131.39.13</td>
+                        <td>10.131.39.13</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/2/2020 11:13:14 PM</td>
+                        <td>2/3/2020 1:57:45 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/113118.html">113118</a></td>
+                        <td>OM198S002501</td>
+                        <td>ac1f6bbc5d58</td>
+                        <td>10.131.39.21</td>
+                        <td>10.131.39.21</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/2/2020 11:13:15 PM</td>
+                        <td>2/3/2020 2:44:29 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/113119.html">113119</a></td>
+                        <td>OM198S002548</td>
+                        <td>ac1f6bbc62c6</td>
+                        <td>10.131.39.23</td>
+                        <td>10.131.39.23</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/2/2020 11:13:15 PM</td>
+                        <td>2/3/2020 2:44:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/113121.html">113121</a></td>
+                        <td>OM198S002559</td>
+                        <td>ac1f6bbc5a1a</td>
+                        <td>10.131.39.18</td>
+                        <td>10.131.39.18</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/2/2020 11:13:15 PM</td>
+                        <td>2/3/2020 2:43:51 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/113122.html">113122</a></td>
+                        <td>OM198S002535</td>
+                        <td>ac1f6bbc630c</td>
+                        <td>10.131.39.16</td>
+                        <td>10.131.39.16</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/2/2020 11:13:15 PM</td>
+                        <td>2/3/2020 3:04:03 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/113129.html">113129</a></td>
+                        <td>OM198S002468</td>
+                        <td>ac1f6bbc6c44</td>
+                        <td>10.131.39.6</td>
+                        <td>10.131.39.6</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/2/2020 11:16:06 PM</td>
+                        <td>2/3/2020 2:43:54 PM</td>
+                    </tr>
+                    <tr class="1006 58">
+                        <td><a href="../ServerDetails/113142.html">113142</a></td>
+                        <td>ASH1-Web840</td>
+                        <td>ac1f6bbc5f0a</td>
+                        <td>10.130.8.168</td>
+                        <td>10.131.39.40</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>2/2/2020 11:32:56 PM</td>
+                        <td>7/10/2020 8:34:02 PM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/113588.html">113588</a></td>
+                        <td>OM199S001697</td>
+                        <td>ac1f6bbc5b3e</td>
+                        <td>10.131.85.149</td>
+                        <td>10.131.85.149</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>2/8/2020 11:35:28 AM</td>
+                        <td>9/21/2020 11:07:54 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/113648.html">113648</a></td>
+                        <td>OM197S018434</td>
+                        <td>ac1f6bbc5ddc</td>
+                        <td>10.131.86.6</td>
+                        <td>10.131.86.6</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/9/2020 11:06:59 AM</td>
+                        <td>2/9/2020 7:54:34 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/114007.html">114007</a></td>
+                        <td>GJ7J4Z2</td>
+                        <td>b496914e92f8</td>
+                        <td>10.131.40.9</td>
+                        <td>10.131.40.9</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/16/2020 11:25:31 AM</td>
+                        <td>2/16/2020 8:30:05 PM</td>
+                    </tr>
+                    <tr class="1010 58">
+                        <td><a href="../ServerDetails/114087.html">114087</a></td>
+                        <td>ASH1-Web1421</td>
+                        <td>b496915c7ec4</td>
+                        <td>10.130.9.139</td>
+                        <td>10.131.41.11</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>2/16/2020 11:51:35 PM</td>
+                        <td>7/10/2020 8:43:49 PM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/114167.html">114167</a></td>
+                        <td>HN6L9Z2</td>
+                        <td>b496915c836c</td>
+                        <td>10.131.41.142</td>
+                        <td>10.131.41.142</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>2/17/2020 2:26:41 PM</td>
+                        <td>7/10/2020 8:41:21 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/114174.html">114174</a></td>
+                        <td>B7JK9Z2</td>
+                        <td>b496915c8014</td>
+                        <td>10.131.41.150</td>
+                        <td>10.131.41.150</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/17/2020 2:49:12 PM</td>
+                        <td>2/18/2020 12:09:55 AM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/114248.html">114248</a></td>
+                        <td>OM199S009714</td>
+                        <td>ac1f6bbc5f50</td>
+                        <td>224.131.87.41</td>
+                        <td>224.131.87.41</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/19/2020 12:24:46 AM</td>
+                        <td>2/9/2021 7:42:52 PM</td>
+                    </tr>
+                    <tr class="948 58">
+                        <td><a href="../ServerDetails/114304.html">114304</a></td>
+                        <td>ASH1-Web1605</td>
+                        <td>b496915c1b10</td>
+                        <td>10.131.108.35</td>
+                        <td>10.131.103.28</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>2/19/2020 1:54:06 AM</td>
+                        <td>7/16/2020 8:27:41 PM</td>
+                    </tr>
+                    <tr class="948 58">
+                        <td><a href="../ServerDetails/114309.html">114309</a></td>
+                        <td>ASH1-LApp279</td>
+                        <td>b496914e9588</td>
+                        <td>10.130.45.165</td>
+                        <td>10.131.108.37</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>2/19/2020 2:04:10 AM</td>
+                        <td>1/13/2021 4:15:49 PM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/114356.html">114356</a></td>
+                        <td>48YW4Z2</td>
+                        <td>b496915aebd4</td>
+                        <td>10.131.107.37</td>
+                        <td>10.131.107.37</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>2/19/2020 5:46:27 PM</td>
+                        <td>7/10/2020 3:48:09 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/114562.html">114562</a></td>
+                        <td>9N2X4Z2</td>
+                        <td>b496915c7f84</td>
+                        <td>10.131.97.163</td>
+                        <td>10.131.97.163</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>2/21/2020 10:37:18 PM</td>
+                        <td>7/18/2020 5:29:34 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/114584.html">114584</a></td>
+                        <td>5CMV4Z2</td>
+                        <td>b496914e7494</td>
+                        <td>10.131.97.169</td>
+                        <td>10.131.97.169</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>2/21/2020 10:50:58 PM</td>
+                        <td>7/10/2020 8:17:43 PM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/115120.html">115120</a></td>
+                        <td>5C6L9Z2</td>
+                        <td>b496915ae328</td>
+                        <td>10.131.101.137</td>
+                        <td>10.131.101.137</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>3/4/2020 11:51:23 AM</td>
+                        <td>7/15/2020 7:21:14 PM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/115417.html">115417</a></td>
+                        <td>8GCL9Z2</td>
+                        <td>b496915c1490</td>
+                        <td>224.131.101.20</td>
+                        <td>224.131.101.20</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>3/16/2020 1:47:29 PM</td>
+                        <td>7/8/2020 11:14:57 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/115434.html">115434</a></td>
+                        <td>9MQK9Z2</td>
+                        <td>b496915c85f0</td>
+                        <td>10.131.101.37</td>
+                        <td>10.131.101.37</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>3/16/2020 2:06:22 PM</td>
+                        <td>3/16/2020 11:32:23 PM</td>
+                    </tr>
+                    <tr class="67">
+                        <td><a href="../ServerDetails/116137.html">116137</a></td>
+                        <td>7NFFMR2</td>
+                        <td>e4434b2779ec</td>
+                        <td>10.131.34.162</td>
+                        <td>10.131.34.162</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>DB-CoreData-Intel-v5-BigSSD</td>
+                        <td>3/31/2020 4:34:18 PM</td>
+                        <td>9/26/2020 1:34:31 AM</td>
+                    </tr>
+                    <tr class="67">
+                        <td><a href="../ServerDetails/116158.html">116158</a></td>
+                        <td>7NNGMR2</td>
+                        <td>e4434b21c67c</td>
+                        <td>10.131.34.28</td>
+                        <td>10.131.34.28</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>DB-CoreData-Intel-v5-BigSSD</td>
+                        <td>4/1/2020 12:01:54 PM</td>
+                        <td>6/5/2020 7:38:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/116350.html">116350</a></td>
+                        <td>5C005Z2</td>
+                        <td>b496914e6f04</td>
+                        <td>10.131.104.8</td>
+                        <td>10.131.104.8</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>4/4/2020 9:35:15 PM</td>
+                        <td>9/15/2020 10:30:46 PM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/116387.html">116387</a></td>
+                        <td>9MVZ4Z2</td>
+                        <td>b496915c12c0</td>
+                        <td>10.131.103.152</td>
+                        <td>10.131.103.152</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>4/4/2020 9:54:12 PM</td>
+                        <td>7/18/2020 1:45:09 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/116399.html">116399</a></td>
+                        <td>9N5Z4Z2</td>
+                        <td>b496915c84bc</td>
+                        <td>10.131.103.158</td>
+                        <td>10.131.103.158</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>4/4/2020 10:00:53 PM</td>
+                        <td>7/18/2020 1:45:01 AM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/116898.html">116898</a></td>
+                        <td>5CC05Z2</td>
+                        <td>b496915ae930</td>
+                        <td>10.131.102.13</td>
+                        <td>10.131.102.13</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>4/17/2020 12:50:48 AM</td>
+                        <td>4/17/2020 10:13:59 AM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/116911.html">116911</a></td>
+                        <td>9MTW4Z2</td>
+                        <td>b496915c8470</td>
+                        <td>10.131.102.24</td>
+                        <td>10.131.102.24</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>4/17/2020 1:01:45 AM</td>
+                        <td>4/17/2020 10:41:58 AM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/116918.html">116918</a></td>
+                        <td>5C9V4Z2</td>
+                        <td>b496915ae384</td>
+                        <td>10.131.102.29</td>
+                        <td>10.131.102.29</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>4/17/2020 1:07:14 AM</td>
+                        <td>4/17/2020 10:41:34 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/116921.html">116921</a></td>
+                        <td>5C215Z2</td>
+                        <td>b496915aebec</td>
+                        <td>10.131.102.31</td>
+                        <td>10.131.102.31</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>4/17/2020 1:09:28 AM</td>
+                        <td>9/21/2020 7:10:12 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/116926.html">116926</a></td>
+                        <td>492Y4Z2</td>
+                        <td>b496914e72e0</td>
+                        <td>10.131.102.34</td>
+                        <td>10.131.102.34</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>4/17/2020 1:12:47 AM</td>
+                        <td>4/17/2020 10:41:34 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/116927.html">116927</a></td>
+                        <td>492W4Z2</td>
+                        <td>b496914e72d4</td>
+                        <td>10.131.102.36</td>
+                        <td>10.131.102.36</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>4/17/2020 1:13:54 AM</td>
+                        <td>9/21/2020 7:05:05 PM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/117799.html">117799</a></td>
+                        <td>5C1X4Z2</td>
+                        <td>b496915ae3c0</td>
+                        <td>10.131.43.23</td>
+                        <td>10.131.43.23</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>5/13/2020 2:29:48 PM</td>
+                        <td>7/10/2020 8:37:39 PM</td>
+                    </tr>
+                    <tr class="946 58">
+                        <td><a href="../ServerDetails/122366.html">122366</a></td>
+                        <td>ASH1-Web2404</td>
+                        <td>b496915c86fc</td>
+                        <td>10.130.44.20</td>
+                        <td>10.131.129.20</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>7/9/2020 5:06:34 PM</td>
+                        <td>11/12/2020 11:07:23 AM</td>
+                    </tr>
+                    <tr class="946 58">
+                        <td><a href="../ServerDetails/122367.html">122367</a></td>
+                        <td>ASH1-Web2405</td>
+                        <td>b496915c86a0</td>
+                        <td>10.130.44.21</td>
+                        <td>10.131.129.21</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>7/9/2020 5:11:04 PM</td>
+                        <td>11/12/2020 10:50:59 AM</td>
+                    </tr>
+                    <tr class="946 58">
+                        <td><a href="../ServerDetails/122973.html">122973</a></td>
+                        <td>ASH1-Web2477</td>
+                        <td>b496914e92c4</td>
+                        <td>10.130.44.34</td>
+                        <td>10.131.129.34</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>7/16/2020 4:32:11 PM</td>
+                        <td>11/12/2020 10:44:31 AM</td>
+                    </tr>
+                    <tr class="74">
+                        <td><a href="../ServerDetails/136001.html">136001</a></td>
+                        <td>4Q8S243</td>
+                        <td>e4434be094fc</td>
+                        <td>10.130.45.222</td>
+                        <td>10.131.112.158</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>DB-CoreData-Vitess-Intel-v5-GiantSSD</td>
+                        <td>10/28/2020 1:30:02 PM</td>
+                        <td>10/29/2020 9:38:07 AM</td>
+                    </tr>
+                    <tr class="74">
+                        <td><a href="../ServerDetails/136084.html">136084</a></td>
+                        <td>4QFT243</td>
+                        <td>e4434be20b8c</td>
+                        <td>10.130.46.196</td>
+                        <td>10.131.114.132</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>DB-CoreData-Vitess-Intel-v5-GiantSSD</td>
+                        <td>10/29/2020 1:20:14 AM</td>
+                        <td>10/29/2020 9:38:07 AM</td>
+                    </tr>
+                    <tr class="1208 58">
+                        <td><a href="../ServerDetails/138912.html">138912</a></td>
+                        <td>ASH1-LApp671</td>
+                        <td>ac1f6bbc41b0</td>
+                        <td>10.130.70.6</td>
+                        <td>10.131.128.134</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>11/11/2020 2:40:58 AM</td>
+                        <td>1/14/2021 1:04:21 AM</td>
+                    </tr>
+                    <tr class="60">
+                        <td><a href="../ServerDetails/144851.html">144851</a></td>
+                        <td>HP6P243</td>
+                        <td>b4969189b070</td>
+                        <td>10.130.46.152</td>
+                        <td>10.131.114.24</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>HyperV-Intel-v5</td>
+                        <td>12/1/2020 7:49:08 PM</td>
+                        <td>12/2/2020 3:51:02 AM</td>
+                    </tr>
+                    <tr class="1361 58">
+                        <td><a href="../ServerDetails/145528.html">145528</a></td>
+                        <td>ASH1-LApp712</td>
+                        <td>b496918a1dc4</td>
+                        <td>10.130.48.70</td>
+                        <td>10.131.117.134</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/3/2020 3:01:26 PM</td>
+                        <td>2/10/2021 5:58:23 AM</td>
+                    </tr>
+                    <tr class="1361 58">
+                        <td><a href="../ServerDetails/145560.html">145560</a></td>
+                        <td>ASH1-LApp724</td>
+                        <td>b496918a2340</td>
+                        <td>10.130.48.72</td>
+                        <td>10.131.117.136</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/3/2020 3:26:13 PM</td>
+                        <td>2/10/2021 5:58:14 AM</td>
+                    </tr>
+                    <tr class="1331 58">
+                        <td><a href="../ServerDetails/145563.html">145563</a></td>
+                        <td>ASH1-LApp725</td>
+                        <td>b496918a5850</td>
+                        <td>10.130.48.194</td>
+                        <td>10.131.118.130</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/3/2020 3:27:17 PM</td>
+                        <td>2/10/2021 5:58:23 AM</td>
+                    </tr>
+                    <tr class="1303 60">
+                        <td><a href="../ServerDetails/145768.html">145768</a></td>
+                        <td>ASH1-Vx179</td>
+                        <td>b4969189b274</td>
+                        <td>10.130.47.138</td>
+                        <td>10.131.116.10</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>HyperV-Intel-v5</td>
+                        <td>12/4/2020 3:04:05 AM</td>
+                        <td>2/10/2021 5:58:12 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/147419.html">147419</a></td>
+                        <td>3WB1853</td>
+                        <td>b496918c1bf0</td>
+                        <td>10.130.49.11</td>
+                        <td>10.131.119.11</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/8/2020 2:15:39 PM</td>
+                        <td>12/8/2020 10:29:07 PM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150376.html">150376</a></td>
+                        <td>HDXV753</td>
+                        <td>b496918a3224</td>
+                        <td>10.130.49.209</td>
+                        <td>10.131.120.145</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:15:36 PM</td>
+                        <td>12/17/2020 5:23:58 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150407.html">150407</a></td>
+                        <td>3WT8853</td>
+                        <td>b496918a5044</td>
+                        <td>10.130.50.223</td>
+                        <td>10.131.122.159</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:28:09 PM</td>
+                        <td>12/17/2020 5:35:19 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150412.html">150412</a></td>
+                        <td>3Y82853</td>
+                        <td>b496918c1670</td>
+                        <td>10.130.50.205</td>
+                        <td>10.131.122.141</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:29:09 PM</td>
+                        <td>12/17/2020 5:37:23 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150414.html">150414</a></td>
+                        <td>4BK8853</td>
+                        <td>b496918c1720</td>
+                        <td>10.130.50.210</td>
+                        <td>10.131.122.146</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:29:45 PM</td>
+                        <td>12/17/2020 5:37:24 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150416.html">150416</a></td>
+                        <td>3XP8853</td>
+                        <td>b496918a562c</td>
+                        <td>10.130.50.231</td>
+                        <td>10.131.122.167</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:30:52 PM</td>
+                        <td>12/17/2020 5:35:24 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150417.html">150417</a></td>
+                        <td>3WF1853</td>
+                        <td>b496918a4fd0</td>
+                        <td>10.130.51.45</td>
+                        <td>10.131.123.45</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:31:13 PM</td>
+                        <td>12/17/2020 5:41:09 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150443.html">150443</a></td>
+                        <td>3WHZ753</td>
+                        <td>b496918c187c</td>
+                        <td>10.130.50.197</td>
+                        <td>10.131.122.133</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:48:52 PM</td>
+                        <td>12/17/2020 5:59:14 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150447.html">150447</a></td>
+                        <td>3XQ8853</td>
+                        <td>b496918c1ad4</td>
+                        <td>10.130.51.29</td>
+                        <td>10.131.123.29</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:50:01 PM</td>
+                        <td>12/17/2020 5:59:30 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150448.html">150448</a></td>
+                        <td>3XM7853</td>
+                        <td>b496918a5364</td>
+                        <td>10.130.51.24</td>
+                        <td>10.131.123.24</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:50:02 PM</td>
+                        <td>12/17/2020 5:59:30 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150451.html">150451</a></td>
+                        <td>3XN5853</td>
+                        <td>b496918a3650</td>
+                        <td>10.130.50.220</td>
+                        <td>10.131.122.156</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:50:20 PM</td>
+                        <td>12/17/2020 5:57:13 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150454.html">150454</a></td>
+                        <td>4BQ0853</td>
+                        <td>b496918c1b58</td>
+                        <td>10.130.50.208</td>
+                        <td>10.131.122.144</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:50:43 PM</td>
+                        <td>12/17/2020 5:57:13 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150456.html">150456</a></td>
+                        <td>3XP7853</td>
+                        <td>b496918a55e0</td>
+                        <td>10.130.50.232</td>
+                        <td>10.131.122.168</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:51:30 PM</td>
+                        <td>12/17/2020 5:57:14 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150457.html">150457</a></td>
+                        <td>3WG4853</td>
+                        <td>b496918a55cc</td>
+                        <td>10.130.51.20</td>
+                        <td>10.131.123.20</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:52:06 PM</td>
+                        <td>12/17/2020 5:57:16 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150459.html">150459</a></td>
+                        <td>3WH4853</td>
+                        <td>b496918a5888</td>
+                        <td>10.130.51.2</td>
+                        <td>10.131.123.2</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/16/2020 9:52:48 PM</td>
+                        <td>12/17/2020 5:57:17 AM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150816.html">150816</a></td>
+                        <td>3WT1853</td>
+                        <td>b496918a5734</td>
+                        <td>10.130.51.138</td>
+                        <td>10.131.124.10</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/17/2020 2:22:13 PM</td>
+                        <td>12/17/2020 10:29:29 PM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150819.html">150819</a></td>
+                        <td>3W8Z753</td>
+                        <td>b496918c137c</td>
+                        <td>10.130.51.155</td>
+                        <td>10.131.124.27</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/17/2020 2:24:22 PM</td>
+                        <td>12/17/2020 10:31:31 PM</td>
+                    </tr>
+                    <tr class="58">
+                        <td><a href="../ServerDetails/150824.html">150824</a></td>
+                        <td>3W87853</td>
+                        <td>b496918c1a68</td>
+                        <td>10.130.51.157</td>
+                        <td>10.131.124.29</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Web-Intel-v5</td>
+                        <td>12/17/2020 2:25:52 PM</td>
+                        <td>12/17/2020 10:29:28 PM</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../ServerDetails/167835.html">167835</a></td>
+                        <td>4QLP243</td>
+                        <td>e4434be08c7c</td>
+                        <td>10.131.104.148</td>
+                        <td>10.131.104.148</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>Not Classified</td>
+                        <td>2/6/2021 12:14:55 AM</td>
+                        <td>2/6/2021 8:50:28 AM</td>
+                    </tr>
+                    <tr class="1353 60">
+                        <td><a href="../ServerDetails/169058.html">169058</a></td>
+                        <td>ASH1-Vx180</td>
+                        <td>b4969189b064</td>
+                        <td>10.130.46.159</td>
+                        <td>10.131.114.31</td>
+                        <td></td>
+                        <td>Defective</td>
+                            <td>HyperV-Intel-v5</td>
+                        <td>2/9/2021 3:15:19 PM</td>
+                        <td>2/10/2021 5:29:56 AM</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+        </div>
+
+        <script src="../../bundles/scriptsce5b?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="../../bundles/servers58ea?v=IFeo-6SazmKAIwgb0Tix6xAo246G_fRj5DYT1xQG2TM1"></script>
+
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/Servers/DefectiveServers/194 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 02:32:16 GMT -->
+</html>

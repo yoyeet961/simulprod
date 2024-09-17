@@ -6,7 +6,7 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <algorithm>
-#include <direct.h>  // For _getcwd
+#include <direct.h>
 
 #pragma comment(lib, "ws2_32.lib")
 
@@ -42,23 +42,40 @@ std::string getMimeType(const std::string& filename) {
     return "application/octet-stream";
 }
 
+std::string removeQueryParams(const std::string& path) {
+    size_t pos = path.find('?');
+    if (pos != std::string::npos) {
+        return path.substr(0, pos);
+    }
+    return path;
+}
+
 void serveFile(const std::string& host, const std::string& path, SOCKET clientSocket) {
-    std::string fullPath = "pages/" + host + path;
+    std::string cleanPath = removeQueryParams(path);
+    std::vector<std::string> possiblePaths = {
+        "pages/" + host + cleanPath,
+        "pages/default" + cleanPath,
+        "Content" + cleanPath,  // Add this line to check the Content directory
+        "pages/css" + cleanPath
+    };
 
-    std::cout << "Attempting to serve file: " << fullPath << std::endl;
+    std::ifstream file;
+    std::string fullPath;
 
-    std::ifstream file(fullPath, std::ios::binary);
-    if (!file) {
-        std::cerr << "File not found: " << fullPath << std::endl;
-        // Try serving from a default directory if host-specific file is not found
-        fullPath = "pages/default" + path;
-        file.open(fullPath, std::ios::binary);
-        if (!file) {
-            std::cerr << "File not found in default directory: " << fullPath << std::endl;
-            std::string notFound = "HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\n\r\n<h1>404 Not Found</h1>";
-            send(clientSocket, notFound.c_str(), notFound.length(), 0);
-            return;
+    for (const auto& testPath : possiblePaths) {
+        std::cout << "Attempting to serve file: " << testPath << std::endl;
+        file.open(testPath, std::ios::binary);
+        if (file) {
+            fullPath = testPath;
+            break;
         }
+    }
+
+    if (!file) {
+        std::cerr << "File not found in any directory" << std::endl;
+        std::string notFound = "HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\n\r\n<h1>404 Not Found</h1>";
+        send(clientSocket, notFound.c_str(), notFound.length(), 0);
+        return;
     }
 
     file.seekg(0, std::ios::end);
@@ -74,6 +91,7 @@ void serveFile(const std::string& host, const std::string& path, SOCKET clientSo
     send(clientSocket, fileContent.data(), fileContent.size(), 0);
 
     std::cout << "File served successfully: " << fullPath << std::endl;
+    std::cout << "MIME Type: " << mimeType << std::endl;
 }
 
 void handleClient(SOCKET clientSocket) {
@@ -88,16 +106,10 @@ void handleClient(SOCKET clientSocket) {
 
         std::cout << "Received request: " << requestLine << std::endl;
 
-        // Extract method, full URL, and HTTP version
         std::string method, fullUrl, httpVersion;
         std::istringstream requestStream(requestLine);
         requestStream >> method >> fullUrl >> httpVersion;
 
-        std::cout << "Method: " << method << std::endl;
-        std::cout << "Full URL: " << fullUrl << std::endl;
-        std::cout << "HTTP Version: " << httpVersion << std::endl;
-
-        // Extract host from headers
         std::string host;
         std::string line;
         while (std::getline(iss, line) && line != "\r") {
@@ -111,15 +123,11 @@ void handleClient(SOCKET clientSocket) {
 
         host = removePort(host);
 
-        std::cout << "Host: " << host << std::endl;
-
-        // Remove port from host if present
         size_t colonPos = host.find(':');
         if (colonPos != std::string::npos) {
             host = host.substr(0, colonPos);
         }
 
-        // Extract path from full URL
         std::string path;
         size_t pathStart = fullUrl.find('/', fullUrl.find("//") + 2);
         if (pathStart != std::string::npos) {
@@ -128,7 +136,6 @@ void handleClient(SOCKET clientSocket) {
             path = "/";
         }
 
-        // If path is empty or just "/", serve index.html
         if (path == "/" || path.empty()) {
             path = "/index.html";
         }

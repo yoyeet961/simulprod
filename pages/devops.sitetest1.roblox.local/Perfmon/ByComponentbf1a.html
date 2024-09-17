@@ -1,0 +1,1015 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/Perfmon/ByComponent?filterID=40 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 04:03:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfmon Exporter Configurations by Component</title>
+        <link rel="shortcut icon" href="https://devops.sitetest1.roblox.local/favicon.ico" />
+        <link href="https://devops.sitetest1.roblox.local/Content/css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="https://devops.sitetest1.roblox.local/" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/Deployments/History">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/farms-by-environment/1">Farms</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/superfarms-by-environment/1">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/servergroups-by-environment/1">ServerGroups</a>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/ServerJobs/History">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/GridDatacenters">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Websites/StatusesByEnvironment/1">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/StatusesByEnvironment/1">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/AllocationByEnvironment/1">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/StatusesByEnvironment/1">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/DatabaseLookupByEnvironment/1">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Websites/Diff">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/Diff">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/Diff">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/servers-by-environment">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/AllServers">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/LiveServers">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/ReserveServers">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/MaintenanceServers">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/BeingAllocated">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/ReadyForAllocation">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/Provisioning">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/DefectiveServers">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/MigrationServers">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Perfmon/ByServerGroup">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Perfmon/ByComponent">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/All">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Assemblies">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Components">Components</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Databases">Databases</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/ElasticsearchClusters">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/RedisClusters">Redis</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/ThirdPartyServices">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Pods">Pods</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Teams">Teams</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Systems">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/SystemResources">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="https://devops.sitetest1.roblox.local/Components">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="https://devops.sitetest1.roblox.local/Logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+
+<h3>
+    Perfmon Exporter Configurations by Component
+    <div class="btn-group">
+        <a class="btn btn-default btn-sm" href="https://devops.sitetest1.roblox.local/Perfmon/EditComponentPerfmonCounter">Create</a>
+    </div>
+</h3>
+
+<div class="row">
+<form action="https://devops.sitetest1.roblox.local/Perfmon/ByComponent" id="options-form" method="get">        <div class="col-xs-4 pull-bottom">
+            <div class="form-group select2-outer">
+                <label for="FilterID"><span class='underline'>C</span>omponent</label>
+                <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field FilterID must be a number." id="FilterID" name="FilterID"><option value="">[ All ]</option>
+<option value="36">AdminWebsite</option>
+<option value="616">apimgtdb</option>
+<option value="254">Chef.PolicyFile</option>
+<option value="237">Chronograf.SRE</option>
+<option value="268">Consul</option>
+<option value="48">CSWebsite</option>
+<option value="298">Docker</option>
+<option value="824">ElasticSearch.AllGames</option>
+<option value="823">ElasticSearch.Applat</option>
+<option value="769">ElasticSearch.Avatar</option>
+<option value="215">ElasticSearch.BillingHistory</option>
+<option value="185">ElasticSearch.Catalog</option>
+<option value="943">Elasticsearch.ClientTelemetryAppPlat</option>
+<option value="224">ElasticSearch.CrashLogs</option>
+<option value="913">Elasticsearch.ES-PanopticLogs</option>
+<option value="216">ElasticSearch.GameCatalog</option>
+<option value="207">ElasticSearch.GameSearch</option>
+<option value="221">ElasticSearch.Groups</option>
+<option value="304">ElasticSearch.GroupSearch</option>
+<option value="902">Elasticsearch.InfoSec</option>
+<option value="931">Elasticsearch.InfraSvcsTelemetry</option>
+<option value="223">ElasticSearch.Messages</option>
+<option value="918">Elasticsearch.Monitoring</option>
+<option value="739">ElasticSearch.Multi1</option>
+<option value="889">ElasticSearch.NetEng</option>
+<option value="942">Elasticsearch.PanopticLogs</option>
+<option value="220">ElasticSearch.PeopleSearch</option>
+<option value="219">ElasticSearch.PointsLeaderboards</option>
+<option value="709">ElasticSearch.ProdReplica</option>
+<option value="915">Elasticsearch.Sale</option>
+<option value="710">ElasticSearch.Tags</option>
+<option value="815">ElasticSearch.Test</option>
+<option value="222">ElasticSearch.VirtualSaleSearch</option>
+<option value="421">ELK.PanopticLogs</option>
+<option value="387">ELK.PlatformLogs</option>
+<option value="941">ES.PanopticLogs</option>
+<option value="926">ES.Tags</option>
+<option value="240">Grafana.SRE</option>
+<option value="378">InfluxDB.ClientDevops</option>
+<option value="607">InfluxDB.MigrationTest</option>
+<option value="654">InfluxDB.Orchestration</option>
+<option value="230">InfluxDB.Perfmon</option>
+<option value="231">InfluxDB.SRE</option>
+<option value="752">InfluxDB.Telemetry</option>
+<option value="811">InfluxDB.TelemetryInfluxEnterprise</option>
+<option value="675">InfluxDB.TimeSeries</option>
+<option value="413">Jenkins.Central.Agent.Default</option>
+<option value="417">Jenkins.Central.Agent.Generic</option>
+<option value="412">Jenkins.Central.Master</option>
+<option value="319">Jenkins.Platform.Agent</option>
+<option value="324">Jenkins.Platform.Master</option>
+<option value="671">Kapacitor.Orchestration</option>
+<option value="259">Kapacitor.Perfmon</option>
+<option value="239">Kapacitor.SRE</option>
+<option value="186">Kibana.Monitoring</option>
+<option value="187">Logstash.Catalog</option>
+<option value="620">mbstoredb</option>
+<option value="906">Mcrouter.AbTesting</option>
+<option value="799">Mcrouter.AccountLocalization</option>
+<option value="893">Mcrouter.AnonymizedUsers</option>
+<option value="794">Mcrouter.AssetFormats</option>
+<option value="795">Mcrouter.AssetFormatsShared</option>
+<option value="944">Mcrouter.AssetMedia</option>
+<option value="781">Mcrouter.Assets</option>
+<option value="869">Mcrouter.Authentication</option>
+<option value="787">Mcrouter.Avatars</option>
+<option value="800">Mcrouter.Billing</option>
+<option value="789">Mcrouter.Chat</option>
+<option value="844">Mcrouter.ContentLocalization</option>
+<option value="813">Mcrouter.Currency</option>
+<option value="801">Mcrouter.Demographics</option>
+<option value="788">Mcrouter.Economy</option>
+<option value="802">Mcrouter.EmailAddresses</option>
+<option value="728">Mcrouter.Friends</option>
+<option value="809">Mcrouter.FriendsShared</option>
+<option value="876">Mcrouter.GameLocalization</option>
+<option value="849">Mcrouter.GameSearchUITreatments</option>
+<option value="920">Mcrouter.GroupRoleSets</option>
+<option value="742">Mcrouter.Groups</option>
+<option value="803">Mcrouter.IPAddresses</option>
+<option value="718">Mcrouter.LoadTesting</option>
+<option value="793">Mcrouter.Localization</option>
+<option value="756">Mcrouter.Marketing</option>
+<option value="817">Mcrouter.Notifications</option>
+<option value="745">Mcrouter.Object</option>
+<option value="727">Mcrouter.Ownership</option>
+<option value="946">Mcrouter.OwnershipVTwo</option>
+<option value="861">Mcrouter.Passwords</option>
+<option value="782">Mcrouter.Permissions</option>
+<option value="783">Mcrouter.PresenceShared</option>
+<option value="845">Mcrouter.Quotas</option>
+<option value="600">McRouter.Thumbnails</option>
+<option value="743">Mcrouter.Universes</option>
+<option value="826">Mcrouter.UniversesInternal</option>
+<option value="929">Mcrouter.UserFollowings</option>
+<option value="927">Mcrouter.UserFollowingsShared</option>
+<option value="773">Mcrouter.Users</option>
+<option value="313">McRouter.Web</option>
+<option value="907">Memcached.AbTesting</option>
+<option value="804">Memcached.AccountLocalization</option>
+<option value="894">Memcached.AnonymizedUsers</option>
+<option value="797">Memcached.AssetFormats</option>
+<option value="798">Memcached.AssetFormatsShared</option>
+<option value="945">Memcached.AssetMedia</option>
+<option value="784">Memcached.Assets</option>
+<option value="870">Memcached.Authentication</option>
+<option value="790">Memcached.Avatars</option>
+<option value="805">Memcached.Billing</option>
+<option value="792">Memcached.Chat</option>
+<option value="846">Memcached.ContentLocalization</option>
+<option value="814">Memcached.Currency</option>
+<option value="806">Memcached.Demographics</option>
+<option value="791">Memcached.Economy</option>
+<option value="807">Memcached.EmailAddresses</option>
+<option value="597">Memcached.Friends</option>
+<option value="681">Memcached.FriendsService</option>
+<option value="810">Memcached.FriendsShared</option>
+<option value="877">Memcached.GameLocalization</option>
+<option value="850">Memcached.GameSearchUITreatments</option>
+<option value="921">Memcached.GroupRoleSets</option>
+<option value="655">Memcached.Groups</option>
+<option value="808">Memcached.IPAddresses</option>
+<option value="719">Memcached.LoadTesting</option>
+<option value="796">Memcached.Localization</option>
+<option value="757">Memcached.Marketing</option>
+<option value="818">Memcached.Notifications</option>
+<option value="251">Memcached.Object</option>
+<option value="699">Memcached.Ownership</option>
+<option value="947">Memcached.OwnershipVTwo</option>
+<option value="862">Memcached.Passwords</option>
+<option value="785">Memcached.Permissions</option>
+<option value="660">Memcached.Presence</option>
+<option value="786">Memcached.PresenceShared</option>
+<option value="847">Memcached.Quotas</option>
+<option value="598">Memcached.Thumnails</option>
+<option value="602">Memcached.Universes</option>
+<option value="827">Memcached.UniversesInternal</option>
+<option value="930">Memcached.UserFollowings</option>
+<option value="928">Memcached.UserFollowingsShared</option>
+<option value="774">Memcached.Users</option>
+<option value="252">Memcached.Web</option>
+<option value="272">NetworkScanUtils</option>
+<option value="296">Nexus</option>
+<option value="295">Nomad.Client</option>
+<option value="608">Nomad.Client.Gitlabrunner</option>
+<option value="294">Nomad.Server</option>
+<option value="910">PanopticLogs</option>
+<option value="912">Prom.AlertManager</option>
+<option value="911">Prom.Prometheus</option>
+<option value="594">Redis.Assets</option>
+<option value="741">Redis.Avatar</option>
+<option value="247">Redis.CacheInvalidation</option>
+<option value="672">Redis.CacheInvalidationTwo</option>
+<option value="373">Redis.Chat</option>
+<option value="382">Redis.Chat.Messages</option>
+<option value="638">Redis.Contacts</option>
+<option value="882">Redis.ContentCompliance</option>
+<option value="381">Redis.ContentRights</option>
+<option value="734">Redis.DevSubsAutoRenewalTasks</option>
+<option value="249">Redis.DurableCounterMigrator</option>
+<option value="330">Redis.EntityCache</option>
+<option value="356">Redis.EphemeralCounters</option>
+<option value="357">Redis.EphemeralStatistics</option>
+<option value="627">Redis.FloodCheckers</option>
+<option value="761">Redis.FloodCheckerService</option>
+<option value="255">Redis.GamePersistence</option>
+<option value="875">Redis.GamesAutocomplete</option>
+<option value="374">Redis.GamesService</option>
+<option value="601">Redis.GamesServiceServerState</option>
+<option value="615">Redis.GameUpdateNotificationAnalytics</option>
+<option value="399">Redis.GameUpdateNotifications</option>
+<option value="271">Redis.GroupTeleports</option>
+<option value="228">Redis.Hubot</option>
+<option value="398">Redis.InGameContentTables</option>
+<option value="668">Redis.ItemTags</option>
+<option value="763">Redis.LeasedLocks</option>
+<option value="667">Redis.LeastRecentlyUsed</option>
+<option value="625">Redis.LocalizationTableBatchProcessing</option>
+<option value="760">Redis.MachineTranslation</option>
+<option value="626">Redis.MessageRouter</option>
+<option value="599">Redis.Moderation</option>
+<option value="842">Redis.NetengAutomation</option>
+<option value="656">Redis.Notifications</option>
+<option value="657">Redis.NotificationsCore</option>
+<option value="859">Redis.NotificationStream</option>
+<option value="487">Redis.Ownership</option>
+<option value="244">Redis.PartyStorage</option>
+<option value="260">Redis.Patronage</option>
+<option value="708">Redis.Permissions</option>
+<option value="622">Redis.PermissionsV2</option>
+<option value="639">Redis.PersonalRecommendations</option>
+<option value="397">Redis.PlayerState</option>
+<option value="864">Redis.PremiumFeatures</option>
+<option value="851">Redis.PresenceEphemeral</option>
+<option value="596">Redis.PresenceStatusChanges</option>
+<option value="832">Redis.PublishService</option>
+<option value="628">Redis.PushNotifications</option>
+<option value="658">Redis.RealTimeAdhocNotifications</option>
+<option value="640">Redis.RealTimeEphemeralSubscriptions</option>
+<option value="345">Redis.RealtimeNotifications</option>
+<option value="738">Redis.ScreenTime</option>
+<option value="856">Redis.SphynxThrottling</option>
+<option value="924">Redis.TalentHub</option>
+<option value="834">Redis.TimedEntertainmentAllowance</option>
+<option value="396">Redis.Token</option>
+<option value="327">Redis.TranslationStorage</option>
+<option value="833">Redis.UserScoreService</option>
+<option value="659">Redis.Voice</option>
+<option value="245">Redis.VotingCache</option>
+<option value="618">regdb</option>
+<option value="195">RLEC.C1</option>
+<option value="196">RLEC.C2</option>
+<option value="197">RLEC.C3</option>
+<option value="194">RLEC.Recommendations</option>
+<option value="218">RLEC.Voting</option>
+<option value="573">Roblox</option>
+<option value="360">Roblox.AbTesting.Api</option>
+<option value="253">Roblox.AbuseReportSubmissionEvents.Processor</option>
+<option value="217">Roblox.AbuseReportSubmitted.Processor</option>
+<option value="179">Roblox.AccountAgeChange.Processor</option>
+<option value="697">Roblox.AccountInformation.Api</option>
+<option value="948">Roblox.AccountIntegrity.Processor</option>
+<option value="210">Roblox.AccountSettings.Api</option>
+<option value="866">Roblox.AdConfiguration.Api</option>
+<option value="117">Roblox.AdImpressionPayout.Processor</option>
+<option value="353">Roblox.Ads.Api</option>
+<option value="181">Roblox.Algorithm.GameSearch.Service</option>
+<option value="829">Roblox.AllGamesSearch.Service</option>
+<option value="753">Roblox.AnonymizedUserPopulator.Processor</option>
+<option value="887">Roblox.AnuragTest.Processor</option>
+<option value="24">Roblox.ApiControlPlane.Service</option>
+<option value="28">Roblox.ApiProxy</option>
+<option value="676">Roblox.AssembliesProxy.Service</option>
+<option value="227">Roblox.AssetCreationEvents.Processor</option>
+<option value="310">Roblox.AssetDelivery.Api</option>
+<option value="706">Roblox.AssetDependencyArchiving.Processor</option>
+<option value="318">Roblox.AssetDetailsQuality.Service</option>
+<option value="748">Roblox.AssetFormats.Service</option>
+<option value="129">Roblox.AssetRecommendationTasksSubmission.Processor</option>
+<option value="51">Roblox.AssetReleases.Service</option>
+<option value="892">Roblox.AssetRename.Processor</option>
+<option value="52">Roblox.AssetRentals.Service</option>
+<option value="422">Roblox.Assets.Service</option>
+<option value="919">Roblox.AudibleMagicEncore.Processor</option>
+<option value="325">Roblox.AudioRightsManagement.Processor</option>
+<option value="365">Roblox.Auth.App.Site</option>
+<option value="674">Roblox.Authentication.Api</option>
+<option value="682">Roblox.Authenticator.Service</option>
+<option value="690">Roblox.Avatar.Service</option>
+<option value="163">Roblox.Avatar.Site</option>
+<option value="680">Roblox.AvatarCatalogSearch.Service</option>
+<option value="867">Roblox.AvatarEmotes.Service</option>
+<option value="747">Roblox.AvatarPolicy.Processor</option>
+<option value="746">Roblox.AvatarPolicy.Service</option>
+<option value="146">Roblox.AwsTester</option>
+<option value="143">Roblox.BadgeAward.Processor</option>
+<option value="293">Roblox.Badges.Api</option>
+<option value="184">Roblox.Badges.Service</option>
+<option value="53">Roblox.Billing.Processor</option>
+<option value="61">Roblox.Billing.RenewalMonitoring.Processor</option>
+<option value="3">Roblox.Billing.Service</option>
+<option value="190">Roblox.Billing.Site</option>
+<option value="332">Roblox.BroadcastNotifications.Service</option>
+<option value="273">Roblox.Bundles.Processor</option>
+<option value="232">Roblox.Bundles.Service</option>
+<option value="722">Roblox.C3PO.Api</option>
+<option value="694">Roblox.CanonicalAssets.Service</option>
+<option value="209">Roblox.Catalog.Api</option>
+<option value="65">Roblox.CatalogDistribution.Processor</option>
+<option value="349">Roblox.CdnProviders.Api</option>
+<option value="135">Roblox.Chat.Api</option>
+<option value="144">Roblox.Chat.Processor</option>
+<option value="503">Roblox.Chat.Service</option>
+<option value="343">Roblox.ChatConversationEvents.Processor</option>
+<option value="901">Roblox.ChatModeration.Api</option>
+<option value="488">Roblox.ChatNotifications.Processor</option>
+<option value="362">Roblox.ClientSettings.Api</option>
+<option value="4">Roblox.ClientSettings.Service</option>
+<option value="156">Roblox.CloudEditNotifications.Processor</option>
+<option value="177">Roblox.CollectibilityStatus.Processor</option>
+<option value="155">Roblox.Configuration.Service</option>
+<option value="730">Roblox.ConfigurationV2.Service</option>
+<option value="633">Roblox.Contacts.Api</option>
+<option value="624">Roblox.Contacts.Processor</option>
+<option value="233">Roblox.Contacts.Service</option>
+<option value="609">Roblox.Content.Site</option>
+<option value="326">Roblox.ContentRights.Service</option>
+<option value="895">Roblox.ContentSite.Api</option>
+<option value="899">Roblox.ContentStore.Api</option>
+<option value="586">Roblox.ContinuousIntegration.Service</option>
+<option value="307">Roblox.CrashReporter.Processor</option>
+<option value="86">Roblox.Currency.Holds.Processor</option>
+<option value="127">Roblox.Currency.RecurringTransactions.Processor</option>
+<option value="22">Roblox.Currency.Service</option>
+<option value="733">Roblox.CustomSortDistribution.Processor</option>
+<option value="347">Roblox.DataEngWebsite.Site</option>
+<option value="731">Roblox.DelayedRelease.Service</option>
+<option value="175">Roblox.Develop.Site</option>
+<option value="831">Roblox.DeveloperExchange.Service</option>
+<option value="835">Roblox.DeveloperPermissionResolution.Service</option>
+<option value="836">Roblox.DeveloperPermissions.Service</option>
+<option value="614">Roblox.DevMetricsGenerator.Processor</option>
+<option value="613">Roblox.DevMetricsNotification.Processor</option>
+<option value="112">Roblox.Devops.Site</option>
+<option value="670">Roblox.DigitalCodes.Service</option>
+<option value="340">Roblox.Discussions.Api</option>
+<option value="339">Roblox.Discussions.Service</option>
+<option value="42">Roblox.DurableCounters.Service</option>
+<option value="248">Roblox.Economy.Api</option>
+<option value="828">Roblox.EconomyCreatorStats.Api</option>
+<option value="199">Roblox.EmailDelivery.Processor</option>
+<option value="204">Roblox.EmailValidation.Processor</option>
+<option value="736">Roblox.EngagementPayouts.Api</option>
+<option value="737">Roblox.EngagementPayouts.Processor</option>
+<option value="735">Roblox.EngagementPayouts.Service</option>
+<option value="12">Roblox.EphemeralCounters.Service</option>
+<option value="134">Roblox.EventIngest.Site</option>
+<option value="241">Roblox.EventStreamConfiguration.Service</option>
+<option value="208">Roblox.Favorites.Service</option>
+<option value="140">Roblox.FavoritesDimensionizer.Processor</option>
+<option value="147">Roblox.Files.Processor</option>
+<option value="693">Roblox.Files.Service</option>
+<option value="312">Roblox.Followings.Api</option>
+<option value="311">Roblox.Followings.Service</option>
+<option value="291">Roblox.ForgetUser.Processor</option>
+<option value="502">Roblox.Fraud.Service</option>
+<option value="880">Roblox.FriendRequestsArchiver.Processor</option>
+<option value="212">Roblox.Friends.Api</option>
+<option value="5">Roblox.Friends.Service</option>
+<option value="202">Roblox.Friendship.Processor</option>
+<option value="661">Roblox.FriendshipNotifications.Processor</option>
+<option value="411">Roblox.GameCatalog.Service</option>
+<option value="246">Roblox.GameCatalogIndexDistribution.Processor</option>
+<option value="277">Roblox.GameInstances.Aggregation.Processor</option>
+<option value="97">Roblox.GameInstances.DataStore</option>
+<option value="278">Roblox.GameInstances.Persistence.Processor</option>
+<option value="279">Roblox.GameInstances.PlaySessions.Aggregation.Processor</option>
+<option value="280">Roblox.GameInstances.PlaySessions.EventStream.Processor</option>
+<option value="281">Roblox.GameInstances.PlaySessions.Persistence.Processor</option>
+<option selected="selected" value="40">Roblox.GameInstances.Service</option>
+<option value="364">Roblox.GameInternationalization.Api</option>
+<option value="492">Roblox.GameInternationalizationIngest.Processor</option>
+<option value="290">Roblox.GameJoin.Api</option>
+<option value="498">Roblox.GameLocalization.Service</option>
+<option value="701">Roblox.GameLocalizationResolution.Service</option>
+<option value="715">Roblox.GameLocalizationUpkeep.Processor</option>
+<option value="329">Roblox.GameNotifications.Processor</option>
+<option value="395">Roblox.GamePasses.Api</option>
+<option value="41">Roblox.GamePersistence.Service</option>
+<option value="150">Roblox.GamePersistence.Site</option>
+<option value="242">Roblox.Games.Api</option>
+<option value="89">Roblox.Games.GameState.DataStore</option>
+<option value="79">Roblox.Games.PlayerState.DataStore</option>
+<option value="93">Roblox.Games.ServerState.DataStore</option>
+<option value="6">Roblox.Games.Service</option>
+<option value="90">Roblox.GameSearch.Processor</option>
+<option value="838">Roblox.GameSearchSignal.Processor</option>
+<option value="606">Roblox.GameSearchUITreatments.Service</option>
+<option value="111">Roblox.GamesPageWatchDog.Processor</option>
+<option value="44">Roblox.GameTransactions.Service</option>
+<option value="482">Roblox.GameUpdateAnalytics.Processor</option>
+<option value="305">Roblox.GameUpdateNotifications.Processor</option>
+<option value="331">Roblox.GameUpdates.Service</option>
+<option value="637">Roblox.GiftCards.Service</option>
+<option value="780">Roblox.GooglePlayWolverine.Processor</option>
+<option value="201">Roblox.Groups.Api</option>
+<option value="243">Roblox.Groups.Service</option>
+<option value="138">Roblox.GroupSearch.Processor</option>
+<option value="336">Roblox.GroupSearch.Service</option>
+<option value="900">Roblox.GroupsModeration.Api</option>
+<option value="848">Roblox.GroupsPolicy.Processor</option>
+<option value="512">Roblox.Identities.Service</option>
+<option value="896">Roblox.IDIPCatalogItemGrant.Processor</option>
+<option value="933">Roblox.InactiveUserIdentifier.Processor</option>
+<option value="121">Roblox.Infrastructure.Foundation.Service</option>
+<option value="333">Roblox.InGameContentTables.Service</option>
+<option value="157">Roblox.Inventory.Site</option>
+<option value="766">Roblox.IpAddresses.Service</option>
+<option value="687">Roblox.ItemConfiguration.Api</option>
+<option value="720">Roblox.ItemTagRecs.Processor</option>
+<option value="666">Roblox.ItemTags.Service</option>
+<option value="871">Roblox.Kafka-Neteng.Service</option>
+<option value="934">Roblox.KoreaIdentityVerification.Service</option>
+<option value="679">Roblox.LibraryCatalogSearch.Service</option>
+<option value="234">Roblox.Locale.Api</option>
+<option value="587">Roblox.Localization.Service</option>
+<option value="404">Roblox.LocalizationTableAssetGenerator.Processor</option>
+<option value="632">Roblox.LocalizationTables.Api</option>
+<option value="712">Roblox.LocalizationTables.Service</option>
+<option value="308">Roblox.MachineLearningEvaluator.Service</option>
+<option value="27">Roblox.MarketPlace.Service</option>
+<option value="508">Roblox.MessageRouter.Service</option>
+<option value="114">Roblox.Metrics.Alerts.Processor</option>
+<option value="369">Roblox.Metrics.Api</option>
+<option value="479">Roblox.Metrics.AutoConfig.Processor</option>
+<option value="108">Roblox.Metrics.Collectors.Processor</option>
+<option value="256">Roblox.Metrics.CustomCollectors.Processor</option>
+<option value="113">Roblox.MetricsConfiguration.Site</option>
+<option value="115">Roblox.MetricsVisualization.Site</option>
+<option value="651">Roblox.Midas.Android.Api</option>
+<option value="623">Roblox.Midas.Api</option>
+<option value="650">Roblox.Midas.IOS.Api</option>
+<option value="649">Roblox.Midas.Web.Api</option>
+<option value="403">Roblox.Moderation.ImageSafetyScanProcessor</option>
+<option value="162">Roblox.Moderation.Site</option>
+<option value="497">Roblox.ModerationActionCreator.Processor</option>
+<option value="406">Roblox.ModerationAutomationAudit.Service</option>
+<option value="590">Roblox.ModerationPolicy.Service</option>
+<option value="496">Roblox.ModerationToken.Service</option>
+<option value="890">Roblox.NeerajTest.Processor</option>
+<option value="192">Roblox.Nonce.Service</option>
+<option value="151">Roblox.Notifications.Processor</option>
+<option value="141">Roblox.Notifications.Site</option>
+<option value="126">Roblox.OrganicAcquisitionPayouts.Processor</option>
+<option value="20">Roblox.Ownership.Service</option>
+<option value="314">Roblox.OwnershipChange.Processor</option>
+<option value="183">Roblox.OwnershipV2.Service</option>
+<option value="392">Roblox.Packages.Processor</option>
+<option value="371">Roblox.Packages.Service</option>
+<option value="698">Roblox.Passwords.Service</option>
+<option value="292">Roblox.PaymentHistory.Processor</option>
+<option value="26">Roblox.PaypalService.Service</option>
+<option value="189">Roblox.PerfmonDataCollector</option>
+<option value="612">Roblox.PermissionResolution.Service</option>
+<option value="31">Roblox.Permissions.Service</option>
+<option value="595">Roblox.PermissionsV2.Service</option>
+<option value="634">Roblox.PersonalRecommendations.Processor</option>
+<option value="636">Roblox.PersonalRecommendations.Service</option>
+<option value="338">Roblox.PhoneNumbers.Service</option>
+<option value="770">Roblox.PiiReplicate.Processor</option>
+<option value="139">Roblox.PlayerInteractions.Processor</option>
+<option value="873">Roblox.PlaySessionData.Processor</option>
+<option value="903">Roblox.PlaySessionElasticsearchData.Processor</option>
+<option value="263">Roblox.Points.Api</option>
+<option value="262">Roblox.Points.Service</option>
+<option value="390">Roblox.PremiumFeatures.Api</option>
+<option value="401">Roblox.PremiumFeatures.Processor</option>
+<option value="409">Roblox.PremiumFeatures.Service</option>
+<option value="211">Roblox.Presence.Api</option>
+<option value="95">Roblox.Presence.Processor</option>
+<option value="9">Roblox.Presence.Service</option>
+<option value="511">Roblox.PresenceRealtimeNotifications.Processor</option>
+<option value="402">Roblox.PresenceRegistration.Processor</option>
+<option value="250">Roblox.PresenceV2.Service</option>
+<option value="776">Roblox.PrivateMessages.Api</option>
+<option value="822">Roblox.PrivateMessages.Processor</option>
+<option value="124">Roblox.PrivateServers.Processor</option>
+<option value="174">Roblox.Publish.Site</option>
+<option value="853">Roblox.Punishments.Api</option>
+<option value="148">Roblox.PushNotifications.Processor</option>
+<option value="480">Roblox.RatingsChange.Processor</option>
+<option value="98">Roblox.RccService</option>
+<option value="299">Roblox.RccService</option>
+<option value="300">Roblox.RccService</option>
+<option value="749">Roblox.RccService</option>
+<option value="777">Roblox.RccService</option>
+<option value="725">Roblox.RccServiceArbiter</option>
+<option value="603">Roblox.RealTimeNotifications.Adhoc.Processor</option>
+<option value="641">Roblox.RealTimeNotifications.Service</option>
+<option value="153">Roblox.RealTimeNotifications.Site</option>
+<option value="128">Roblox.Recommendations.Processor</option>
+<option value="193">Roblox.Recommendations.Service</option>
+<option value="631">Roblox.RequestContext.Service</option>
+<option value="116">Roblox.Retention.Processor</option>
+<option value="119">Roblox.RevenueReport.Processor</option>
+<option value="288">Roblox.RobuxRefunds.Processor</option>
+<option value="302">Roblox.Roles.Service</option>
+<option value="648">Roblox.Rules.Service</option>
+<option value="484">Roblox.RunningGames.Service</option>
+<option value="109">Roblox.SaleAggregation.Processor</option>
+<option value="478">Roblox.SaleData.Processor</option>
+<option value="178">Roblox.Search.Service</option>
+<option value="13">Roblox.Segmentation.Service</option>
+<option value="936">Roblox.ServiceResiliency.Service</option>
+<option value="937">Roblox.ServiceResiliencyWorkloadGenerator.Processor</option>
+<option value="581">Roblox.Settings.Site</option>
+<option value="854">Roblox.Share.Api</option>
+<option value="685">Roblox.SignupAvatarInitialization.Processor</option>
+<option value="868">Roblox.SignupEmotesInitialization.Processor</option>
+<option value="130">Roblox.SignupInitialization.Processor</option>
+<option value="683">Roblox.SignupPlaceInitialization.Processor</option>
+<option value="226">Roblox.Sms.Service</option>
+<option value="888">Roblox.Smui.Processor</option>
+<option value="64">Roblox.SolrAccountDistribution.Processor</option>
+<option value="66">Roblox.SolrCatalogTimeDecay.Processor</option>
+<option value="500">Roblox.SourceControl.Service</option>
+<option value="684">Roblox.SourceStringsCrowdinSync.Processor</option>
+<option value="372">Roblox.StaticContent.Service</option>
+<option value="176">Roblox.StudioSearch.Service</option>
+<option value="229">Roblox.SupportTicketSubmission.Processor</option>
+<option value="136">Roblox.SuppressedAssets.Processor</option>
+<option value="582">Roblox.SurveySubmissions.Processor</option>
+<option value="122">Roblox.SystemEvents.Service</option>
+<option value="198">Roblox.TeamCreate.Service</option>
+<option value="504">Roblox.TeamOwnership.Service</option>
+<option value="166">Roblox.Test.Site</option>
+<option value="355">Roblox.TextFilter.Service</option>
+<option value="160">Roblox.TextFilter.Site</option>
+<option value="303">Roblox.TextProcessing.Service</option>
+<option value="328">Roblox.TextureTranscode.Processor</option>
+<option value="588">Roblox.Themes.Api</option>
+<option value="400">Roblox.Themes.Service</option>
+<option value="334">Roblox.Thumbnails.Api</option>
+<option value="15">Roblox.Thumbnails.Coordination.Service</option>
+<option value="72">Roblox.Thumbnails.Dependencies.Processor</option>
+<option value="30">Roblox.Thumbnails.Dependencies.Service</option>
+<option value="68">Roblox.Thumbnails.Relay</option>
+<option value="14">Roblox.Thumbnails.Service</option>
+<option value="610">Roblox.ThumbnailsInvalidations.Processor</option>
+<option value="689">Roblox.ThumbnailsResizer.Api</option>
+<option value="38">Roblox.TimeSeries.Service</option>
+<option value="354">Roblox.Token.Service</option>
+<option value="663">Roblox.Trades.Api</option>
+<option value="67">Roblox.Trades.Processor</option>
+<option value="932">Roblox.Trades.Service</option>
+<option value="493">Roblox.TranslationRoles.Api</option>
+<option value="368">Roblox.Translations.Api</option>
+<option value="283">Roblox.TranslationStorage.Service</option>
+<option value="897">Roblox.TwoStepVerification.Api</option>
+<option value="852">Roblox.TwoStepVerification.Processor</option>
+<option value="688">Roblox.TwoStepVerification.Service</option>
+<option value="721">Roblox.UGCValidationCoordination.Service</option>
+<option value="726">Roblox.UGCValidationTasks.Processor</option>
+<option value="419">Roblox.UniqueCounts.Processor</option>
+<option value="778">Roblox.UniversePermissions.Processor</option>
+<option value="45">Roblox.Universes.Service</option>
+<option value="19">Roblox.UserAds.Service</option>
+<option value="865">Roblox.UserAvatar.Service</option>
+<option value="860">Roblox.UserFollowings.Service</option>
+<option value="917">Roblox.UserModeration.Api</option>
+<option value="908">Roblox.UserModeration.Service</option>
+<option value="342">Roblox.UserPiiPurger.Processor</option>
+<option value="370">Roblox.Users.Api</option>
+<option value="32">Roblox.Users.Service</option>
+<option value="765">Roblox.UserSearch.Service</option>
+<option value="158">Roblox.Vantiv.Proxy.Service</option>
+<option value="25">Roblox.VersionCompatibility.Service</option>
+<option value="872">Roblox.VipServers.Service</option>
+<option value="767">Roblox.VirtualCurrencyGateway.Service</option>
+<option value="775">Roblox.VirtualEconomyProducts.Service</option>
+<option value="125">Roblox.VirtualPayments.Processor</option>
+<option value="132">Roblox.VirtualSaleDistribution.Processor</option>
+<option value="149">Roblox.VirtualSaleRemediation.Processor</option>
+<option value="647">Roblox.Voice.Api</option>
+<option value="677">Roblox.Voice.Service</option>
+<option value="820">Roblox.VoidedPurchaseClawback.Processor</option>
+<option value="35">Roblox.Voting.Service</option>
+<option value="137">Roblox.XboxLive.Service</option>
+<option value="750">Roblox2Configuration</option>
+<option value="576">RobloxAbTesting</option>
+<option value="553">RobloxAccountCountriesAudit</option>
+<option value="554">RobloxAccountLocalesAudit</option>
+<option value="466">RobloxAccountLocalization</option>
+<option value="525">RobloxAccountPhoneNumbersAudit</option>
+<option value="563">RobloxAccountPinHashesAudit</option>
+<option value="475">RobloxAccounts</option>
+<option value="551">RobloxAccountsAudit</option>
+<option value="531">RobloxAccountSecurity</option>
+<option value="449">RobloxAccoutrements</option>
+<option value="565">RobloxAdImpressions</option>
+<option value="535">RobloxAds</option>
+<option value="764">RobloxAffiliates</option>
+<option value="819">RobloxAnonymizedUsers</option>
+<option value="922">RobloxApplicationAuthorization</option>
+<option value="523">RobloxAssetCounters</option>
+<option value="456">RobloxAssetCreations</option>
+<option value="323">RobloxAssetDetailsQuality</option>
+<option value="751">RobloxAssetFormats</option>
+<option value="567">RobloxAssetHashes</option>
+<option value="533">RobloxAssetMedia</option>
+<option value="566">RobloxAssetNamespaces</option>
+<option value="520">RobloxAssetRecommendations</option>
+<option value="463">RobloxAssetReviewAudit</option>
+<option value="578">RobloxAssets</option>
+<option value="541">RobloxAssetSales</option>
+<option value="564">RobloxAssetsAudit</option>
+<option value="572">RobloxAssetSecurity</option>
+<option value="571">RobloxAssetSets</option>
+<option value="557">RobloxAssetStatistics</option>
+<option value="529">RobloxAssetVersions</option>
+<option value="448">RobloxAuthentication</option>
+<option value="717">RobloxAuthenticationV2</option>
+<option value="884">RobloxAuthenticator</option>
+<option value="904">RobloxAvatarCatalogDeduplication</option>
+<option value="758">RobloxAvatarPolicies</option>
+<option value="452">RobloxAvatars</option>
+<option value="440">RobloxBadges</option>
+<option value="423">RobloxBadgesV2</option>
+<option value="451">RobloxBilling</option>
+<option value="363">RobloxBundles</option>
+<option value="696">RobloxCanonicalImages</option>
+<option value="534">RobloxChat</option>
+<option value="665">RobloxChatParticipants</option>
+<option value="436">RobloxClans</option>
+<option value="517">RobloxClickThroughAgreements</option>
+<option value="428">RobloxClientSettings</option>
+<option value="437">RobloxCollectibles</option>
+<option value="555">RobloxComments</option>
+<option value="514">RobloxConfiguration</option>
+<option value="464">RobloxContacts</option>
+<option value="469">RobloxContent</option>
+<option value="441">RobloxContentRatings</option>
+<option value="455">RobloxCurrency</option>
+<option value="442">RobloxCurrencyBudgets</option>
+<option value="704">RobloxCurrencyRobuxHolds</option>
+<option value="462">RobloxDailyLogins</option>
+<option value="472">RobloxDemographics</option>
+<option value="429">RobloxDeveloperProducts</option>
+<option value="515">RobloxDeviceVoting</option>
+<option value="558">RobloxDistribution</option>
+<option value="527">RobloxEconomy</option>
+<option value="812">RobloxEconomyDevStats</option>
+<option value="568">RobloxEconomyReports</option>
+<option value="450">RobloxEmailAddresses</option>
+<option value="754">RobloxEngagementPayouts</option>
+<option value="367">RobloxEventsIngestValidation</option>
+<option value="465">RobloxFavoriteCounters</option>
+<option value="386">RobloxFavorites</option>
+<option value="427">RobloxFeeds</option>
+<option value="424">RobloxFileLocations</option>
+<option value="542">RobloxFiles</option>
+<option value="519">RobloxFilesV2</option>
+<option value="351">RobloxFollowings</option>
+<option value="550">RobloxForums</option>
+<option value="540">RobloxFriendRequests</option>
+<option value="350">RobloxFriendships</option>
+<option value="575">RobloxFriendshipsLegacy</option>
+<option value="384">RobloxFriendshipSources</option>
+<option value="457">RobloxGameAttributes</option>
+<option value="543">RobloxGameCounters</option>
+<option value="443">RobloxGamePasses</option>
+<option value="536">RobloxGamePersistence</option>
+<option value="577">RobloxGames</option>
+<option value="458">RobloxGamesRecentlyVisited</option>
+<option value="425">RobloxGameTemplates</option>
+<option value="716">RobloxGiftCards</option>
+<option value="438">RobloxGroupCounters</option>
+<option value="435">RobloxGroupMembership</option>
+<option value="537">RobloxGroupPosts</option>
+<option value="528">RobloxGroupRoleSets</option>
+<option value="524">RobloxGroups</option>
+<option value="506">RobloxIdentities</option>
+<option value="874">RobloxIdipAccessLogs</option>
+<option value="335">RobloxInGameContentTables</option>
+<option value="547">RobloxInteractionCounters</option>
+<option value="383">RobloxIpAddresses</option>
+<option value="905">RobloxItemManagementFees</option>
+<option value="732">RobloxItemManifolds</option>
+<option value="526">RobloxItemStatusesAudit</option>
+<option value="695">RobloxItemTags</option>
+<option value="544">RobloxLatencyMeasurements</option>
+<option value="467">RobloxLocalization</option>
+<option value="530">RobloxMacAddresses</option>
+<option value="379">RobloxMachineLearningModels</option>
+<option value="768">RobloxMachineTranslation</option>
+<option value="460">RobloxMarketing</option>
+<option value="505">RobloxMatchmaking</option>
+<option value="461">RobloxMessages</option>
+<option value="445">RobloxMetricsClient</option>
+<option value="430">RobloxModeration</option>
+<option value="584">RobloxModerationAutomationAudit</option>
+<option value="431">RobloxModerationNew</option>
+<option value="611">RobloxModerationPolicy</option>
+<option value="468">RobloxModerationReportsAudit</option>
+<option value="560">RobloxNotifications</option>
+<option value="446">RobloxObservation</option>
+<option value="358">RobloxPermissions</option>
+<option value="548">RobloxPlaceAccessPermissions</option>
+<option value="925">RobloxPlaceSequestration</option>
+<option value="556">RobloxPlaceShowcases</option>
+<option value="393">RobloxPoints</option>
+<option value="518">RobloxPremiumFeatures</option>
+<option value="779">RobloxPremiumFeaturesActivationTasks</option>
+<option value="574">RobloxPromotionChannels</option>
+<option value="426">RobloxPunishmentReviewAudit</option>
+<option value="580">RobloxPushNotificationDefinition</option>
+<option value="561">RobloxPushNotifications</option>
+<option value="485">RobloxRatingsAudit</option>
+<option value="516">RobloxReporting</option>
+<option value="473">RobloxRoles</option>
+<option value="673">RobloxRules</option>
+<option value="583">RobloxSegmentation</option>
+<option value="559">RobloxServices</option>
+<option value="432">RobloxShops</option>
+<option value="470">RobloxShowcases</option>
+<option value="585">RobloxStaticContent</option>
+<option value="447">RobloxStatistics</option>
+<option value="579">RobloxStudio</option>
+<option value="483">RobloxSurveyCounters</option>
+<option value="476">RobloxSurveyResponses</option>
+<option value="507">RobloxSurveys</option>
+<option value="569">RobloxSystemEvents</option>
+<option value="380">RobloxTeamOwnership</option>
+<option value="499">RobloxThemesV2</option>
+<option value="570">RobloxThrottling</option>
+<option value="344">RobloxThumbnails</option>
+<option value="453">RobloxTrades</option>
+<option value="454">RobloxTransactionHistory</option>
+<option value="385">RobloxTranslation</option>
+<option value="705">RobloxTranslationAnalyticsReports</option>
+<option value="678">RobloxTranslationAudit</option>
+<option value="322">RobloxTranslationStorage</option>
+<option value="439">RobloxTwoStepVerificationSettingsAudit</option>
+<option value="740">RobloxUGCValidation</option>
+<option value="707">RobloxUniversalAppConfigurations</option>
+<option value="433">RobloxUniverses</option>
+<option value="546">RobloxUserAssetEscrows</option>
+<option value="459">RobloxUserAssetExpirations</option>
+<option value="521">RobloxUserAssetOptions</option>
+<option value="306">RobloxUserAssets</option>
+<option value="830">RobloxUserAssetsV2</option>
+<option value="545">RobloxUserCounters</option>
+<option value="552">RobloxUserDataProtection</option>
+<option value="434">RobloxUserFeeds</option>
+<option value="486">RobloxUsernames</option>
+<option value="562">RobloxUserPrivacy</option>
+<option value="538">RobloxUserRetention</option>
+<option value="549">RobloxUsers</option>
+<option value="474">RobloxUsersAudit</option>
+<option value="522">RobloxUserSettings</option>
+<option value="539">RobloxUserStatuses</option>
+<option value="444">RobloxVersions</option>
+<option value="878">RobloxVipServers</option>
+<option value="771">RobloxVirtualCurrencyGateway</option>
+<option value="352">RobloxVoting</option>
+<option value="532">RobloxVotingCounters</option>
+<option value="471">RobloxXbox</option>
+<option value="261">Saucelabs.Sauceconnect</option>
+<option value="297">SPFMonitor</option>
+<option value="619">statdb</option>
+<option value="257">Teamcity.BuildAgent</option>
+<option value="375">Teamcity.DockerAgent</option>
+<option value="376">Teamcity.Server</option>
+<option value="617">userdb</option>
+<option value="274">Vault</option>
+<option value="1">Website</option>
+<option value="703">WSO2EI_REGISTRY_DB</option>
+<option value="702">WSO2EI_USER_DB</option>
+</select>
+            </div>
+        </div>
+        <div class="col-xs-8 pull-bottom">
+
+            <p class="text-info">
+                These are ComponentPerfmonCounters. Modificatons are restricted to members of PerfmonSGAdmins AD group.
+            </p>
+
+                <div class="alert alert-warning">You do not have edit permissions.</div>
+        </div>
+</form></div>
+
+<table id="perfmon-container" class="table table-condensed table-striped not-too-small farms-table sortable-table table-hover">
+    <thead>
+        <tr>
+            <th class="id-col">ID</th>
+            <th>Component</th>
+            <th>Object Name</th>
+            <th>Counter Name</th>
+            <th>Instance Name</th>
+            <th>Is Enabled</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td><a href="https://devops.sitetest1.roblox.local/Perfmon/EditComponentPerfmonCounter/519">519</a></td>
+                <td><a href="https://devops.sitetest1.roblox.local/Perfmon/ByComponent?FilterID=40">Roblox.GameInstances.Service</a></td>
+                <td title="System"><div>System</div></td>
+                <td title="Processor Queue Length"><div>Processor Queue Length</div></td>
+                <td title="*"><div>*</div></td>
+                <td>True</td>
+            </tr>
+    </tbody>
+</table>
+
+
+
+
+        </div>
+
+        <script src="https://devops.sitetest1.roblox.local/bundles/scripts?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="https://devops.sitetest1.roblox.local/bundles/perfmon-page?v=wF4-A7zZuGvrOJC8b5nyloAmGvOQ-SWF3h-ZF_aj9Q41"></script>
+
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/Perfmon/ByComponent?filterID=40 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 04:03:22 GMT -->
+</html>

@@ -1,0 +1,941 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/ServerJobs/InstanceDetails/117697 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 04:06:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RollingIISResetBySuperFarm Server Job 117697</title>
+        <link rel="shortcut icon" href="https://devops.sitetest1.roblox.local/favicon.ico" />
+        <link href="https://devops.sitetest1.roblox.local/Content/css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="https://devops.sitetest1.roblox.local/" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/Deployments/History">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/farms-by-environment/1">Farms</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/superfarms-by-environment/1">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="https://devops.sitetest1.roblox.local/servergroups-by-environment/1">ServerGroups</a>
+                    </li>
+                    <li class="active">
+                        <a href="https://devops.sitetest1.roblox.local/ServerJobs/History">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/GridDatacenters">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Websites/StatusesByEnvironment/1">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/StatusesByEnvironment/1">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/AllocationByEnvironment/1">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/StatusesByEnvironment/1">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/DatabaseLookupByEnvironment/1">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Websites/Diff">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Services/Diff">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Databases/Diff">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/servers-by-environment/117697">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/AllServers">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/LiveServers">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/ReserveServers">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/MaintenanceServers">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/BeingAllocated">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/ReadyForAllocation">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/Provisioning">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/DefectiveServers">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Servers/MigrationServers">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Perfmon/ByServerGroup">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Perfmon/ByComponent">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/All">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Assemblies">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Components">Components</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Databases">Databases</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/ElasticsearchClusters">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/RedisClusters">Redis</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/ThirdPartyServices">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Pods">Pods</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Teams">Teams</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/Systems">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="https://devops.sitetest1.roblox.local/Teams/SystemResources">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="https://devops.sitetest1.roblox.local/Components">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="https://devops.sitetest1.roblox.local/Logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+<h4>Server Job Instance 117697 Details</h4>
+
+<div id="status" data-url="/ServerJobs/InstanceDetailsStatus/117697">
+    <table class="table table-striped table-condensed not-too-small">
+    <tr>
+        <th class="key-column">Key</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <th>Server Job</th>
+        <td>RollingIISResetBySuperFarm</td>
+    </tr>
+        <tr>
+            <th>SuperFarm parameter</th>
+            <td>OwnershipV2</td>
+        </tr>
+        <tr>
+            <th>Environment parameter</th>
+            <td>Prod</td>
+        </tr>
+    <tr>
+        <th>Status</th>
+        <td class="text-danger">Failed - All of the job instance tasks have completed but there were one or more failures</td>
+    </tr>
+    <tr>
+        <th>Progress</th>
+        <td>
+            <span class="text-success" title="Succeded">37</span> / <span title="Total">38</span>
+                 / <span class="text-danger" title="Failed">1</span>
+        </td>
+    </tr>
+    <tr>
+        <th>Created</th>
+        <td>2/10/2021 2:01:42 AM</td>
+    </tr>
+    <tr>
+        <th>Updated</th>
+        <td>2/10/2021 2:28:39 AM</td>
+    </tr>
+    <tr>
+        <th>Scheduled Start Time</th>
+        <td>2/10/2021 2:01:42 AM</td>
+    </tr>
+    <tr>
+        <th>Started</th>
+        <td>2/10/2021 2:08:48 AM</td>
+    </tr>
+    <tr>
+        <th>Completed</th>
+        <td>2/10/2021 2:28:38 AM</td>
+    </tr>
+    <tr>
+        <th>Time Taken</th>
+        <td>
+19.84  minutes
+        </td>
+    </tr>
+</table>
+</div>
+
+<h4>Server Job Instance 117697 Tasks</h4>
+
+<table class="table table-striped table-condensed not-too-small sortable-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ordinal</th>
+            <th>Status</th>
+            <th>Script</th>
+            <th>Result</th>
+            <th>Grouping</th>
+            <th>Run Time</th>
+            <th>Server</th>
+            <th>Attempts</th>
+            <th>Created</th>
+            <th>Started</th>
+            <th>Completed</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619788" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619788">8619788</a></td>
+<td>38</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 92912); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/92912">chi1-web951</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:55 AM</td>
+<td>2/10/2021 2:27:15 AM</td>
+<td>2/10/2021 2:28:36 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619787" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619787">8619787</a></td>
+<td>37</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 89851); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>91 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/89851">chi1-web880</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:55 AM</td>
+<td>2/10/2021 2:27:14 AM</td>
+<td>2/10/2021 2:28:45 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619786" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619786">8619786</a></td>
+<td>36</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 89849); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>92 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/89849">chi1-web853</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:55 AM</td>
+<td>2/10/2021 2:27:12 AM</td>
+<td>2/10/2021 2:28:42 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619785" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619785">8619785</a></td>
+<td>35</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 89734); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/89734">chi1-web766</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:55 AM</td>
+<td>2/10/2021 2:26:07 AM</td>
+<td>2/10/2021 2:27:28 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619784" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619784">8619784</a></td>
+<td>34</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 131048); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/131048">chi1-web7325</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:54 AM</td>
+<td>2/10/2021 2:25:19 AM</td>
+<td>2/10/2021 2:26:39 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619783" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619783">8619783</a></td>
+<td>33</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 131054); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/131054">chi1-web7318</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:54 AM</td>
+<td>2/10/2021 2:25:17 AM</td>
+<td>2/10/2021 2:26:37 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619782" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619782">8619782</a></td>
+<td>32</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 131040); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/131040">chi1-web7313</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:54 AM</td>
+<td>2/10/2021 2:25:14 AM</td>
+<td>2/10/2021 2:26:34 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619781" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619781">8619781</a></td>
+<td>31</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 130943); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/130943">chi1-web7312</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:54 AM</td>
+<td>2/10/2021 2:23:17 AM</td>
+<td>2/10/2021 2:24:37 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619780" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619780">8619780</a></td>
+<td>30</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 130937); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/130937">chi1-web7309</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:54 AM</td>
+<td>2/10/2021 2:23:09 AM</td>
+<td>2/10/2021 2:24:29 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619779" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619779">8619779</a></td>
+<td>29</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 130930); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/130930">chi1-web7303</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:53 AM</td>
+<td>2/10/2021 2:23:07 AM</td>
+<td>2/10/2021 2:24:27 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619778" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619778">8619778</a></td>
+<td>28</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 130925); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/130925">chi1-web7293</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:53 AM</td>
+<td>2/10/2021 2:23:15 AM</td>
+<td>2/10/2021 2:24:35 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619777" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619777">8619777</a></td>
+<td>27</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 130924); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/130924">chi1-web7292</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:53 AM</td>
+<td>2/10/2021 2:21:52 AM</td>
+<td>2/10/2021 2:23:12 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619776" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619776">8619776</a></td>
+<td>26</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 130917); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/130917">chi1-web7291</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:53 AM</td>
+<td>2/10/2021 2:21:10 AM</td>
+<td>2/10/2021 2:22:30 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619775" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619775">8619775</a></td>
+<td>25</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 130916); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/130916">chi1-web7282</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:53 AM</td>
+<td>2/10/2021 2:21:15 AM</td>
+<td>2/10/2021 2:22:35 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619774" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619774">8619774</a></td>
+<td>24</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 89631); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/89631">chi1-web726</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:52 AM</td>
+<td>2/10/2021 2:21:10 AM</td>
+<td>2/10/2021 2:22:31 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619773" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619773">8619773</a></td>
+<td>23</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 129062); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/129062">chi1-web7224</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:52 AM</td>
+<td>2/10/2021 2:20:24 AM</td>
+<td>2/10/2021 2:21:44 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619772" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619772">8619772</a></td>
+<td>22</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 129037); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/129037">chi1-web7220</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:52 AM</td>
+<td>2/10/2021 2:19:21 AM</td>
+<td>2/10/2021 2:20:41 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619771" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619771">8619771</a></td>
+<td>21</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 122524); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>80 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/122524">chi1-web7185</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:52 AM</td>
+<td>2/10/2021 2:19:11 AM</td>
+<td>2/10/2021 2:20:31 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619770" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619770">8619770</a></td>
+<td>20</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 122549); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/122549">chi1-web7183</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:52 AM</td>
+<td>2/10/2021 2:19:09 AM</td>
+<td>2/10/2021 2:20:29 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619769" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619769">8619769</a></td>
+<td>19</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 125275); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>80 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/125275">chi1-web7178</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:51 AM</td>
+<td>2/10/2021 2:17:51 AM</td>
+<td>2/10/2021 2:19:11 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619768" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619768">8619768</a></td>
+<td>18</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 87565); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/87565">chi1-web693</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:51 AM</td>
+<td>2/10/2021 2:17:40 AM</td>
+<td>2/10/2021 2:19:00 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619767" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619767">8619767</a></td>
+<td>17</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 122517); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>80 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/122517">chi1-web6902</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:51 AM</td>
+<td>2/10/2021 2:17:29 AM</td>
+<td>2/10/2021 2:18:49 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619766" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619766">8619766</a></td>
+<td>16</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 122263); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/122263">chi1-web6876</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:51 AM</td>
+<td>2/10/2021 2:16:20 AM</td>
+<td>2/10/2021 2:17:40 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619765" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619765">8619765</a></td>
+<td>15</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 122245); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/122245">chi1-web6832</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:51 AM</td>
+<td>2/10/2021 2:16:07 AM</td>
+<td>2/10/2021 2:17:28 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619764" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619764">8619764</a></td>
+<td>14</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 122305); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>80 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/122305">chi1-web6733</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:50 AM</td>
+<td>2/10/2021 2:15:10 AM</td>
+<td>2/10/2021 2:16:30 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619763" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619763">8619763</a></td>
+<td>13</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 116889); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/116889">chi1-web6692</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:50 AM</td>
+<td>2/10/2021 2:15:16 AM</td>
+<td>2/10/2021 2:16:36 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619762" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619762">8619762</a></td>
+<td>12</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 117067); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/117067">chi1-web6588</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:50 AM</td>
+<td>2/10/2021 2:13:13 AM</td>
+<td>2/10/2021 2:14:32 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619761" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619761">8619761</a></td>
+<td>11</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 117001); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>80 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/117001">chi1-web6523</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:50 AM</td>
+<td>2/10/2021 2:13:10 AM</td>
+<td>2/10/2021 2:14:30 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619760" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619760">8619760</a></td>
+<td>10</td>
+<td class="text-danger">Failed</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 116556); </td>
+<td></td>
+<td>22295</td>
+<td></td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/116556">chi1-web6263</a></td>
+<td>2</td>
+<td>2/10/2021 2:08:50 AM</td>
+<td></td>
+<td></td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619759" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619759">8619759</a></td>
+<td>9</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 87578); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/87578">chi1-web623</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:49 AM</td>
+<td>2/10/2021 2:13:16 AM</td>
+<td>2/10/2021 2:14:37 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619758" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619758">8619758</a></td>
+<td>8</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 115719); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/115719">chi1-web6004</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:49 AM</td>
+<td>2/10/2021 2:11:15 AM</td>
+<td>2/10/2021 2:12:35 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619757" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619757">8619757</a></td>
+<td>7</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 115814); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/115814">chi1-web5971</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:49 AM</td>
+<td>2/10/2021 2:11:14 AM</td>
+<td>2/10/2021 2:12:34 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619756" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619756">8619756</a></td>
+<td>6</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 89600); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/89600">chi1-web589</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:49 AM</td>
+<td>2/10/2021 2:11:15 AM</td>
+<td>2/10/2021 2:12:35 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619755" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619755">8619755</a></td>
+<td>5</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 89347); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>80 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/89347">chi1-web565</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:49 AM</td>
+<td>2/10/2021 2:11:12 AM</td>
+<td>2/10/2021 2:12:32 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619754" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619754">8619754</a></td>
+<td>4</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 87776); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/87776">chi1-web556</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:48 AM</td>
+<td>2/10/2021 2:09:15 AM</td>
+<td>2/10/2021 2:10:35 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619753" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619753">8619753</a></td>
+<td>3</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 94060); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/94060">chi1-web1622</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:48 AM</td>
+<td>2/10/2021 2:09:15 AM</td>
+<td>2/10/2021 2:10:36 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619752" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619752">8619752</a></td>
+<td>2</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 93754); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/93754">chi1-web1025</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:48 AM</td>
+<td>2/10/2021 2:09:11 AM</td>
+<td>2/10/2021 2:10:31 AM</td>
+
+        </tr>        
+        <tr class="task-row" data-url="/ServerJobs/TaskRow/8619751" data-completed-value="True">
+            <td><a href="https://devops.sitetest1.roblox.local/ServerJobs/TaskDetails/8619751">8619751</a></td>
+<td>1</td>
+<td class="">Succeeded</td>
+<td>OfflineIISResetUsingKeepAliveFiles $(GetIP 93776); </td>
+<td>True
+</td>
+<td>22295</td>
+<td>81 sec</td>
+<td><a href="https://devops.sitetest1.roblox.local/Servers/ServerDetails/93776">chi1-web1014</a></td>
+<td>1</td>
+<td>2/10/2021 2:08:48 AM</td>
+<td>2/10/2021 2:09:13 AM</td>
+<td>2/10/2021 2:10:33 AM</td>
+
+        </tr>        
+
+    </tbody>
+</table>
+
+<span class="pull-right">
+    <a href="https://devops.sitetest1.roblox.local/ServerJobs/ExportInstanceTasksToCsv?serverJobInstanceID=117697" target="_self"><span class="glyphicon glyphicon-download-alt"></span><span style="padding-left: 8px">Download all as CSV</span></a>
+</span>
+
+<div class="pagination-container"><ul class="pagination"><li class="active"><a>1</a></li></ul></div>
+
+
+        </div>
+
+        <script src="https://devops.sitetest1.roblox.local/bundles/scripts?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="https://devops.sitetest1.roblox.local/bundles/serverjobs-instance-details-page?v=axjJOkahhPe9igogrTrmC99cX-InTJEPjzp2Rpix9sQ1"></script>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Roblox.autorefreshHelpers.autorefreshById("status");
+            Roblox.autorefreshHelpers.autorefreshByClass("task-row", 10000, function (element, html) {
+                // get current sort order
+                var table = $("table.sortable-table");
+                var sortOn = table[0].config.sortList;
+
+                // replace contents
+                element.html(html);
+
+                // sort table on old sort order
+                table.tablesorter({ sortList: sortOn });
+            });
+        });
+    </script>
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/ServerJobs/InstanceDetails/117697 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 04:06:11 GMT -->
+</html>

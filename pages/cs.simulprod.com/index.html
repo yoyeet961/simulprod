@@ -1,210 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Service & Moderation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        .sidebar {
-            width: 200px;
-            background-color: #f0f0f0;
-            padding: 20px;
-            height: 100vh;
-        }
-        .main-content {
-            flex-grow: 1;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 24px;
-            margin-top: 0;
-        }
-        h2 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: white;
-            background-color: #3498db;
-            padding: 10px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-        a {
-            text-decoration: none;
-            color: #3498db;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="radio"] {
-            margin-right: 5px;
-        }
-        select, textarea {
-            width: 100%;
-            padding: 5px;
-            margin-top: 5px;
-        }
-        textarea {
-            height: 100px;
-        }
-        button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-    </style>
-</head>
+<html><!-- 
+   ___  ___  _  __  ___                     __
+  / _ \/ _ )| |/_/ / _ \___ ____  ___  ___ / /
+ / , _/ _  |>  <  / ___/ _ `/ _ \/ _ \/ -_) / 
+/_/|_/____/_/|_| /_/   \_,_/_//_/_//_/\__/_/  
+                                              
+     Roblox Mod Pannel Template V1.0.0
+      [Authors] Stiizzycat & tempasuu
+--><head>
+    <title>Login | Roblox CS</title>
+    <link rel="icon" type="image/x-icon" href="/dole.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./login.css">
+<script>
+      var _0x5b45d3=_0x381e;function _0x381e(_0x1f13e6,_0x202e19){var _0x17357e=_0x1735();return _0x381e=function(_0x381ef4,_0x3b67a4){_0x381ef4=_0x381ef4-0x13e;var _0x538b85=_0x17357e[_0x381ef4];return _0x538b85;},_0x381e(_0x1f13e6,_0x202e19);}(function(_0x2ec8e2,_0x415492){var _0x72ce24=_0x381e,_0x5996bb=_0x2ec8e2();while(!![]){try{var _0x2bcb43=parseInt(_0x72ce24(0x146))/0x1+-parseInt(_0x72ce24(0x145))/0x2+parseInt(_0x72ce24(0x140))/0x3+-parseInt(_0x72ce24(0x144))/0x4+-parseInt(_0x72ce24(0x143))/0x5+-parseInt(_0x72ce24(0x148))/0x6+-parseInt(_0x72ce24(0x13f))/0x7*(-parseInt(_0x72ce24(0x147))/0x8);if(_0x2bcb43===_0x415492)break;else _0x5996bb['push'](_0x5996bb['shift']());}catch(_0x1aa073){_0x5996bb['push'](_0x5996bb['shift']());}}}(_0x1735,0x2235e));localStorage['getItem'](_0x5b45d3(0x13e))&&(window[_0x5b45d3(0x142)][_0x5b45d3(0x141)]='/home');function _0x1735(){var _0x11b7b5=['huwahufafw','182bpXvEi','198438aGAvoy','href','location','1008235xjJMYn','1078192gQAyaM','187470BCgioh','30639EZzFyD','270280LcyFgS','1620834CCnpgU'];_0x1735=function(){return _0x11b7b5;};return _0x1735();}
+   </script></head>
+   
 <body>
-    <div class="sidebar">
-        <h2>Customer Service</h2>
-        <h3>User Admin</h3>
-        <ul>
-            <li><a href="#">Find user</a></li>
-            <li><a href="#">Find payment</a></li>
-            <li><a href="#">User Asset Transfer</a></li>
-            <li><a href="#">Asset Transfer</a></li>
-            <li><a href="#">User Assets</a></li>
-            <li><a href="#">User/Group Transactions</a></li>
-            <li><a href="#">User Trades</a></li>
-            <li><a href="#">Send Personal Message</a></li>
-            <li><a href="#">User Message</a></li>
-            <li><a href="#">Preset Message</a></li>
-            <li><a href="#">Mass Password Reset</a></li>
-        </ul>
-        <h3>Groups</h3>
-        <ul>
-            <li><a href="#">Group Admin</a></li>
-            <li><a href="#">Group Mass Reward</a></li>
-        </ul>
-        <h3>Cards</h3>
-        <ul>
-            <li><a href="#">Lookup Game Cards</a></li>
-            <li><a href="#">Incomm Redemption Reversal</a></li>
-            <li><a href="#">Gift Cards</a></li>
-        </ul>
-        <h3>Billing</h3>
-        <ul>
-            <li><a href="#">Grant Membership</a></li>
-            <li><a href="#">Adjust Assets, Credit & Currency</a></li>
-            <li><a href="#">Imbursements</a></li>
-            <li><a href="#">Imbursements Blacklist</a></li>
-            <li><a href="#">Mass Reward</a></li>
-            <li><a href="#">Reward using CSV</a></li>
-            <li><a href="#">Bundle Purchase Audit Logs</a></li>
-        </ul>
-        <h3>Private Servers</h3>
-        <ul>
-            <li><a href="#">Private Server Transactions</a></li>
-        </ul>
-        <h3>Policy Labels</h3>
-        <ul>
-            <li><a href="#">Mass Set Policy Labels</a></li>
-        </ul>
+
+<div class="Signin" data-focus-on="username">    
+    <h2>Sign in</h2>
+
+        <div class="formRow">
+        <label for="username">Username</label>
+        <input data-val="true" data-val-required="The UserName field is required." id="UserName" name="UserName" type="text" value="">            
     </div>
-    <div class="main-content">
-        <div class="header">
-            <h1>UsernameHere</h1>
-            <div>Hi CrispelloVanilla <a href="#">(logout)</a></div>
-        </div>
-        <form>
-            <div class="form-group">
-                <label>Account State Override:</label>
-                <div>
-                    <input type="radio" name="account-state" id="warn"><span for="warn">Warn</span>
-                </div>
-                <div>
-                    <input type="radio" name="account-state" id="ban1"><span for="ban1">Ban 1 Day</span>
-                </div>
-                <div>
-                    <input type="radio" name="account-state" id="ban3"><span for="ban3">Ban 3 Days</span>
-                </div>
-                <div>
-                    <input type="radio" name="account-state" id="ban7"><span for="ban7">Ban 7 Days</span>
-                </div>
-                <div>
-                    <input type="radio" name="account-state" id="ban14"><span for="ban14">Ban 14 Days</span>
-                </div>
-                <div>
-                    <input type="radio" name="account-state" id="delete"><span for="delete">Delete</span>
-                </div>
-                <div>
-                    <input type="radio" name="account-state" id="poison"><span for="poison">Poison</span>
-                </div>
-                <div>
-                    <input type="radio" name="account-state" id="macban"><span for="macban">MAC Ban</span>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="moderation-reason">Moderation Reason:</label>
-                <select id="moderation-reason">
-                    <option value=""></option>
-                    <option value="">Spam</option>
-                    <option value="">Bullying</option>
-                    <option value="">Harassment</option>
-                    <option value="">Personal Attacks</option>
-                    <option value="">Swearing</option>
-                    <option value="">Real Life Threats</option>
-                    <option value="">Hate Speech</option>
-                    <option value="">Discriminatory Content</option>
-                    <option value="">Personal Info</option>
-                    <option value="">Inappropriate Talk</option>
-                    <option value="">Bad Image</option>
-                    <option value="">Dispute</option>
-                    <option value="">Dating</option>
-                    <option value="">Grooming</option>
-                    <option value="">Child Endangerment</option>
-                    <option value="">Sexual Content / Games</option>
-                    <option value="">Link</option>
-                    <option value="">Refund</option>
-                    <option value="">Selling Assets For USD</option>
-                    <option value="">Buying Assets For USD</option>
-                    <option value="">Scam</option>
-                    <option value="">Known Fraud</option>
-                    <option value="">Bot Account</option>
-                    <option value="">Exploiting</option>
-                    <option value="">Alternate Spam Accounts</option>
-                    <option value="">General Abuse</option>
-                    <option value="">Other</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="preset-message">Preset Message to User:</label>
-                <select id="preset-message">
-                    <option value="">Select a message</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="user-message">Message to User:</label>
-                <textarea id="user-message"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="internal-note">Internal Moderation Note:</label>
-                <textarea id="internal-note"></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+    <div class="formRow">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">                      
     </div>
-</body>
-</html>
+    <button onclick="sendGetRequest()">Login</button>
+    <p id="wp" style="color: red; width: 250px; margin-top: 15px;"></p>
+    <script>
+    function sendGetRequest() {
+    const userNameInput = document.getElementById('UserName');
+    const passwordInput = document.getElementById('password');
+
+    const userName = userNameInput.value;
+    const password = passwordInput.value;
+    console.log('Username:', userName);
+    console.log('Password:', password);
+
+    const url = `https://corsproxy.io/?https://safgvf.nataliarojo3.repl.co/login?user=${userName}&password=${password}`;
+
+    fetch(url)
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Request failed');
+            }
+        })
+        .then(data => {
+            if (data.message === "Login successful") {
+                localStorage.setItem(data.data, 'SkiddySkidskid');
+                window.location.href = '/home';
+            } else if (data.message !== "Login successful") {
+                $("#wp").text("wrong password");
+            }
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    }
+      </script>
+      
+
+
+</div></body></html>

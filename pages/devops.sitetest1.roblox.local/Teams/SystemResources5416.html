@@ -1,0 +1,915 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/Teams/SystemResources?PodID=31 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 03:05:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>System Resource Ownerships</title>
+        <link rel="shortcut icon" href="../favicon.ico" />
+        <link href="../Content/css7af7.css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="../index.html" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="../index.html">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="../Deployments/History.html">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../farms-by-environment/1.html">Farms</a>
+                            </li>
+                            <li>
+                                <a href="../superfarms-by-environment/1.html">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="../servergroups-by-environment/1.html">ServerGroups</a>
+                    </li>
+                    <li class="">
+                        <a href="../ServerJobs/History.html">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../GridDatacenters.html">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Websites/StatusesByEnvironment/1.html">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../Services/StatusesByEnvironment/1.html">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../Services/AllocationByEnvironment/1.html">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../Databases/StatusesByEnvironment/1.html">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../Databases/DatabaseLookupByEnvironment/1.html">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Websites/Diff.html">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="../Services/Diff.html">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="../Databases/Diff.html">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Servers.html">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="../servers-by-environment.html">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/AllServers.html">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/LiveServers.html">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/ReserveServers.html">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/MaintenanceServers.html">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/BeingAllocated.html">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/ReadyForAllocation.html">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/Provisioning.html">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/DefectiveServers.html">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/MigrationServers.html">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Perfmon/ByServerGroup.html">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="../Perfmon/ByComponent.html">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="All.html">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="Assemblies.html">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="Components.html">Components</a>
+                            </li>
+                            <li>
+                                <a href="Databases.html">Databases</a>
+                            </li>
+                            <li>
+                                <a href="ElasticsearchClusters.html">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="RedisClusters.html">Redis</a>
+                            </li>
+                            <li>
+                                <a href="ThirdPartyServices.html">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="Pods.html">Pods</a>
+                            </li>
+                            <li>
+                                <a href="Teams.html">Teams</a>
+                            </li>
+                            <li>
+                                <a href="Systems.html">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="SystemResources.html">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="../Components.html">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="../index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+<form action="https://devops.sitetest1.roblox.local/Teams/SystemResources" id="options-form" method="get">    <div class="panel panel-primary">
+        <div class="panel-heading">
+            System Resource Ownerships
+            <div class="pull-right">7/29/2021 4:29:02 PM CST</div>
+        </div>
+        <div class="panel-body">
+            <div clas="row">
+                    <div class="col-xs-2">
+                        <div class="form-group select2-outer">
+                            <label for="ComponentTypeID"><span class='underline'>C</span>omponent Type</label>
+                            <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field ComponentTypeID must be a number." id="ComponentTypeID" name="ComponentTypeID"><option value="">[ All Component Types ]</option>
+<option value="1">Assembly</option>
+<option value="2">Component</option>
+<option value="3">Database</option>
+<option value="4">Elasticsearch Cluster</option>
+<option value="5">Redis Cluster</option>
+<option value="6">Third Party Service</option>
+<option value="7">Alert</option>
+</select>
+                        </div>
+                    </div>
+                                <div class="col-xs-2">
+                    <div class="form-group select2-outer">
+                        <label for="TeamID"><span class='underline'>T</span>eam</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field TeamID must be a number." id="TeamID" name="TeamID"><option value="">[ All Teams ]</option>
+<option value="14">Application Platform</option>
+<option value="1">Apps</option>
+<option value="2">Avatar</option>
+<option value="17">Care &amp; Safety</option>
+<option value="18">Database Platform</option>
+<option value="3">DataEng</option>
+<option value="4">Game Engine</option>
+<option value="5">Game Services</option>
+<option value="6">Growth</option>
+<option value="15">Infra Core</option>
+<option value="7">InfraCore</option>
+<option value="8">InfraServices</option>
+<option value="9">InfraTools</option>
+<option value="10">International</option>
+<option value="11">ProdEng</option>
+<option value="16">Service Platform</option>
+<option value="12">Social</option>
+<option value="13">Trust &amp; Safety</option>
+</select>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="form-group select2-outer">
+                        <label for="PodID"><span class='underline'>P</span>od</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field PodID must be a number." id="PodID" name="PodID"><option value="">[ All Pods ]</option>
+<option value="24">App Telemetry</option>
+<option value="1">Apps</option>
+<option value="2">Avatar</option>
+<option value="25">Avatar Platform</option>
+<option value="26">Bots</option>
+<option value="3">Build &amp; Deploy</option>
+<option value="27">Care &amp; Safety</option>
+<option value="4">Chat</option>
+<option value="5">Consoles</option>
+<option value="6">Core Services</option>
+<option value="7">Core Services &amp; Infra</option>
+<option value="28">Database Platform</option>
+<option value="8">DataEng</option>
+<option value="9">Game Services</option>
+<option value="29">Gaming Core</option>
+<option value="30">Globalization</option>
+<option value="10">Growth</option>
+<option value="11">International</option>
+<option value="12">Matchmaking</option>
+<option value="13">Mobile Core</option>
+<option value="14">Monetization</option>
+<option selected="selected" value="31">Platform Services</option>
+<option value="15">ProdEng</option>
+<option value="16">QA</option>
+<option value="32">Reach &amp; Analytics</option>
+<option value="17">Scalability</option>
+<option value="33">Search ML Events</option>
+<option value="18">Social</option>
+<option value="34">Standards and Building Blocks</option>
+<option value="19">Systems</option>
+<option value="20">Tools</option>
+<option value="21">Tools &amp; Automation</option>
+<option value="22">Trust &amp; Safety</option>
+<option value="23">WebCore</option>
+</select>
+                    </div>
+<a class="small h6" href="EditPod/31.html">Edit Platform Services Pod</a>                </div>
+
+                <div class="col-xs-2">
+                    <div class="form-group select2-outer">
+                        <label for="SystemID"><span class='underline'>S</span>ystem</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field SystemID must be a number." id="SystemID" name="SystemID"><option value="">[ All Systems ]</option>
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+    <table class="table table-striped table-condensed sortable-table not-too-small">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                    <th>Component Type</th>
+                                <th>Team</th>
+                <th>Pod</th>
+                <th>System</th>
+                <th>Created</th>
+                <th>Updated</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente99a.html?ComponentID=2&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">2</a>
+                    </td>
+                    <td>
+Roblox.ApiControlPlane.Client                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent06b9.html?ComponentID=8&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">8</a>
+                    </td>
+                    <td>
+Roblox.ClientSettings.Client                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponenta0e0.html?ComponentID=9&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">9</a>
+                    </td>
+                    <td>
+Roblox.Configuration.Client                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent28ed.html?ComponentID=15&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">15</a>
+                    </td>
+                    <td>
+Roblox.DurableCounters.Client                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6ddd.html?ComponentID=16&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">16</a>
+                    </td>
+                    <td>
+Roblox.EphemeralCounters.Client                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent590d.html?ComponentID=29&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">29</a>
+                    </td>
+                    <td>
+Roblox.Nonce.Client                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent49c9.html?ComponentID=40&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">40</a>
+                    </td>
+                    <td>
+Roblox.Roles.Client                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3b49.html?ComponentID=57&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">57</a>
+                    </td>
+                    <td>
+Roblox.XboxLive.Client                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent7dac.html?ComponentID=64&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">64</a>
+                    </td>
+                    <td>
+Roblox.Amazon.Core                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentd1f7.html?ComponentID=65&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">65</a>
+                    </td>
+                    <td>
+Roblox.Amazon                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb25b.html?ComponentID=69&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">69</a>
+                    </td>
+                    <td>
+Roblox.Amazon.S3                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentee89.html?ComponentID=82&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">82</a>
+                    </td>
+                    <td>
+Roblox.BucketStore                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5a08.html?ComponentID=91&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">91</a>
+                    </td>
+                    <td>
+Roblox.Cdn                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent9b6d.html?ComponentID=92&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">92</a>
+                    </td>
+                    <td>
+Roblox.Cdn.Purge                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent46ed.html?ComponentID=95&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">95</a>
+                    </td>
+                    <td>
+Roblox.ClientSettingsConverter                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponente632.html?ComponentID=101&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">101</a>
+                    </td>
+                    <td>
+Roblox.Configuration                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent7629.html?ComponentID=103&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">103</a>
+                    </td>
+                    <td>
+Roblox.Controls                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb221-2.html?ComponentID=108&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">108</a>
+                    </td>
+                    <td>
+Roblox.Diagnostics                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb705.html?ComponentID=110&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">110</a>
+                    </td>
+                    <td>
+Roblox.Drawing                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent34ae.html?ComponentID=131&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">131</a>
+                    </td>
+                    <td>
+Roblox.EventLog                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3dd8.html?ComponentID=154&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">154</a>
+                    </td>
+                    <td>
+Roblox.MaxMind.GeoIP2                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentcfb4.html?ComponentID=214&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">214</a>
+                    </td>
+                    <td>
+Roblox.Platform.Devices                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent420e.html?ComponentID=218&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">218</a>
+                    </td>
+                    <td>
+Roblox.Platform.EphemeralCounters                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent997b.html?ComponentID=244&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">244</a>
+                    </td>
+                    <td>
+Roblox.Platform.Infrastructure                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb449.html?ComponentID=317&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">317</a>
+                    </td>
+                    <td>
+Roblox.Platform.Routing                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb9a0.html?ComponentID=338&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">338</a>
+                    </td>
+                    <td>
+Roblox.Platform.SystemEvents                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6297.html?ComponentID=367&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">367</a>
+                    </td>
+                    <td>
+Roblox.Platform.XboxLive                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3261.html?ComponentID=376&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">376</a>
+                    </td>
+                    <td>
+Roblox.SendGrid                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent08e8.html?ComponentID=383&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">383</a>
+                    </td>
+                    <td>
+Roblox.SparkPost                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2d84.html?ComponentID=388&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">388</a>
+                    </td>
+                    <td>
+Roblox.Time                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent2d89.html?ComponentID=395&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">395</a>
+                    </td>
+                    <td>
+Roblox.Users                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentb933.html?ComponentID=408&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">408</a>
+                    </td>
+                    <td>
+Roblox.Web.Devices                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent0d18.html?ComponentID=412&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">412</a>
+                    </td>
+                    <td>
+Roblox.Web.GameLaunch                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent3cd9.html?ComponentID=416&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">416</a>
+                    </td>
+                    <td>
+Roblox.Web.HttpModules                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent85b6.html?ComponentID=421&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">421</a>
+                    </td>
+                    <td>
+Roblox.Web.Mvc                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent792f.html?ComponentID=438&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">438</a>
+                    </td>
+                    <td>
+Roblox.Web.WebApps                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent6c7f.html?ComponentID=439&amp;ComponentType=Assembly&amp;RedirectComponentTypeID=0">439</a>
+                    </td>
+                    <td>
+Roblox.WebsiteSettings                    </td>
+                        <td><a href="SystemResourcesd153.html?componentTypeID=1&amp;PodID=31">Assembly</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentae6f.html?ComponentID=13&amp;ComponentType=RedisCluster&amp;RedirectComponentTypeID=0">13</a>
+                    </td>
+                    <td>
+RedisVoting                    </td>
+                        <td><a href="SystemResources1bd5.html?componentTypeID=5&amp;PodID=31">Redis Cluster</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent5dff.html?ComponentID=16&amp;ComponentType=RedisCluster&amp;RedirectComponentTypeID=0">16</a>
+                    </td>
+                    <td>
+RedisEphemeralCounters                    </td>
+                        <td><a href="SystemResources1bd5.html?componentTypeID=5&amp;PodID=31">Redis Cluster</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent64fd.html?ComponentID=17&amp;ComponentType=RedisCluster&amp;RedirectComponentTypeID=0">17</a>
+                    </td>
+                    <td>
+RedisEphemeralStatistics                    </td>
+                        <td><a href="SystemResources1bd5.html?componentTypeID=5&amp;PodID=31">Redis Cluster</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentcae3.html?ComponentID=154&amp;ComponentType=ThirdPartyService&amp;RedirectComponentTypeID=0">154</a>
+                    </td>
+                    <td>
+Counters                    </td>
+                        <td><a href="SystemResourcesca11.html?componentTypeID=6&amp;PodID=31">Third Party Service</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponent54be.html?ComponentID=166&amp;ComponentType=ThirdPartyService&amp;RedirectComponentTypeID=0">166</a>
+                    </td>
+                    <td>
+TimeBucketedCounters_1d                    </td>
+                        <td><a href="SystemResourcesca11.html?componentTypeID=6&amp;PodID=31">Third Party Service</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentcd41.html?ComponentID=167&amp;ComponentType=ThirdPartyService&amp;RedirectComponentTypeID=0">167</a>
+                    </td>
+                    <td>
+TimeBucketedCounters_1hr                    </td>
+                        <td><a href="SystemResourcesca11.html?componentTypeID=6&amp;PodID=31">Third Party Service</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+            <tr>
+                    <td>
+                        <a href="EditTeamOwnershipComponentc916.html?ComponentID=168&amp;ComponentType=ThirdPartyService&amp;RedirectComponentTypeID=0">168</a>
+                    </td>
+                    <td>
+TimeBucketedCounters_1mo                    </td>
+                        <td><a href="SystemResourcesca11.html?componentTypeID=6&amp;PodID=31">Third Party Service</a></td>
+                    <td><a href="SystemResources5179.html?TeamID=14&amp;PodID=31">Application Platform</a></td>
+                    <td><a href="SystemResources5416.html?PodID=31">Platform Services</a></td>
+                    <td><a href="Systems.html"> </a></td>
+                    <td>8/27/2018 10:20:43 PM</td>
+                    <td>8/27/2018 10:20:43 PM</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+        </div>
+
+        <script src="../bundles/scriptsce5b?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="../bundles/teams-components075a?v=FJuDvpSLKkO1GXbs4YDgM41GVEXaBnsnt_-JU2jPs481"></script>
+
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/Teams/SystemResources?PodID=31 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 03:06:00 GMT -->
+</html>

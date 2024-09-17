@@ -1,0 +1,2004 @@
+
+
+
+
+<!DOCTYPE html>
+<!-- RA-WEB208 -->
+<html>
+    
+<!-- Mirrored from devops.sitetest1.roblox.local/Teams/Components?ComponentSubTypeID=30 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 02:48:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Component Ownership</title>
+        <link rel="shortcut icon" href="../favicon.ico" />
+        <link href="../Content/css7af7.css?v=2yeoonhnwCPMrxoqbRW1OQyO0aaTwrI-lgvUpfp_nSA1" rel="stylesheet"/>
+
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="../index.html" class="navbar-brand">Roblox DevOps</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="../index.html">Deployments</a>
+                    </li>
+                    <li class="">
+                        <a href="../Deployments/History.html">History</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Farms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../farms-by-environment/1.html">Farms</a>
+                            </li>
+                            <li>
+                                <a href="../superfarms-by-environment/1.html">SuperFarms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="../servergroups-by-environment/1.html">ServerGroups</a>
+                    </li>
+                    <li class="">
+                        <a href="../ServerJobs/History.html">Jobs</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../GridDatacenters.html">Grid Datacenters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Statuses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Websites/StatusesByEnvironment/1.html">Website Statuses</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../Services/StatusesByEnvironment/1.html">Service Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../Services/AllocationByEnvironment/1.html">Service Allocation</a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a href="../Databases/StatusesByEnvironment/1.html">Database Statuses</a>
+                            </li>
+                            <li>
+                                <a href="../Databases/DatabaseLookupByEnvironment/1.html">Database Lookup</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Differences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Websites/Diff.html">Website Differences</a>
+                            </li>
+                            <li>
+                                <a href="../Services/Diff.html">Service Differences</a>
+                            </li>
+                            <li>
+                                <a href="../Databases/Diff.html">Database Differences</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Servers.html">Search Servers</a>
+                            </li>
+                            <li>
+                                <a href="../servers-by-environment.html">Server Explorer</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/AllServers.html">All Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/LiveServers.html">Live Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/ReserveServers.html">Reserve Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/MaintenanceServers.html">Maintenance Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/BeingAllocated.html">Being Allocated</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/ReadyForAllocation.html">Ready for Allocation</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/Provisioning.html">Still Provisioning</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/DefectiveServers.html">Defective Servers</a>
+                            </li>
+                            <li>
+                                <a href="../Servers/MigrationServers.html">Migration Servers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfmon <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Perfmon/ByServerGroup.html">By Server Group</a>
+                            </li>
+                            <li>
+                                <a href="../Perfmon/ByComponent.html">By Component</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="All.html">All Ownership</a>
+                            </li>
+                            <li>
+                                <a href="Assemblies.html">Assemblies</a>
+                            </li>
+                            <li>
+                                <a href="Components.html">Components</a>
+                            </li>
+                            <li>
+                                <a href="Databases.html">Databases</a>
+                            </li>
+                            <li>
+                                <a href="ElasticsearchClusters.html">Elasticsearch</a>
+                            </li>
+                            <li>
+                                <a href="RedisClusters.html">Redis</a>
+                            </li>
+                            <li>
+                                <a href="ThirdPartyServices.html">Third Party</a>
+                            </li>
+                            <li>
+                                <a href="Pods.html">Pods</a>
+                            </li>
+                            <li>
+                                <a href="Teams.html">Teams</a>
+                            </li>
+                            <li>
+                                <a href="Systems.html">System Ownerships</a>
+                            </li>
+                            <li>
+                                <a href="SystemResources.html">System Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="../Components.html">Components</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Hello, servicenetbox!</li>
+                        <li class="navbar-link"><a href="../index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid body-content">
+            
+
+
+<form action="https://devops.sitetest1.roblox.local/Teams/Components" id="options-form" method="get">    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Component Ownership
+            <div class="pull-right">7/29/2021 4:11:40 PM CST</div>
+        </div>
+        <div class="panel-body">
+            <div clas="row">
+                                    <div class="col-xs-3">
+                        <div class="form-group select2-outer">
+                            <label for="ComponentSubTypeID">T<span class='underline'>y</span>pe</label>
+                            <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field ComponentSubTypeID must be a number." id="ComponentSubTypeID" name="ComponentSubTypeID"><option value="">[ All Types ]</option>
+<option value="39">Admin Sites</option>
+<option selected="selected" value="30">API Web Services</option>
+<option value="153">AssetDependenciesRCC</option>
+<option value="49">DataStore Windows Services</option>
+<option value="66">DevOps Sites</option>
+<option value="12">Distributed Windows Services</option>
+<option value="64">Foundation Web Services</option>
+<option value="222">Game Grid Canary</option>
+<option value="0">Global</option>
+<option value="114">Grid Monitor Servers</option>
+<option value="189">Micro Services</option>
+<option value="109">Notifications Web Services</option>
+<option value="82">Observation Distributed Windows Services</option>
+<option value="324">Operations Web APIs</option>
+<option value="127">Private API Web Services</option>
+<option value="52">Proxy Sites</option>
+<option value="279">ProxyWeb-China</option>
+<option value="106">ServicesUnmonitored</option>
+<option value="10">Singleton Windows Services</option>
+<option value="234">SiteTest3 Only Websites</option>
+<option value="54">Static Content Sites</option>
+<option value="223">Thumbnail Grid Canary</option>
+<option value="46">Thumbnail Grid Servers</option>
+<option value="323">UGCValidationRCC</option>
+<option value="182">WebApp Sites</option>
+<option value="8">WWW Site</option>
+</select>
+                        </div>
+                    </div>
+                <div class="col-xs-3">
+                    <div class="form-group select2-outer">
+                        <label for="TeamID"><span class='underline'>T</span>eam</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field TeamID must be a number." id="TeamID" name="TeamID"><option value="">[ All Teams ]</option>
+<option value="14">Application Platform</option>
+<option value="1">Apps</option>
+<option value="2">Avatar</option>
+<option value="17">Care &amp; Safety</option>
+<option value="18">Database Platform</option>
+<option value="3">DataEng</option>
+<option value="4">Game Engine</option>
+<option value="5">Game Services</option>
+<option value="6">Growth</option>
+<option value="15">Infra Core</option>
+<option value="7">InfraCore</option>
+<option value="8">InfraServices</option>
+<option value="9">InfraTools</option>
+<option value="10">International</option>
+<option value="11">ProdEng</option>
+<option value="16">Service Platform</option>
+<option value="12">Social</option>
+<option value="13">Trust &amp; Safety</option>
+</select>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-group select2-outer">
+                        <label for="PodID"><span class='underline'>P</span>od</label>
+                        <select class="form-control input-sm will-select2" data-val="true" data-val-number="The field PodID must be a number." id="PodID" name="PodID"><option value="">[ All Pods ]</option>
+<option value="24">App Telemetry</option>
+<option value="1">Apps</option>
+<option value="2">Avatar</option>
+<option value="25">Avatar Platform</option>
+<option value="26">Bots</option>
+<option value="3">Build &amp; Deploy</option>
+<option value="27">Care &amp; Safety</option>
+<option value="4">Chat</option>
+<option value="5">Consoles</option>
+<option value="6">Core Services</option>
+<option value="7">Core Services &amp; Infra</option>
+<option value="28">Database Platform</option>
+<option value="8">DataEng</option>
+<option value="9">Game Services</option>
+<option value="29">Gaming Core</option>
+<option value="30">Globalization</option>
+<option value="10">Growth</option>
+<option value="11">International</option>
+<option value="12">Matchmaking</option>
+<option value="13">Mobile Core</option>
+<option value="14">Monetization</option>
+<option value="31">Platform Services</option>
+<option value="15">ProdEng</option>
+<option value="16">QA</option>
+<option value="32">Reach &amp; Analytics</option>
+<option value="17">Scalability</option>
+<option value="33">Search ML Events</option>
+<option value="18">Social</option>
+<option value="34">Standards and Building Blocks</option>
+<option value="19">Systems</option>
+<option value="20">Tools</option>
+<option value="21">Tools &amp; Automation</option>
+<option value="22">Trust &amp; Safety</option>
+<option value="23">WebCore</option>
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+    <table class="table table-striped table-condensed sortable-table not-too-small">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                                    <th>Type</th>
+                <th>Team</th>
+                <th>Pod</th>
+                <th>Created</th>
+                <th>Updated</th>
+                    <th>First Deployed</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent4b82.html?ComponentID=181&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">181</a>
+                        </td>
+                        <td>
+Roblox.Algorithm.GameSearch.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components0b54.html?ComponentSubTypeID=30&amp;TeamID=3">DataEng</a></td>
+                        <td><a href="Componentsd494.html?ComponentSubTypeID=30&amp;PodID=8">DataEng</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+2/23/2017 1:03:09 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent8daf.html?ComponentID=829&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">829</a>
+                        </td>
+                        <td>
+Roblox.AllGamesSearch.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+2/5/2020 3:39:11 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent9a8d.html?ComponentID=24&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">24</a>
+                        </td>
+                        <td>
+Roblox.ApiControlPlane.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Componentsccd5.html?ComponentSubTypeID=30&amp;PodID=7">Core Services &amp; Infra</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/12/2014 2:22:04 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent5ebc.html?ComponentID=676&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">676</a>
+                        </td>
+                        <td>
+Roblox.AssembliesProxy.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+4/5/2019 4:04:01 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent3ef5.html?ComponentID=318&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">318</a>
+                        </td>
+                        <td>
+Roblox.AssetDetailsQuality.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components0b54.html?ComponentSubTypeID=30&amp;TeamID=3">DataEng</a></td>
+                        <td><a href="Componentsd494.html?ComponentSubTypeID=30&amp;PodID=8">DataEng</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+5/22/2018 5:39:49 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent2793.html?ComponentID=748&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">748</a>
+                        </td>
+                        <td>
+Roblox.AssetFormats.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+10/3/2019 4:44:42 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent7a89.html?ComponentID=422&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">422</a>
+                        </td>
+                        <td>
+Roblox.Assets.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+11/13/2018 4:18:16 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentd0f3.html?ComponentID=682&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">682</a>
+                        </td>
+                        <td>
+Roblox.Authenticator.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+4/23/2019 10:16:08 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent9018.html?ComponentID=690&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">690</a>
+                        </td>
+                        <td>
+Roblox.Avatar.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+9/18/2019 6:09:04 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentc945.html?ComponentID=680&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">680</a>
+                        </td>
+                        <td>
+Roblox.AvatarCatalogSearch.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+6/13/2019 4:35:10 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent2688-2.html?ComponentID=867&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">867</a>
+                        </td>
+                        <td>
+Roblox.AvatarEmotes.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+4/27/2020 12:59:39 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent64c1.html?ComponentID=746&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">746</a>
+                        </td>
+                        <td>
+Roblox.AvatarPolicy.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+11/5/2019 3:59:05 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent21f7.html?ComponentID=184&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">184</a>
+                        </td>
+                        <td>
+Roblox.Badges.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components3e59.html?ComponentSubTypeID=30&amp;TeamID=5">Game Services</a></td>
+                        <td><a href="Componentsa5ae.html?ComponentSubTypeID=30&amp;PodID=9">Game Services</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>7/24/2020 6:43:29 PM</td>
+                            <td>
+4/20/2017 1:08:29 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent4b18.html?ComponentID=3&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">3</a>
+                        </td>
+                        <td>
+Roblox.Billing.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components314b.html?ComponentSubTypeID=30&amp;TeamID=6">Growth</a></td>
+                        <td><a href="Components994d.html?ComponentSubTypeID=30&amp;PodID=14">Monetization</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+7/1/2014 12:29:04 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentad5a.html?ComponentID=332&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">332</a>
+                        </td>
+                        <td>
+Roblox.BroadcastNotifications.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+7/6/2018 11:42:21 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent3607.html?ComponentID=232&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">232</a>
+                        </td>
+                        <td>
+Roblox.Bundles.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components0353.html?ComponentSubTypeID=30&amp;TeamID=1">Apps</a></td>
+                        <td><a href="Components3293.html?ComponentSubTypeID=30&amp;PodID=5">Consoles</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+10/16/2017 5:41:29 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentcfc2.html?ComponentID=694&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">694</a>
+                        </td>
+                        <td>
+Roblox.CanonicalAssets.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+6/3/2019 4:20:48 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentddb6.html?ComponentID=4&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">4</a>
+                        </td>
+                        <td>
+Roblox.ClientSettings.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Components98f7.html?ComponentSubTypeID=30&amp;PodID=23">WebCore</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/11/2014 7:12:34 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent25c6.html?ComponentID=233&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">233</a>
+                        </td>
+                        <td>
+Roblox.Contacts.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components314b.html?ComponentSubTypeID=30&amp;TeamID=6">Growth</a></td>
+                        <td><a href="Components3c29.html?ComponentSubTypeID=30&amp;PodID=10">Growth</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+1/31/2018 5:24:54 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponente58b.html?ComponentID=326&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">326</a>
+                        </td>
+                        <td>
+Roblox.ContentRights.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components3e59.html?ComponentSubTypeID=30&amp;TeamID=5">Game Services</a></td>
+                        <td><a href="Componentsa5ae.html?ComponentSubTypeID=30&amp;PodID=9">Game Services</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+5/9/2018 5:10:21 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent6be2.html?ComponentID=22&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">22</a>
+                        </td>
+                        <td>
+Roblox.Currency.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components314b.html?ComponentSubTypeID=30&amp;TeamID=6">Growth</a></td>
+                        <td><a href="Components994d.html?ComponentSubTypeID=30&amp;PodID=14">Monetization</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/6/2014 3:23:53 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent21cb.html?ComponentID=731&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">731</a>
+                        </td>
+                        <td>
+Roblox.DelayedRelease.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+8/20/2019 1:45:14 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentbd22.html?ComponentID=831&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">831</a>
+                        </td>
+                        <td>
+Roblox.DeveloperExchange.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+7/15/2020 2:06:32 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent0919.html?ComponentID=835&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">835</a>
+                        </td>
+                        <td>
+Roblox.DeveloperPermissionResolution.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+2/24/2020 7:08:52 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent5bc1.html?ComponentID=836&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">836</a>
+                        </td>
+                        <td>
+Roblox.DeveloperPermissions.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+2/24/2020 7:06:28 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentfb09.html?ComponentID=670&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">670</a>
+                        </td>
+                        <td>
+Roblox.DigitalCodes.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent2c19.html?ComponentID=339&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">339</a>
+                        </td>
+                        <td>
+Roblox.Discussions.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponenteefb.html?ComponentID=42&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">42</a>
+                        </td>
+                        <td>
+Roblox.DurableCounters.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Componentsccd5.html?ComponentSubTypeID=30&amp;PodID=7">Core Services &amp; Infra</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/18/2014 6:26:34 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentf0d2.html?ComponentID=735&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">735</a>
+                        </td>
+                        <td>
+Roblox.EngagementPayouts.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+8/26/2019 7:41:05 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent23cb.html?ComponentID=12&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">12</a>
+                        </td>
+                        <td>
+Roblox.EphemeralCounters.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Componentsccd5.html?ComponentSubTypeID=30&amp;PodID=7">Core Services &amp; Infra</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+7/7/2014 6:13:42 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent7033.html?ComponentID=241&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">241</a>
+                        </td>
+                        <td>
+Roblox.EventStreamConfiguration.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components0b54.html?ComponentSubTypeID=30&amp;TeamID=3">DataEng</a></td>
+                        <td><a href="Componentsd494.html?ComponentSubTypeID=30&amp;PodID=8">DataEng</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+10/31/2017 11:56:29 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent64dd.html?ComponentID=208&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">208</a>
+                        </td>
+                        <td>
+Roblox.Favorites.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components3e59.html?ComponentSubTypeID=30&amp;TeamID=5">Game Services</a></td>
+                        <td><a href="Componentsa5ae.html?ComponentSubTypeID=30&amp;PodID=9">Game Services</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/2/2017 5:39:16 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent9415.html?ComponentID=693&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">693</a>
+                        </td>
+                        <td>
+Roblox.Files.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+5/6/2019 3:04:37 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentae3c.html?ComponentID=311&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">311</a>
+                        </td>
+                        <td>
+Roblox.Followings.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+7/6/2018 11:42:15 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent8866.html?ComponentID=502&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">502</a>
+                        </td>
+                        <td>
+Roblox.Fraud.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+11/20/2020 11:35:50 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent8c73.html?ComponentID=5&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">5</a>
+                        </td>
+                        <td>
+Roblox.Friends.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+7/17/2014 4:08:51 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent2a0a.html?ComponentID=411&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">411</a>
+                        </td>
+                        <td>
+Roblox.GameCatalog.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent7670.html?ComponentID=40&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">40</a>
+                        </td>
+                        <td>
+Roblox.GameInstances.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Components5b2b.html?ComponentSubTypeID=30&amp;PodID=12">Matchmaking</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+7/21/2014 4:40:21 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent274f.html?ComponentID=498&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">498</a>
+                        </td>
+                        <td>
+Roblox.GameLocalization.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+4/10/2019 6:40:25 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent0412.html?ComponentID=701&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">701</a>
+                        </td>
+                        <td>
+Roblox.GameLocalizationResolution.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+6/6/2019 12:35:28 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent1bd1.html?ComponentID=41&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">41</a>
+                        </td>
+                        <td>
+Roblox.GamePersistence.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components3e59.html?ComponentSubTypeID=30&amp;TeamID=5">Game Services</a></td>
+                        <td><a href="Componentsa5ae.html?ComponentSubTypeID=30&amp;PodID=9">Game Services</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+9/2/2014 3:54:38 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent70c4.html?ComponentID=6&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">6</a>
+                        </td>
+                        <td>
+Roblox.Games.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+8/9/2014 3:30:39 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent192b.html?ComponentID=606&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">606</a>
+                        </td>
+                        <td>
+Roblox.GameSearchUITreatments.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+3/14/2019 6:19:56 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentb4a8.html?ComponentID=44&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">44</a>
+                        </td>
+                        <td>
+Roblox.GameTransactions.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components314b.html?ComponentSubTypeID=30&amp;TeamID=6">Growth</a></td>
+                        <td><a href="Components994d.html?ComponentSubTypeID=30&amp;PodID=14">Monetization</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/14/2014 6:28:43 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent2e1c.html?ComponentID=331&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">331</a>
+                        </td>
+                        <td>
+Roblox.GameUpdates.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+7/6/2018 11:38:25 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent0b6c.html?ComponentID=637&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">637</a>
+                        </td>
+                        <td>
+Roblox.GiftCards.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentabe5.html?ComponentID=243&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">243</a>
+                        </td>
+                        <td>
+Roblox.Groups.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Componentsec2a.html?ComponentSubTypeID=30&amp;TeamID=12">Social</a></td>
+                        <td><a href="Components5a94.html?ComponentSubTypeID=30&amp;PodID=18">Social</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+11/14/2017 2:26:28 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent7665.html?ComponentID=336&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">336</a>
+                        </td>
+                        <td>
+Roblox.GroupSearch.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+6/27/2018 4:37:49 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentb8f5.html?ComponentID=512&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">512</a>
+                        </td>
+                        <td>
+Roblox.Identities.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+1/7/2019 4:32:30 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent1896.html?ComponentID=333&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">333</a>
+                        </td>
+                        <td>
+Roblox.InGameContentTables.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+6/19/2018 4:18:29 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponenta728.html?ComponentID=766&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">766</a>
+                        </td>
+                        <td>
+Roblox.IpAddresses.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+10/31/2019 4:31:27 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponenta7c5.html?ComponentID=666&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">666</a>
+                        </td>
+                        <td>
+Roblox.ItemTags.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+5/20/2019 3:53:17 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent9536.html?ComponentID=871&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">871</a>
+                        </td>
+                        <td>
+Roblox.Kafka-Neteng.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent6c17.html?ComponentID=934&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">934</a>
+                        </td>
+                        <td>
+Roblox.KoreaIdentityVerification.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent5621.html?ComponentID=679&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">679</a>
+                        </td>
+                        <td>
+Roblox.LibraryCatalogSearch.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponenteac9.html?ComponentID=587&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">587</a>
+                        </td>
+                        <td>
+Roblox.Localization.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+11/5/2019 3:59:41 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentb46e.html?ComponentID=712&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">712</a>
+                        </td>
+                        <td>
+Roblox.LocalizationTables.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+8/1/2019 1:45:26 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentba5b.html?ComponentID=308&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">308</a>
+                        </td>
+                        <td>
+Roblox.MachineLearningEvaluator.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+4/19/2018 11:55:06 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent50bb.html?ComponentID=27&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">27</a>
+                        </td>
+                        <td>
+Roblox.MarketPlace.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components314b.html?ComponentSubTypeID=30&amp;TeamID=6">Growth</a></td>
+                        <td><a href="Components994d.html?ComponentSubTypeID=30&amp;PodID=14">Monetization</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+7/17/2014 8:04:57 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent1300.html?ComponentID=508&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">508</a>
+                        </td>
+                        <td>
+Roblox.MessageRouter.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+1/23/2019 5:07:37 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent23db.html?ComponentID=192&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">192</a>
+                        </td>
+                        <td>
+Roblox.Nonce.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+9/5/2017 11:34:55 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentadc5.html?ComponentID=20&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">20</a>
+                        </td>
+                        <td>
+Roblox.Ownership.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Components166f.html?ComponentSubTypeID=30&amp;PodID=17">Scalability</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/13/2014 2:52:15 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent7319.html?ComponentID=183&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">183</a>
+                        </td>
+                        <td>
+Roblox.OwnershipV2.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Components166f.html?ComponentSubTypeID=30&amp;PodID=17">Scalability</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+2/28/2017 4:12:49 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent0abd.html?ComponentID=371&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">371</a>
+                        </td>
+                        <td>
+Roblox.Packages.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+7/27/2018 6:58:16 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentd545.html?ComponentID=698&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">698</a>
+                        </td>
+                        <td>
+Roblox.Passwords.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+5/23/2019 1:23:18 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent6d43.html?ComponentID=26&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">26</a>
+                        </td>
+                        <td>
+Roblox.PaypalService.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+10/10/2014 2:34:24 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent97a5.html?ComponentID=31&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">31</a>
+                        </td>
+                        <td>
+Roblox.Permissions.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components01c7.html?ComponentSubTypeID=30&amp;TeamID=13">Trust &amp; Safety</a></td>
+                        <td><a href="Components2fc8.html?ComponentSubTypeID=30&amp;PodID=22">Trust &amp; Safety</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/14/2014 5:56:08 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent16f8.html?ComponentID=636&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">636</a>
+                        </td>
+                        <td>
+Roblox.PersonalRecommendations.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+4/23/2019 4:12:31 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentb3f0.html?ComponentID=338&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">338</a>
+                        </td>
+                        <td>
+Roblox.PhoneNumbers.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+7/16/2018 8:03:18 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent6875.html?ComponentID=262&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">262</a>
+                        </td>
+                        <td>
+Roblox.Points.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components3e59.html?ComponentSubTypeID=30&amp;TeamID=5">Game Services</a></td>
+                        <td><a href="Componentsa5ae.html?ComponentSubTypeID=30&amp;PodID=9">Game Services</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+1/23/2018 1:14:18 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentd74e.html?ComponentID=409&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">409</a>
+                        </td>
+                        <td>
+Roblox.PremiumFeatures.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+11/8/2018 2:02:52 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent0427.html?ComponentID=9&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">9</a>
+                        </td>
+                        <td>
+Roblox.Presence.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Componentsccd5.html?ComponentSubTypeID=30&amp;PodID=7">Core Services &amp; Infra</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/13/2014 11:51:33 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent239f.html?ComponentID=193&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">193</a>
+                        </td>
+                        <td>
+Roblox.Recommendations.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+6/8/2017 4:17:23 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent2d4f.html?ComponentID=631&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">631</a>
+                        </td>
+                        <td>
+Roblox.RequestContext.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+2/4/2019 6:58:25 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent22eb.html?ComponentID=302&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">302</a>
+                        </td>
+                        <td>
+Roblox.Roles.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+3/21/2018 12:31:37 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent7650.html?ComponentID=648&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">648</a>
+                        </td>
+                        <td>
+Roblox.Rules.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+3/28/2019 5:55:14 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentec50.html?ComponentID=178&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">178</a>
+                        </td>
+                        <td>
+Roblox.Search.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components0b54.html?ComponentSubTypeID=30&amp;TeamID=3">DataEng</a></td>
+                        <td><a href="Componentsd494.html?ComponentSubTypeID=30&amp;PodID=8">DataEng</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+3/30/2017 3:37:18 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent0d97.html?ComponentID=13&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">13</a>
+                        </td>
+                        <td>
+Roblox.Segmentation.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Componentsec2a.html?ComponentSubTypeID=30&amp;TeamID=12">Social</a></td>
+                        <td><a href="Components5a94.html?ComponentSubTypeID=30&amp;PodID=18">Social</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/7/2014 3:49:37 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentedbc.html?ComponentID=936&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">936</a>
+                        </td>
+                        <td>
+Roblox.ServiceResiliency.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+11/16/2020 10:06:46 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentb8b1.html?ComponentID=226&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">226</a>
+                        </td>
+                        <td>
+Roblox.Sms.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Components98f7.html?ComponentSubTypeID=30&amp;PodID=23">WebCore</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+9/7/2017 1:06:13 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentfeef.html?ComponentID=372&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">372</a>
+                        </td>
+                        <td>
+Roblox.StaticContent.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+7/24/2018 6:53:50 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent0d7c.html?ComponentID=176&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">176</a>
+                        </td>
+                        <td>
+Roblox.StudioSearch.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+1/9/2017 12:52:23 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentdb6c.html?ComponentID=122&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">122</a>
+                        </td>
+                        <td>
+Roblox.SystemEvents.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Componentsccd5.html?ComponentSubTypeID=30&amp;PodID=7">Core Services &amp; Infra</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+11/5/2014 3:21:39 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent894f.html?ComponentID=198&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">198</a>
+                        </td>
+                        <td>
+Roblox.TeamCreate.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components3e59.html?ComponentSubTypeID=30&amp;TeamID=5">Game Services</a></td>
+                        <td><a href="Componentsa5ae.html?ComponentSubTypeID=30&amp;PodID=9">Game Services</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+7/12/2017 6:34:06 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponenta187.html?ComponentID=504&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">504</a>
+                        </td>
+                        <td>
+Roblox.TeamOwnership.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+10/31/2018 11:46:57 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentb322.html?ComponentID=355&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">355</a>
+                        </td>
+                        <td>
+Roblox.TextFilter.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+7/20/2018 1:28:10 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent3678.html?ComponentID=303&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">303</a>
+                        </td>
+                        <td>
+Roblox.TextProcessing.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+4/2/2018 11:10:32 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent1f61.html?ComponentID=400&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">400</a>
+                        </td>
+                        <td>
+Roblox.Themes.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+10/8/2018 8:27:35 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponenteee9.html?ComponentID=15&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">15</a>
+                        </td>
+                        <td>
+Roblox.Thumbnails.Coordination.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+6/30/2014 10:13:48 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentbd2f.html?ComponentID=30&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">30</a>
+                        </td>
+                        <td>
+Roblox.Thumbnails.Dependencies.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+11/26/2019 12:41:29 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentdf1a.html?ComponentID=14&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">14</a>
+                        </td>
+                        <td>
+Roblox.Thumbnails.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Componentsccd5.html?ComponentSubTypeID=30&amp;PodID=7">Core Services &amp; Infra</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+6/30/2014 2:12:21 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent2205.html?ComponentID=38&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">38</a>
+                        </td>
+                        <td>
+Roblox.TimeSeries.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Components166f.html?ComponentSubTypeID=30&amp;PodID=17">Scalability</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/25/2014 9:37:34 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentc1bf.html?ComponentID=354&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">354</a>
+                        </td>
+                        <td>
+Roblox.Token.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+8/8/2018 3:59:19 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentd8bb.html?ComponentID=932&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">932</a>
+                        </td>
+                        <td>
+Roblox.Trades.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+10/19/2020 2:27:10 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent4e5f.html?ComponentID=283&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">283</a>
+                        </td>
+                        <td>
+Roblox.TranslationStorage.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+2/22/2018 6:02:20 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent77fa.html?ComponentID=688&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">688</a>
+                        </td>
+                        <td>
+Roblox.TwoStepVerification.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+4/23/2019 10:16:09 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentd69b.html?ComponentID=721&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">721</a>
+                        </td>
+                        <td>
+Roblox.UGCValidationCoordination.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+9/11/2019 8:04:28 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentfb5f.html?ComponentID=45&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">45</a>
+                        </td>
+                        <td>
+Roblox.Universes.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components3e59.html?ComponentSubTypeID=30&amp;TeamID=5">Game Services</a></td>
+                        <td><a href="Componentsa5ae.html?ComponentSubTypeID=30&amp;PodID=9">Game Services</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+7/14/2014 8:39:52 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent7b71.html?ComponentID=19&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">19</a>
+                        </td>
+                        <td>
+Roblox.UserAds.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components314b.html?ComponentSubTypeID=30&amp;TeamID=6">Growth</a></td>
+                        <td><a href="Components994d.html?ComponentSubTypeID=30&amp;PodID=14">Monetization</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/7/2014 2:25:17 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentd000.html?ComponentID=865&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">865</a>
+                        </td>
+                        <td>
+Roblox.UserAvatar.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+4/21/2020 4:03:34 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponente42e.html?ComponentID=32&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">32</a>
+                        </td>
+                        <td>
+Roblox.Users.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+8/13/2014 3:37:27 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent0cf8.html?ComponentID=765&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">765</a>
+                        </td>
+                        <td>
+Roblox.UserSearch.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+10/29/2019 5:07:25 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent0c89.html?ComponentID=158&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">158</a>
+                        </td>
+                        <td>
+Roblox.Vantiv.Proxy.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components314b.html?ComponentSubTypeID=30&amp;TeamID=6">Growth</a></td>
+                        <td><a href="Components994d.html?ComponentSubTypeID=30&amp;PodID=14">Monetization</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/25/2016 6:05:52 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent1255.html?ComponentID=25&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">25</a>
+                        </td>
+                        <td>
+Roblox.VersionCompatibility.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Componentsccd5.html?ComponentSubTypeID=30&amp;PodID=7">Core Services &amp; Infra</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/14/2014 3:20:34 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponenta96d.html?ComponentID=872&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">872</a>
+                        </td>
+                        <td>
+Roblox.VipServers.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+5/5/2020 1:37:59 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent377d.html?ComponentID=767&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">767</a>
+                        </td>
+                        <td>
+Roblox.VirtualCurrencyGateway.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+11/22/2019 12:54:50 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent1a3f.html?ComponentID=775&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">775</a>
+                        </td>
+                        <td>
+Roblox.VirtualEconomyProducts.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+12/9/2019 11:13:18 AM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent2c4a.html?ComponentID=677&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">677</a>
+                        </td>
+                        <td>
+Roblox.Voice.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            <td>
+5/30/2019 6:13:57 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponentacca.html?ComponentID=35&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">35</a>
+                        </td>
+                        <td>
+Roblox.Voting.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components6e1c.html?ComponentSubTypeID=30&amp;TeamID=7">InfraCore</a></td>
+                        <td><a href="Componentsccd5.html?ComponentSubTypeID=30&amp;PodID=7">Core Services &amp; Infra</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+8/13/2014 8:05:43 PM                            </td>
+                </tr>
+                <tr>
+                        <td>
+                            <a href="EditTeamOwnershipComponent9b25.html?ComponentID=137&amp;ComponentType=Component&amp;RedirectComponentTypeID=2">137</a>
+                        </td>
+                        <td>
+Roblox.XboxLive.Service                        </td>
+                            <td>
+<a href="Components62b0.html?ComponentSubTypeID=30">API Web Services</a>                            </td>
+                        <td><a href="Components0353.html?ComponentSubTypeID=30&amp;TeamID=1">Apps</a></td>
+                        <td><a href="Components3293.html?ComponentSubTypeID=30&amp;PodID=5">Consoles</a></td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                        <td>8/27/2018 10:20:18 PM</td>
+                            <td>
+7/9/2015 11:26:10 AM                            </td>
+                </tr>
+        </tbody>
+    </table>
+
+
+        </div>
+
+        <script src="../bundles/scriptsce5b?v=IIcqsVgupLLkWQeKirBiDM5qjuwDL2GlNgyyFe8E22g1"></script>
+
+        
+    <script src="../bundles/teams-components075a?v=FJuDvpSLKkO1GXbs4YDgM41GVEXaBnsnt_-JU2jPs481"></script>
+
+
+        
+    </body>
+
+<!-- Mirrored from devops.sitetest1.roblox.local/Teams/Components?ComponentSubTypeID=30 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 02:48:33 GMT -->
+</html>

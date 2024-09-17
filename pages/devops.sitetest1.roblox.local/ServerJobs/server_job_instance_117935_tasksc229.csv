@@ -1,0 +1,2 @@
+ServerJobInstanceTaskID,ServerJobInstanceID,ServerJobStatus,ServerJobStatusVerbose,ExecutionServerID,ExecutionServerName,ExecutionGrouping,ExecutionParallelism,Ordinal,Started,Completed,RunTimeSeconds,MaxRunTimeMinutes,ScriptBlock,Result,LogFile,MaxAttempts,Attempts,Created,Updated,UpdatedBy
+8628472,117935,Failed,Failed - Completed with errors or unexpected results,93212,chi1-web6070,0,0.08,1,,,0,5,OfflineIISResetUsingKeepAliveFiles $(GetIP 93212); ,,,1,2,2/11/2021 2:13:38 AM,2/11/2021 2:20:14 AM,ROBLOX\CHI1-DB33$

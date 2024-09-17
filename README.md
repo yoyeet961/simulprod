@@ -8,3 +8,6 @@ To use it, launch **simulprod-nonhttp.exe**, then go to your system proxy settin
 
 
 **NOTE: The recreation is not full and also when the proxy is enabled, other websites besides cs.simulprod.com won't work.**
+
+## Additional Notes
+plug is a fucking bitchass (discord user id 1274003217096638558); he claims i skidded the entire remake off of simulprod.org which i didnt even know had an actual recreation besides the login page; the only page taken from simulprod.org is the login page. if you want further proof, go get simulprod.org's home page and compare it to my code. yes, the code is partially written with AI but does that make the remake bad? it doesn't. enjoy
